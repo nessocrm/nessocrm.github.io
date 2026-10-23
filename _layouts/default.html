@@ -136,9 +136,9 @@
 
         @media (min-width: 1024px) {
             .hero-index__grid {
-                grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-                gap: 2.5rem;
-                align-items: start;
+                grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+                gap: 2rem;
+                align-items: stretch;
             }
 
             .hero-index__title {
@@ -146,9 +146,17 @@
             }
 
             .hero-index__visual {
+                display: flex;
                 width: 100%;
-                max-width: 100%;
+                max-width: none;
                 margin-right: 0;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .hero-index__grid.max-w-7xl {
+                max-width: 92rem;
+                grid-template-columns: minmax(0, 0.78fr) minmax(22rem, 1.22fr);
             }
         }
 
