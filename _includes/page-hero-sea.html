@@ -1,7 +1,12 @@
 <section class="page-hero page-hero--wash{% if include.extra_class %} {{ include.extra_class }}{% endif %}" aria-label="{{ include.kicker | default: 'Nesso' }}">
   <div class="page-hero__goldline"></div>
 
-  <div class="max-w-6xl mx-auto relative z-10 page-hero__layout">
+  <figure class="page-hero__wash">
+    <div class="page-hero__wash-glow" aria-hidden="true"></div>
+    {% include nesso-cubes.html %}
+  </figure>
+
+  <div class="max-w-6xl mx-auto relative z-10">
     <div class="page-hero__copy">
       {% if include.kicker %}
       <p class="text-sm font-mono text-brand-gold uppercase tracking-[0.3em] mb-5">{{ include.kicker }}</p>
@@ -12,10 +17,5 @@
       {% endif %}
       <p class="page-hero__course-legend">{% if page.lang == 'it' %}Espo da una parte{% else %}Espo on one side{% endif %}</p>
     </div>
-
-    <figure class="page-hero__wash">
-      <div class="page-hero__wash-glow" aria-hidden="true"></div>
-      {% include nesso-cubes.html %}
-    </figure>
   </div>
 </section>
