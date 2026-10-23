@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /en/compare/
+title: "Why not a script | Nesso"
+lang: en
+locale: en_US
+alt: /it/confronto/
+description: "A script on tonight's table is not a product. Nesso is a run with a key, a hash, a preview, and a field owner."
+---
+{% include page-hero-sea.html
+  kicker="The comparison"
+  title="It is not a second CRM and it is not a query."
+  lead="A script copies cells. It does not know who owns the field, it does not ask before closing, it does not tell an expected file from a file already read."
+%}
+
+{% include pull-quote.html text="An Espo table is not an API." cite="Three ways to get it wrong" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">A script</h2>
+    <p>A script reads the CSV and runs an INSERT. The next day the file has one row less and the script deletes, or it leaves the record and nobody knows the source no longer has it. There is no preview. There is no hash, so it rewrites even what did not change.</p>
+    <p>If the salesperson's note sits in the same table, the script clears it when the cell arrives empty. It has no field owner.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">A query on the tables</h2>
+    <p>Writing on Espo tables skips the checks, the teams, the history, and the hooks. The day Espo changes a schema, the query is the first piece that breaks, and it breaks quietly.</p>
+    <p>Nesso talks to Espo only over HTTP. The key, the team, and the close go through the API. The Espo database is not a channel.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">A second CRM</h2>
+    <p>Keeping the masters in another product and then chasing them in Espo doubles the truth. Nesso is not that second place. It always has Espo on one side. The other side is a channel: a file, a SELECT, a call.</p>
+    <p>The recipes for accounts, contacts, sites, and the price list are a mapping to review. They are not a certified connector and they do not replace the ERP.</p>
+  </div>
+</section>
+

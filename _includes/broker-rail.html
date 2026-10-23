@@ -1,0 +1,31 @@
+{% comment %}Sliding logo deck. Drop anywhere: {% include broker-rail.html %}{% endcomment %}
+<section class="broker-rail {% if include.pad != 'none' %}py-12{% endif %}" aria-label="{% if page.lang == 'it' %}Canali{% else %}Channels{% endif %}">
+  {% unless include.kicker == 'off' %}
+  <p class="text-center text-[10px] font-mono uppercase tracking-[0.35em] text-brand-gold mb-7">
+    {% if page.lang == 'it' %}Canali · il nome di un gestionale non sta nel codice{% else %}Channels · an ERP's name is not in the code{% endif %}
+  </p>
+  {% endunless %}
+  <div class="broker-marquee">
+    <div class="broker-marquee__track">
+      {% for b in site.data.brokers %}
+        {% unless b.rail == false %}
+          {% include broker-tile.html broker=b %}
+        {% endunless %}
+      {% endfor %}
+      {% for b in site.data.brokers %}
+        {% unless b.rail == false %}
+          {% include broker-tile.html broker=b %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </div>
+  {% unless include.caption == 'off' %}
+  <p class="text-center text-xs text-gray-500 mt-7 max-w-3xl mx-auto px-6">
+    {% if page.lang == 'it' %}
+    In evidenza i canali che il motore ha già. La scrittura di ritorno, la coda e il filtro del portale restano spenti finché non si accendono. La posta, l'Advanced Pack e gli utenti di Espo non passano di qui.
+    {% else %}
+    The channels the engine already has are the ones on show. Write-back, the queue and the portal filter stay off until they are turned on. Mail, the Advanced Pack and Espo users do not pass through here.
+    {% endif %}
+  </p>
+  {% endunless %}
+</section>

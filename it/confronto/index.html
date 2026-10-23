@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /it/confronto/
+title: "Perché non uno script | Nesso"
+lang: it
+locale: it_IT
+alt: /en/compare/
+description: "Uno script sulla tabella di stanotte non è un prodotto. Nesso è un giro con chiave, hash, anteprima e padrone del campo."
+---
+{% include page-hero-sea.html
+  kicker="Il confronto"
+  title="Non è un secondo CRM e non è una query."
+  lead="Uno script copia le celle. Non sa chi è il padrone del campo, non chiede conferma prima di chiudere, non distingue un file atteso da un file già letto."
+%}
+
+{% include pull-quote.html text="La tabella di Espo non è un'API." cite="Tre modi di sbagliare" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Uno script</h2>
+    <p>Uno script legge il CSV e fa un INSERT. Il giorno dopo il file ha una riga in meno e lo script cancella, oppure lascia il record e nessuno sa che la sorgente non lo ha più. Non c'è anteprima. Non c'è un hash, quindi riscrive anche ciò che non è cambiato.</p>
+    <p>Se la nota del commerciale sta nella stessa tabella, lo script la svuota quando la cella arriva vuota. Non ha un padrone del campo.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Una query sulle tabelle</h2>
+    <p>Scrivere sulle tabelle di Espo salta i controlli, i team, la storia e gli hook. Il giorno in cui Espo cambia uno schema, la query è il primo pezzo che si rompe, e si rompe in silenzio.</p>
+    <p>Nesso parla con Espo solo via HTTP. La chiave, il team e la chiusura passano dalle API. Il database di Espo non è un canale.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Un secondo CRM</h2>
+    <p>Tenere le anagrafiche in un altro prodotto e poi rincorrerle in Espo raddoppia la verità. Nesso non è quel secondo posto. Ha sempre Espo da una parte. L'altro lato è un canale: un file, una SELECT, una chiamata.</p>
+    <p>Le ricette di anagrafiche, contatti, sedi e listino sono un abbinamento da rivedere. Non sono un connettore certificato e non sostituiscono il gestionale.</p>
+  </div>
+</section>
+

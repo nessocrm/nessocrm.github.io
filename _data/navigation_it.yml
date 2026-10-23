@@ -1,0 +1,63 @@
+﻿- title: Prodotto
+  dropdown: true
+  items:
+    - title: Come funziona
+      url: /it/come-funziona/
+      blurb: Canale, scheda, giro del record
+    - title: Architettura
+      url: /it/architecture/
+      blurb: Espo da una parte, le API dall'altra
+    - title: Il modello
+      url: /it/llm/
+      blurb: Propone l'abbinamento. Non salva.
+    - title: Il giro
+      url: /it/scan/
+      blurb: Cadenza, e il numero di stamattina
+    - title: Regole
+      url: /it/skill/
+      blurb: Padrone, chiave, scarto
+    - title: Schede
+      url: /it/universo/
+      blurb: Quelle che Espo ha già
+    - title: Il campo
+      url: /it/coperture/
+      blurb: Chi vince se la cella è vuota
+    - title: Il record
+      url: /it/ordini/
+      blurb: Come entra e come esce
+    - title: Cosa può andare storto
+      url: /it/rischio/
+      blurb: Anteprima, lettura, interruttore
+- title: Canali
+  dropdown: true
+  items:
+    - title: Canali
+      url: /it/broker/
+      blurb: File, tabella, chiamata, uscita
+    - title: Ricette
+      url: /it/strategies/
+      blurb: Un abbinamento da rivedere
+    - title: La prova
+      url: /it/accesso/
+      blurb: Il repository, un Espo vuoto
+- title: Nesso
+  dropdown: true
+  align: end
+  items:
+    - title: Perché Nesso
+      url: /it/confronto/
+      blurb: Non è SQL, non è un secondo CRM
+    - title: Per chi
+      url: /it/per-chi/
+      blurb: Chi deve fidarsi del giro
+    - title: Decisioni
+      url: /it/filosofia/
+      blurb: Quelle che il codice rispetta
+    - title: Il progetto
+      url: /it/chi-siamo/
+      blurb: Il repository pubblico
+- title: FAQ
+  url: /it/faq/
+- title: La prova
+  url: /it/accesso/
+  cta: true

@@ -1,0 +1,39 @@
+---
+layout: default
+permalink: /en/access/
+title: "The trial | Nesso"
+lang: en
+locale: en_US
+alt: /it/accesso/
+description: "The trial is the public repository. It starts an empty Espo. It does not collect email."
+---
+{% include page-hero-sea.html
+  kicker="The trial"
+  title="No sign-up. Clone it and start."
+  lead="The repository is public. Docker Compose starts an empty Espo and the engine. Production dumps are not mounted."
+%}
+
+{% include pull-quote.html text="An empty Espo is the trial. A production dump is not." cite="How you start" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The repository</h2>
+    <p>The code is at github.com/nessocrm/nessocrm. There is no installer and there is no waitlist. Whoever wants to try clones the repository and reads the manual in the docs folder.</p>
+    <p>This page does not ask for an email address. There is no form. The contact is the repository.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What comes up</h2>
+    <p>Docker Compose starts the database, an empty Espo, and the engine. The trial Espo stays empty: production dumps are not imported and attachments are not copied.</p>
+    <p>Writes toward Espo go through the HTTP API. No query on Espo tables. The Advanced Pack, if someone has it locally, is not in the repository and is not published.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What stays off</h2>
+    <p>Write-back, retry queue, portal filter, seal: off. The NESSO_SECRET_KEY variable is not set, so a password saved in the trial stays cleartext on the volume. It is written in the manual, it is not a surprise.</p>
+    <p>Mail is not configured from here. A run journal stays in the language of the run.</p>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+  <div class="max-w-3xl mx-auto text-center space-y-6">
+    <a class="inline-flex items-center gap-2 bg-brand-indigo text-white font-bold px-8 py-4 rounded-full" href="https://github.com/nessocrm/nessocrm">github.com/nessocrm/nessocrm</a>
+    <p class="text-gray-600 dark:text-gray-400">The manual is the docs folder of the repository. This site does not rebuild it.</p>
+  </div>
+</section>
+

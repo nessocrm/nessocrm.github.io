@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /en/risk/
+title: "What can go wrong | Nesso"
+lang: en
+locale: en_US
+alt: /it/rischio/
+description: "Preview, read mode, the switch. The first close asks for confirmation. Without a key the password stays cleartext."
+---
+{% include page-hero-sea.html
+  kicker="What can go wrong"
+  title="Look first. Then write."
+  lead="Preview does not write. Read mode and the global switch stop writes. The retry queue and the portal filter stay off."
+%}
+
+{% include pull-quote.html text="A switch that is off is a choice, not a hidden defect." cite="The brakes" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Before the write</h2>
+    <p>Preview shows what would be born and what would change, without calling the write. A VAT number already present is seen first. Undo goes back on what the run wrote.</p>
+    <p>Read mode and the global switch stop writes. A run in read mode reads, compares, and does not send the POST.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Passwords and secrets</h2>
+    <p>Without the NESSO_SECRET_KEY variable the connection password stays cleartext in the SQLite volume. The trial does not set the variable. With the variable, a new save is sealed. An old cleartext row still opens.</p>
+    <p>Removing the variable after sealing means that connection does not open until the password is typed again. Secrets do not enter the public connection page and do not enter the export.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Things that stay off</h2>
+    <p>The retry queue is off. When on, it queues again only an inbound row that has an external id, not in the same run, and it does not requeue HTTP outbound: that already has its own attempts.</p>
+    <p>The portal filter is off. It does not create portal users and it does not change roles. When on, outbound skips records of other teams. A missing key still stops the pull.</p>
+    <p>Mail stays in Espo. The Advanced Pack is not rewritten and is not in the repository. No SQL query on Espo tables. Production dumps are not imported.</p>
+  </div>
+</section>
+

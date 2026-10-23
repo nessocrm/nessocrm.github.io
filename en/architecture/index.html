@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /en/architecture/
+title: "Architecture | Nesso"
+lang: en
+locale: en_US
+alt: /it/architecture/
+description: "Espo on one side, a channel on the other, the engine in between. HTTP API only. The Espo database is not an interface."
+---
+{% include page-hero-sea.html
+  kicker="Architecture"
+  title="Two memories. One write direction toward Espo."
+  lead="The hash remembers the inbound row. The cursor remembers the outbound. Neither is a query on Espo tables."
+%}
+
+{% include pull-quote.html text="The engine volume is not the Espo database." cite="The boundaries" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Three pieces</h2>
+    <p>The external system delivers or receives rows: a file, a SELECT, a call, an HTTP endpoint. Nesso holds the connection and the integration. Espo holds the sheets, the teams, the history.</p>
+    <p>An integration has one connection. A connection can have several integrations. If the connection is HTTP, the integration leaves Espo. In the other cases it enters.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Where the data sits</h2>
+    <p>The sheets sit in Espo. The engine keeps its own memory in a SQLite file: connections, integrations, hash, cursor, journal. That file is not a second CRM and it does not replace Espo.</p>
+    <p>Without NESSO_SECRET_KEY the passwords in that volume stay cleartext. With the variable, a new save is sealed. The trial does not set the variable.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What does not cross the boundary</h2>
+    <p>No SQL on Espo tables. No production dump in the trial Espo. The Advanced Pack is not in the repository. CRM mail does not pass through the engine. Espo users are not created from a master.</p>
+    <p>Two different integrations can run together. The same one does not start twice. After an error the full interval is waited, unless retry_failed is on.</p>
+  </div>
+</section>
+

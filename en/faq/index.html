@@ -1,0 +1,30 @@
+---
+layout: default
+permalink: /en/faq/
+title: "Questions | Nesso"
+lang: en
+locale: en_US
+alt: /it/faq/
+description: "What Nesso is, what it does not do, how to try it. The answers are also in the repository manual."
+---
+{% include page-hero-sea.html
+  kicker="Questions"
+  title="The same answers as the manual, in short."
+  lead="If a sentence on this page and a sentence in the manual diverge, the manual wins: it changes together with the code."
+%}
+
+{% include pull-quote.html text="The manual is the docs folder." cite="The repository" %}
+
+<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+  <div class="max-w-4xl mx-auto">{% include accordion-faq.html %}</div>
+</section>
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Beyond the list</h2>
+    <p>Nesso is not a second CRM. It always has Espo on one side and a channel on the other. Writes toward Espo go through the HTTP API. There is no query on the tables.</p>
+    <p>The retry queue, the portal filter, the seal, and write-back exist and stay off. The trial does not turn them on. Without NESSO_SECRET_KEY the password in the volume stays cleartext.</p>
+    <p>The recipes are not a certified connector. The price list looks at Product: if the sheet is missing, the fields stay empty. Mail stays in Espo.</p>
+  </div>
+</section>
+{% include cta-band.html title="The trial is the repository." lead="No form. Clone it, start an empty Espo, read the docs folder." %}

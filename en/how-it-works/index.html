@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /en/how-it-works/
+title: "How it works | Nesso"
+lang: en
+locale: en_US
+alt: /it/come-funziona/
+description: "A record enters from a channel, takes a key, and is born in Espo only through the API."
+---
+{% include page-hero-sea.html
+  kicker="How it works"
+  title="Two objects. One run. No query on the tables."
+  lead="The connection is the channel. The integration is the rule: which sheet, which column is the identity, which field lands where, how often."
+%}
+
+{% include pull-quote.html text="A file is not an opinion." cite="The product, in one sentence" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Why the run is short</h2>
+    <p>The person who configures does not write a stored procedure and does not open the CRM tables. They choose the channel, the sheet, and the mapping. From there the same engine moves records, whatever the sheet is.</p>
+    <p>A site webhook can feed Leads and, with a second integration, Contacts. An integration has one connection. If the connection is HTTP, the integration leaves Espo. In the other cases it enters.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Inbound</h2>
+    <p>The external system delivers a row: a call, a SELECT, a file. The key is the integration id plus the external value. On standard sheets the field is cExternalKey. On sheets created by Nesso it is externalKey.</p>
+    <p>If the row hash is already the one stored, Espo is not called: the row is unchanged. If the key already exists, it is an update. If it does not, it is a create. An identical second send does not duplicate.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Outbound</h2>
+    <p>The cursor remembers the last modifiedAt and the Espo id. The run reads pages of 50 and sends only the mapped fields. The HTTP cursor advances only after the POSTs succeed. If the external key is missing, the pull stops: later records do not leave.</p>
+    <p>They are two different memories. The hash is the inbound memory. The cursor is the outbound memory. A second run, if nobody in Espo touched those records, exports zero.</p>
+  </div>
+</section>
+

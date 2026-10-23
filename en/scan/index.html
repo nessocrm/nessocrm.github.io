@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /en/scan/
+title: "The run | Nesso"
+lang: en
+locale: en_US
+alt: /it/scan/
+description: "The cadence is manual, 5 minutes, 15, one hour, or a fixed time. The same integration does not start twice."
+---
+{% include page-hero-sea.html
+  kicker="The run"
+  title="Every quarter of an hour, if you ask. Not on its own just to show movement."
+  lead="On the home screen the accounts number counts only if today's run toward Account succeeded. Yesterday's success is not presented as today."
+%}
+
+{% include pull-quote.html text="The scheduler is not a quarter of an hour watched on the container." cite="How the cadence is proved" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">When it starts</h2>
+    <p>The cadences are four intervals: off, 5 minutes, 15, 60. Plus a fixed time, for example 02:10. An integration on pause is skipped by the scheduler and by the webhook. Run now is not.</p>
+    <p>The fifteen minutes are proved with a fake clock: one second before, it does not start; at the deadline it starts once, and it does not start again in the same minute. It is not a quarter of an hour observed on the container.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Two runs, not only one</h2>
+    <p>Two different integrations can run together. The same one does not start twice: the second is told a run is already in progress. If it is already in progress, the scheduler skips it and does not write an error every thirty seconds.</p>
+    <p>After an error the clock updates and the full interval is waited. Only with retry_failed on does the clock stay put, and the run can come back sooner.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What the home screen shows</h2>
+    <p>The aligned-accounts percentage counts inbound integrations toward Account. If today's run fails, the percentage is not shown and yesterday's time is not passed off as today.</p>
+    <p>A file expected within an hour, if that hour passes without a successful run, turns the border red. A file already in the processed folder is not read again. A failed-run notice lights once, with the integration name.</p>
+  </div>
+</section>
+

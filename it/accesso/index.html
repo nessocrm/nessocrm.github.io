@@ -1,0 +1,39 @@
+---
+layout: default
+permalink: /it/accesso/
+title: "La prova | Nesso"
+lang: it
+locale: it_IT
+alt: /en/access/
+description: "La prova è il repository pubblico. Parte con un Espo vuoto. Non raccoglie email."
+---
+{% include page-hero-sea.html
+  kicker="La prova"
+  title="Niente iscrizione. Si clona e si parte."
+  lead="Il repository è pubblico. Docker Compose alza Espo vuoto e il motore. I dump di produzione non si montano."
+%}
+
+{% include pull-quote.html text="Un Espo vuoto è la prova. Un dump di produzione non lo è." cite="Come si parte" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Il repository</h2>
+    <p>Il codice sta su github.com/nessocrm/nessocrm. Non c'è un installer e non c'è una lista d'attesa. Chi vuole provare clona il repository e legge il manuale nella cartella docs.</p>
+    <p>Questa pagina non chiede un indirizzo email. Non c'è un modulo. Il contatto è il repository.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa si alza</h2>
+    <p>Docker Compose alza il database, un Espo vuoto e il motore. L'Espo di prova resta vuoto: non si importano i dump di produzione e non si copiano gli allegati.</p>
+    <p>Le scritture verso Espo passano dalle API HTTP. Nessuna query sulle tabelle di Espo. L'Advanced Pack, se qualcuno lo ha in locale, non sta nel repository e non si pubblica.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa resta spento</h2>
+    <p>Scrittura di ritorno, coda di ritento, filtro del portale, sigillo: spenti. La variabile NESSO_SECRET_KEY non è impostata, quindi una password salvata in prova resta in chiaro sul volume. È scritto nel manuale, non è una sorpresa.</p>
+    <p>La posta non si configura da qui. Il giornale di un giro resta nella lingua del giro.</p>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+  <div class="max-w-3xl mx-auto text-center space-y-6">
+    <a class="inline-flex items-center gap-2 bg-brand-indigo text-white font-bold px-8 py-4 rounded-full" href="https://github.com/nessocrm/nessocrm">github.com/nessocrm/nessocrm</a>
+    <p class="text-gray-600 dark:text-gray-400">Il manuale è la cartella docs del repository. Questo sito non lo ricompila.</p>
+  </div>
+</section>
+

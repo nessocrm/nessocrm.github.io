@@ -1,0 +1,33 @@
+groups:
+  - id: standard
+    title_it: Schede che Espo ha già
+    title_en: Sheets Espo already has
+    copy_it: "All'apertura della pagina il motore chiede a Espo l'elenco. Non è un catalogo fisso di cinquanta nomi. Se la scheda c'è, si può abbinare. Lead, Account e Contact sono il caso più comune, non l'unico."
+    copy_en: "When the page opens, the engine asks Espo for the list. It is not a fixed catalogue of fifty names. If the sheet is there, it can be mapped. Lead, Account and Contact are the common case, not the only one."
+    names:
+      - { symbol: Account, name: Azienda, plain: true }
+      - { symbol: Contact, name: Contatto, plain: true }
+      - { symbol: Lead, name: Lead, plain: true }
+      - { symbol: Opportunity, name: Opportunità, plain: true }
+      - { symbol: Case, name: Ticket, plain: true }
+      - { symbol: Task, name: Compito, plain: true }
+      - { symbol: Meeting, name: Riunione, plain: true }
+      - { symbol: Call, name: Chiamata, plain: true }
+      - { symbol: Document, name: Documento, plain: true }
+  - id: created
+    title_it: Schede che nascono da qui
+    title_en: Sheets born here
+    copy_it: "Dal modulo si indica il singolare e il plurale. Espo assegna il nome tecnico con il prefisso C. I campi di quella scheda non ricevono un secondo prefisso. La chiave, su una scheda creata qui, si chiama externalKey."
+    copy_en: "The form asks for the singular and the plural. Espo assigns the technical name with the prefix C. Fields on that sheet do not get a second prefix. The key, on a sheet created here, is called externalKey."
+    names:
+      - { symbol: C…, name: Prefisso, plain: true }
+      - { symbol: externalKey, name: Chiave, plain: true }
+  - id: absent
+    title_it: Quello che non si inventa
+    title_en: What is not invented
+    wide: true
+    copy_it: "Se Product non c'è, la ricetta listino lascia i campi vuoti. Gli utenti non nascono da un file. Una scheda che non è nel metadata non viene nominata per far vedere movimento."
+    copy_en: "If Product is missing, the price-list recipe leaves the fields empty. Users are not born from a file. A sheet that is not in the metadata is not named just to show movement."
+    names:
+      - { symbol: Product, name: Solo se c'è, plain: true }
+      - { symbol: User, name: Non si crea, plain: true }

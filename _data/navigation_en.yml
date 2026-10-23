@@ -1,0 +1,63 @@
+﻿- title: Product
+  dropdown: true
+  items:
+    - title: How it works
+      url: /en/how-it-works/
+      blurb: Channel, sheet, the record's run
+    - title: Architecture
+      url: /en/architecture/
+      blurb: Espo on one side, the API on the other
+    - title: The model
+      url: /en/llm/
+      blurb: It proposes the mapping. It does not save.
+    - title: The run
+      url: /en/scan/
+      blurb: Cadence, and this morning's number
+    - title: Rules
+      url: /en/skills/
+      blurb: Owner, key, reject
+    - title: Sheets
+      url: /en/universe/
+      blurb: The ones Espo already has
+    - title: The field
+      url: /en/covered/
+      blurb: Who wins if the cell is empty
+    - title: The record
+      url: /en/orders/
+      blurb: How it enters and how it leaves
+    - title: What can go wrong
+      url: /en/risk/
+      blurb: Preview, read mode, the switch
+- title: Channels
+  dropdown: true
+  items:
+    - title: Channels
+      url: /en/brokers/
+      blurb: File, table, call, outbound
+    - title: Recipes
+      url: /en/strategies/
+      blurb: A mapping to review
+    - title: The trial
+      url: /en/access/
+      blurb: The repository, an empty Espo
+- title: Nesso
+  dropdown: true
+  align: end
+  items:
+    - title: Why Nesso
+      url: /en/compare/
+      blurb: Not SQL, not a second CRM
+    - title: Who it is for
+      url: /en/who-its-for/
+      blurb: Who has to trust the run
+    - title: Decisions
+      url: /en/philosophy/
+      blurb: The ones the code keeps
+    - title: The project
+      url: /en/about/
+      blurb: The public repository
+- title: FAQ
+  url: /en/faq/
+- title: The trial
+  url: /en/access/
+  cta: true

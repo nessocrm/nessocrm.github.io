@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /it/rischio/
+title: "Cosa può andare storto | Nesso"
+lang: it
+locale: it_IT
+alt: /en/risk/
+description: "Anteprima, lettura, interruttore. La prima chiusura chiede conferma. Senza chiave la password resta in chiaro."
+---
+{% include page-hero-sea.html
+  kicker="Cosa può andare storto"
+  title="Prima si guarda. Poi si scrive."
+  lead="L'anteprima non scrive. La lettura e l'interruttore generale fermano le scritture. La coda di ritento e il filtro del portale restano spenti."
+%}
+
+{% include pull-quote.html text="Un interruttore spento è una scelta, non un difetto nascosto." cite="I freni" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Prima della scrittura</h2>
+    <p>L'anteprima mostra cosa nascerebbe e cosa cambierebbe, senza chiamare la scrittura. Una partita IVA già presente si vede prima. L'annullamento torna indietro su quello che il giro ha scritto.</p>
+    <p>La modalità lettura e l'interruttore generale fermano le scritture. Un giro in lettura legge, confronta, e non manda il POST.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Password e segreti</h2>
+    <p>Senza la variabile NESSO_SECRET_KEY la password del collegamento resta in chiaro nel volume SQLite. La prova non imposta la variabile. Con la variabile, un salvataggio nuovo viene sigillato. Una riga vecchia in chiaro si apre ancora.</p>
+    <p>Togliere la variabile dopo il sigillo significa che quel collegamento non si apre finché la password non viene riscritta. I segreti non entrano nella pagina pubblica del collegamento e non entrano nello scarico.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cose che restano spente</h2>
+    <p>La coda di ritento è spenta. Accesa, rimette in coda solo una riga in ingresso che ha un id esterno, non nello stesso giro, e non rimette in coda l'uscita HTTP: quella ha già i suoi tentativi.</p>
+    <p>Il filtro del portale è spento. Non crea utenti del portale e non cambia i ruoli. Acceso, in uscita salta i record di altri team. Una chiave mancante ferma il pull lo stesso.</p>
+    <p>La posta resta in Espo. L'Advanced Pack non viene riscritto e non sta nel repository. Nessuna query SQL sulle tabelle di Espo. I dump di produzione non si importano.</p>
+  </div>
+</section>
+

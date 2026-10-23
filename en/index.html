@@ -1,0 +1,275 @@
+---
+layout: default
+title: "Nesso — Espo on one side. The external system on the other."
+lang: en
+locale: en_US
+alt: /it/
+description: "Nesso moves records between an external system and EspoCRM. Channel, sheet, fields. Espo's API only."
+---
+
+<section class="relative min-h-screen flex items-center pt-32 pb-20 overflow-x-hidden bg-grid-pattern">
+    <div class="absolute inset-0 bg-white/90 dark:bg-brand-dark/90 transition-colors"></div>
+
+    <div class="max-w-7xl mx-auto hero-index__grid grid gap-8 items-start px-6 w-full relative z-10">
+        <div class="reveal active min-w-0">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-brand-gold/10 border-l-4 border-brand-gold text-xs font-mono tracking-widest uppercase mb-8 text-brand-navy dark:text-brand-gold">
+                <span class="w-2 h-2 bg-brand-gold animate-pulse"></span>
+                EspoCRM · Channel · Sheet · Fields
+            </div>
+            <h1 class="hero-index__title font-black mb-6 font-display text-gray-900 dark:text-white tracking-tight">
+                Tonight's file enters Espo.<br>
+                <span class="text-brand-gold">The salesperson's note stays.</span>
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-xl leading-relaxed">
+                Nesso is the engine between an external system and EspoCRM. You choose the channel, the sheet and the mapping. The passage uses <strong>only Espo's API</strong>. It is not a second CRM and it does not have an ERP's name written in the code.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                {% include cta-button.html %}
+                <a href="/en/how-it-works/"
+                    class="flex items-center justify-center gap-2 px-8 py-4 border border-gray-300 dark:border-white/20 font-bold text-sm hover:bg-gray-100 dark:hover:bg-white/5 transition-colors text-gray-800 dark:text-white">
+                    How it works
+                </a>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-gray-200 dark:border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs text-gray-500 uppercase tracking-wide">
+                <div>
+                    <div class="text-brand-gold font-bold text-lg mb-1">API</div>
+                    <div>No SQL on Espo</div>
+                </div>
+                <div>
+                    <div class="text-brand-indigo font-bold text-lg mb-1">Owner</div>
+                    <div>An empty cell does not wipe everything</div>
+                </div>
+                <div>
+                    <div class="text-gray-900 dark:text-white font-bold text-lg mb-1">Preview</div>
+                    <div>You can look without writing</div>
+                </div>
+                <div>
+                    <div class="text-gray-900 dark:text-white font-bold text-lg mb-1">History</div>
+                    <div>What disappears is closed, not deleted</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative reveal active mt-8 lg:mt-0 hero-index__visual">
+            {% include hero-bridge.html %}
+        </div>
+    </div>
+</section>
+
+<div class="bg-white dark:bg-brand-dark border-y border-gray-200 dark:border-white/5">
+  {% include broker-rail.html %}
+</div>
+
+<section id="who" class="py-32 px-6 bg-gray-50 dark:bg-brand-surface border-y border-gray-200 dark:border-white/10">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-16 max-w-3xl">
+            <h2 class="text-sm font-mono text-brand-gold font-bold uppercase tracking-widest mb-4">Who has to trust the run</h2>
+            <h3 class="text-4xl lg:text-5xl font-black font-display text-gray-900 dark:text-white tracking-tight">Four fears, four answers already in the engine</h3>
+            <p class="text-gray-500 mt-4">They are not characters. They are the people who, in a company with Espo and an ERP, have to say yes. The site does not promise they will switch it on alone on Monday.</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-0 border border-gray-200 dark:border-white/10 bg-white dark:bg-[#081628]">
+            <div class="p-8 border-b sm:border-r border-gray-200 dark:border-white/10">
+                <div class="text-brand-gold text-2xl mb-4"><i class="fas fa-balance-scale"></i></div>
+                <h4 class="text-xl font-black uppercase mb-2 text-gray-900 dark:text-white">Owner</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Wants one number: today's accounts are in sync, and the balance of the totals if there is an amount. It is a check. It does not write.</p>
+            </div>
+            <div class="p-8 border-b lg:border-r border-gray-200 dark:border-white/10">
+                <div class="text-brand-indigo text-2xl mb-4"><i class="fas fa-user-edit"></i></div>
+                <h4 class="text-xl font-black uppercase mb-2 text-gray-900 dark:text-white">Sales</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Wrote a note yesterday. The field belongs to Espo: tonight's file does not clear it. The sheet shows who wrote last.</p>
+            </div>
+            <div class="p-8 border-b sm:border-r border-gray-200 dark:border-white/10">
+                <div class="text-brand-gold text-2xl mb-4"><i class="fas fa-file-alt"></i></div>
+                <h4 class="text-xl font-black uppercase mb-2 text-gray-900 dark:text-white">Finance</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">A bad file must not close customers in silence. There is the preview, a VAT number already present, and undoing the run.</p>
+            </div>
+            <div class="p-8">
+                <div class="text-brand-indigo text-2xl mb-4"><i class="fas fa-wrench"></i></div>
+                <h4 class="text-xl font-black uppercase mb-2 text-gray-900 dark:text-white">Installer</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Four steps, a recipe to review, a switch-on plan, a handover page without passwords. Then they can leave.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 px-6 bg-[#081628] text-white border-y border-white/10">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-sm font-mono text-brand-gold font-bold uppercase tracking-widest mb-4">The field owner</h2>
+            <h3 class="text-4xl lg:text-5xl font-black font-display tracking-tight mb-6">The source wins. Even if the cell is empty.</h3>
+            <p class="text-gray-400 mb-8 leading-relaxed border-l-2 border-brand-gold/40 pl-4">
+                That is the default, and it is on purpose. A field can have another owner: Espo. Then the run does not touch it. Without that distinction, "sync" means deleting a person's work.
+            </p>
+            <ul class="space-y-4 text-gray-300">
+                <li class="flex gap-3"><i class="fas fa-check text-brand-gold mt-1"></i><span>The key is the <em>integration</em> plus the external value. Two systems do not trample each other's records.</span></li>
+                <li class="flex gap-3"><i class="fas fa-check text-brand-gold mt-1"></i><span>A row that disappears from the file is closed in Espo and stays in the history. It is not deleted.</span></li>
+                <li class="flex gap-3"><i class="fas fa-check text-brand-gold mt-1"></i><span>Writing back to the ERP stays off until you turn it on.</span></li>
+            </ul>
+        </div>
+        <div class="border border-brand-gold/20 bg-brand-gold/5 p-8">
+            <div class="text-[10px] font-mono uppercase tracking-widest text-brand-gold mb-6">A valid run</div>
+            <div class="space-y-5 font-mono text-sm">
+                <div class="flex justify-between border-b border-white/10 pb-3"><span class="text-gray-400">Channel</span><span>File, table or call</span></div>
+                <div class="flex justify-between border-b border-white/10 pb-3"><span class="text-gray-400">Sheet</span><span class="text-brand-gold">Espo's</span></div>
+                <div class="flex justify-between border-b border-white/10 pb-3"><span class="text-gray-400">Write</span><span>API, if the switch is on</span></div>
+                <div class="flex justify-between"><span class="text-gray-400">SQL on Espo</span><span class="text-red-400">Does not exist</span></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 px-6 bg-white dark:bg-brand-dark">
+    <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+            <h2 class="text-sm font-mono text-brand-gold font-bold uppercase tracking-widest mb-4">Two objects</h2>
+            <h3 class="text-4xl lg:text-5xl font-black font-display text-gray-900 dark:text-white tracking-tight">The connection carries. The integration decides.</h3>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="card-glow bg-gray-50 dark:bg-[#111] p-8 relative">
+                <div class="text-4xl text-gray-200 dark:text-white/10 font-black absolute top-4 right-4">01</div>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 mt-4">Connection</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">The physical channel. Webhook, database, file, or outbound HTTP. One connection can have several integrations.</p>
+            </div>
+            <div class="card-glow bg-gray-50 dark:bg-[#111] p-8 relative">
+                <div class="text-4xl text-gray-200 dark:text-white/10 font-black absolute top-4 right-4">02</div>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 mt-4">Sheet</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Account, Contact, Lead, or a sheet Espo already has in the metadata. If it is missing, you create it: the technical name takes the prefix C.</p>
+            </div>
+            <div class="card-glow bg-gray-50 dark:bg-[#111] p-8 relative">
+                <div class="text-4xl text-gray-200 dark:text-white/10 font-black absolute top-4 right-4">03</div>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 mt-4">Mapping</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">Which column lands in which field, and who owns it. The synonym proposal does not save. The model, without an address, does not start.</p>
+            </div>
+            <div class="card-glow bg-gray-50 dark:bg-[#111] p-8 relative">
+                <div class="text-4xl text-gray-200 dark:text-white/10 font-black absolute top-4 right-4">04</div>
+                <h4 class="text-lg font-bold text-gray-900 dark:text-white mb-3 mt-4">Run</h4>
+                <p class="text-sm text-gray-500 leading-relaxed">By hand, every 5 minutes, every 15, every hour, or at a fixed time. The same integration does not start twice.</p>
+            </div>
+        </div>
+        <p class="mt-10">
+            <a href="/en/how-it-works/" class="font-bold text-brand-gold hover:underline">A record's run →</a>
+        </p>
+    </div>
+</section>
+
+<section class="py-24 px-6 bg-gray-50 dark:bg-brand-surface border-y border-gray-200 dark:border-white/10">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+            <h2 class="text-sm font-mono text-brand-gold font-bold uppercase tracking-widest mb-4">Channels</h2>
+            <h3 class="text-4xl font-black font-display text-gray-900 dark:text-white tracking-tight mb-4">The shape is in the engine. The customer's name is not.</h3>
+            <p class="text-gray-500 leading-relaxed mb-6">A site that calls, a night file, a SELECT, a PDF whose name contains the company key: they are the same shape. The account, contact and site recipes prepare a mapping to review. They are not a certified ERP connector.</p>
+            <a href="/en/brokers/" class="font-bold text-brand-gold hover:underline">The channels, one by one →</a>
+        </div>
+        <div class="border border-gray-200 dark:border-white/10 p-8 bg-white dark:bg-[#081628]">
+            <div class="flex items-center justify-between py-3 border-b border-gray-100 dark:border-white/10">
+                <span class="font-bold text-gray-900 dark:text-white">Webhook · database · CSV</span>
+                <span class="text-xs font-mono uppercase text-brand-gold">Inbound</span>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b border-gray-100 dark:border-white/10">
+                <span class="font-bold text-gray-900 dark:text-white">HTTP</span>
+                <span class="text-xs font-mono uppercase text-brand-gold">Outbound</span>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b border-gray-100 dark:border-white/10">
+                <span class="font-bold text-gray-900 dark:text-white">Excel · SFTP · PDF · document</span>
+                <span class="text-xs font-mono uppercase text-brand-gold">Same shape</span>
+            </div>
+            <div class="flex items-center justify-between py-3 border-b border-gray-100 dark:border-white/10">
+                <span class="text-gray-500">Write-back · queue · portal · seal</span>
+                <span class="text-xs font-mono uppercase text-gray-400">Off until turned on</span>
+            </div>
+            <div class="flex items-center justify-between py-3">
+                <span class="text-gray-500">SQL on Espo's tables</span>
+                <span class="text-xs font-mono uppercase text-gray-900 dark:text-white">Out</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-black mb-10 text-gray-900 dark:text-white">The rest of the site says the same thing, at length</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="/en/how-it-works/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">RUN</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">How a record enters</h3>
+        <p class="text-sm text-gray-500">Key, hash, POST or PUT. A second identical send does not call Espo again.</p>
+      </a>
+      <a href="/en/covered/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">FIELD</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">Who wins the cell</h3>
+        <p class="text-sm text-gray-500">The source, even empty. Or Espo, and the run does not touch it.</p>
+      </a>
+      <a href="/en/universe/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">SHEETS</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">What Espo already has</h3>
+        <p class="text-sm text-gray-500">Not a fixed list. If Product is missing, the price list stays empty.</p>
+      </a>
+      <a href="/en/risk/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">STOP</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">Before writing</h3>
+        <p class="text-sm text-gray-500">Preview, read mode, the switch. The first close is confirmed.</p>
+      </a>
+      <a href="/en/brokers/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">CHANNELS</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">File, table, call</h3>
+        <p class="text-sm text-gray-500">And what the product refuses to be.</p>
+      </a>
+      <a href="/en/llm/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">MODEL</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">It proposes, it does not save</h3>
+        <p class="text-sm text-gray-500">Synonyms call nobody. Without an address, the model does not start.</p>
+      </a>
+      <a href="/en/strategies/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">RECIPES</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">To review</h3>
+        <p class="text-sm text-gray-500">Accounts, contacts, sites, price list. Not a certified connector.</p>
+      </a>
+      <a href="/en/who-its-for/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">WHO</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">Who says yes</h3>
+        <p class="text-sm text-gray-500">Owner, sales, finance, the person who installs.</p>
+      </a>
+      <a href="/en/faq/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">FAQ</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">The short questions</h3>
+        <p class="text-sm text-gray-500">SQL, portal, passwords, queue, trial. No brochure.</p>
+      </a>
+      <a href="/en/philosophy/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">DECISIONS</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">What is not reopened</h3>
+        <p class="text-sm text-gray-500">Espo on one side. Closing is not deleting. The source wins, unless an exception says otherwise.</p>
+      </a>
+      <a href="/en/compare/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">WHY</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">Not a script</h3>
+        <p class="text-sm text-gray-500">And not a query on Espo's tables, and not a second product.</p>
+      </a>
+      <a href="/en/access/" class="card-glow p-8 block">
+        <div class="text-brand-gold font-mono text-xs mb-3">TRIAL</div>
+        <h3 class="font-black text-xl mb-2 text-gray-900 dark:text-white">The repository</h3>
+        <p class="text-sm text-gray-500">Empty Espo. No production dump. No form that asks for an email.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-32 px-6 bg-white dark:bg-[#111]">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-sm font-mono text-brand-gold font-bold uppercase tracking-widest mb-4">Before you install</h2>
+            <h3 class="text-4xl lg:text-5xl font-black font-display text-gray-900 dark:text-white tracking-tight">Questions from someone who already has Espo</h3>
+        </div>
+        {% include accordion-faq.html %}
+        <p class="text-center mt-10"><a href="/en/faq/" class="font-bold text-brand-gold hover:underline">All the FAQ →</a></p>
+    </div>
+</section>
+
+<section class="py-32 px-6 bg-brand-navy text-white">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl lg:text-5xl font-black font-display mb-6 tracking-tight">The trial is the repository. Not a waiting list.</h2>
+        <p class="text-lg text-gray-400 mb-10">It starts an empty Espo. The Gruppo Meridia demo shows a run. It is not your company, and production dumps are not imported.</p>
+        <div class="flex justify-center">{% include cta-button.html %}</div>
+        <p class="mt-8 text-xs text-gray-500">Nesso is not a certified connector. The manual lives in the repository, in Italian and in English.</p>
+    </div>
+</section>

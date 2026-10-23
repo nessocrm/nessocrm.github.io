@@ -1,0 +1,14 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+*:Zone.Identifier*
+
+# Archivio del template: non entra nel sito pubblicato.
+_brand/
+_webpages_backups/
+
+*.psd
+*com.dropbox.attrs
+assets/font/logo/

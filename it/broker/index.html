@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /it/broker/
+title: "Canali | Nesso"
+lang: it
+locale: it_IT
+alt: /en/brokers/
+description: "Webhook, database in sola lettura, CSV, Excel, SFTP, FTPS, PDF, documento. L'HTTP esce da Espo."
+---
+{% include page-hero-sea.html
+  kicker="Canali"
+  title="Il nome dell'ERP non sta nel codice."
+  lead="Un canale è un modo di ricevere o di mandare righe. La regola sta nell'integrazione, non nel nome del sistema dall'altra parte."
+%}
+
+{% include pull-quote.html text="La posta non è un canale di Nesso." cite="I canali" %}
+
+{% include broker-rail.html %}
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quelli che girano</h2>
+    <p>In ingresso: webhook, una SELECT sul database esterno, CSV, Excel, SFTP, FTPS, PDF, documento. In uscita: HTTP, con il cursore. La direzione segue il canale. Un'integrazione HTTP non diventa un caricamento.</p>
+    <p>Il database esterno si legge. Non si scrive sulle sue tabelle da qui, finché la scrittura di ritorno non è accesa, e anche allora solo sulle colonne nominate.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quelli che esistono e restano spenti</h2>
+    <p>Scrittura di ritorno, coda di ritento, filtro del portale, sigillo dei segreti: il codice c'è, l'interruttore di default è spento. Accenderli è una scelta di chi installa, non un comportamento della prova.</p>
+    <p>La prova non imposta NESSO_SECRET_KEY, non accende la coda, non accende il portale, non accende la scrittura di ritorno.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quello che non passa di qui</h2>
+    <p>La posta del CRM resta in Espo. L'Advanced Pack non viene riscritto. Gli utenti di Espo non si creano da un'anagrafica. Non c'è un ponte senza Espo da una parte. Non si importa un dump di produzione.</p>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+  <div class="max-w-5xl mx-auto space-y-10">
+    <h2 class="text-2xl font-black text-gray-900 dark:text-white">In ingresso e in uscita</h2>
+    {% include broker-grid.html tier="a" %}
+    <h2 class="text-2xl font-black text-gray-900 dark:text-white">File e documenti</h2>
+    {% include broker-grid.html tier="b" %}
+    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Nel motore, spenti</h2>
+    {% include broker-grid.html tier="c" %}
+  </div>
+</section>
+{% include broker-out.html %}
+

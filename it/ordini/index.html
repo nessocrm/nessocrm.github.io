@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /it/ordini/
+title: "Il record | Nesso"
+lang: it
+locale: it_IT
+alt: /en/orders/
+description: "Una riga sparita dalla sorgente chiude il record su Espo e tiene la storia. Non lo cancella."
+---
+{% include page-hero-sea.html
+  kicker="Il record"
+  title="Chiudere non è dimenticare."
+  lead="La prima chiusura chiede conferma. Il record resta, con la storia. Non è una cancellazione e non è un oblio."
+%}
+
+{% include pull-quote.html text="Una riga che non c'è più non viene cancellata di nascosto." cite="Il record" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Come entra</h2>
+    <p>La chiave è l'id dell'integrazione più il valore esterno. Se su Espo quella chiave c'è già, il giro aggiorna. Se non c'è, crea. Se l'hash è identico, non chiama Espo.</p>
+    <p>Un record creato da Nesso porta il team. La visibilità è una regola: questa riga è del team Vendite, assegnata a questa persona. Non è un permesso inventato fuori da Espo.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Come esce dalla sorgente</h2>
+    <p>Se la riga non è più nel file, il record su Espo viene chiuso. La storia resta. La prima volta che un giro chiuderebbe dei record, chiede conferma: non si chiude un elenco intero per un file troncato, senza che qualcuno lo veda.</p>
+    <p>Chiudere non cancella. Non è la funzione di oblio. Un record chiuso si può riaprire se la riga torna.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Come torna indietro</h2>
+    <p>La scrittura di ritorno è spenta finché non la si accende. Accesa, scrive solo le colonne nominate. Non riscrive il file intero e non inventa colonne.</p>
+    <p>Il cursore in uscita non è questa scrittura. Il cursore manda i campi abbinati a un HTTP. La scrittura di ritorno scrive sulla sorgente da cui la riga è arrivata.</p>
+  </div>
+</section>
+

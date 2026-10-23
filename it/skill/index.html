@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /it/skill/
+title: "Regole | Nesso"
+lang: it
+locale: it_IT
+alt: /en/skills/
+description: "Padrone del campo, chiave, duplicato, data, telefono. Sono regole del carico, non strategie."
+---
+{% include page-hero-sea.html
+  kicker="Regole"
+  title="Il giro applica regole. Non inventa un mestiere."
+  lead="Ogni campo ha un padrone. Una data si legge in tre formati. Un telefono italiano diventa +39. Un duplicato si scarta o si adotta, se l'integrazione lo dice."
+%}
+
+{% include pull-quote.html text="Una regola che non è scritta non scatta." cite="Il carico" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Il padrone</h2>
+    <p>Di default vince la sorgente, anche se la cella arriva vuota. Lo svuotamento vale solo sui campi della sorgente. Se il padrone è Espo, il valore diverso finisce in coda da guardare e il campo su Espo resta.</p>
+    <p>In creazione si scrive anche il campo di Espo: il record non esiste ancora, e non c'è una nota da proteggere. Dal giro dopo, il padrone conta.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">La chiave e il duplicato</h2>
+    <p>L'identità è una convenzione unica: id dell'integrazione, due punti, valore esterno. Due integrazioni sulla stessa scheda non si mescolano, perché la chiave contiene l'integrazione.</p>
+    <p>Se Espo rifiuta perché esiste già un record simile con un'altra chiave, la riga viene scartata. Si può dire all'integrazione di adottare quel record. Non è il comportamento di default.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Prima di Espo</h2>
+    <p>Una data illeggibile non inventa un giorno. Un elenco deve avere almeno un valore, se il campo nuovo è un elenco. Il telefono italiano viene messo in forma internazionale. L'errore di Espo, se nomina un campo, riporta quel nome.</p>
+    <p>Manca una colonna obbligatoria: il file non si sposta e lo scarto è uno solo. Manca una cella: la riga si scarta e le altre proseguono, se la colonna c'è.</p>
+  </div>
+</section>
+

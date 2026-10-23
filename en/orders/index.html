@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /en/orders/
+title: "The record | Nesso"
+lang: en
+locale: en_US
+alt: /it/ordini/
+description: "A row that disappeared from the source closes the record on Espo and keeps the history. It does not delete it."
+---
+{% include page-hero-sea.html
+  kicker="The record"
+  title="Closing is not forgetting."
+  lead="The first close asks for confirmation. The record stays, with its history. It is not a deletion and it is not a forget."
+%}
+
+{% include pull-quote.html text="A row that is gone is not deleted in secret." cite="The record" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">How it enters</h2>
+    <p>The key is the integration id plus the external value. If that key is already on Espo, the run updates. If it is not, it creates. If the hash is identical, it does not call Espo.</p>
+    <p>A record created by Nesso carries the team. Visibility is a rule: this row belongs to the Sales team, assigned to this person. It is not a permission invented outside Espo.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">How it leaves the source</h2>
+    <p>If the row is no longer in the file, the record on Espo is closed. The history stays. The first time a run would close records, it asks for confirmation: a whole list is not closed because of a truncated file, without someone seeing it.</p>
+    <p>Closing does not delete. It is not the forget function. A closed record can be reopened if the row comes back.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">How it goes back</h2>
+    <p>Write-back stays off until it is turned on. Once on, it writes only the named columns. It does not rewrite the whole file and it does not invent columns.</p>
+    <p>The outbound cursor is not this write. The cursor sends the mapped fields to an HTTP endpoint. Write-back writes on the source the row came from.</p>
+  </div>
+</section>
+

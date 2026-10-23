@@ -1,0 +1,187 @@
+﻿<nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-white/5"
+  id="navbar">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center gap-4">
+
+    <a href="{% if page.lang == 'it' %}/it/{% else %}/en/{% endif %}"
+      class="flex items-center hover:opacity-90 transition-opacity shrink-0 min-w-0">
+      {% include brand-logo.html %}
+    </a>
+
+    <div class="hidden lg:flex items-center gap-5 xl:gap-7">
+      {% assign nav_items = site.data.navigation_en %}
+      {% if page.lang == 'it' %}
+      {% assign nav_items = site.data.navigation_it %}
+      {% endif %}
+
+      {% for item in nav_items %}
+      {% if item.dropdown %}
+      {% assign mega_active = false %}
+      {% for link in item.items %}
+        {% if page.url == link.url or page.permalink == link.url %}
+          {% assign mega_active = true %}
+        {% endif %}
+      {% endfor %}
+      <div class="mega{% if item.align == 'end' %} is-end{% endif %}" data-mega>
+        <button type="button" class="mega__btn {% if mega_active %}is-active{% endif %}"
+          aria-expanded="false" aria-haspopup="true">
+          {{ item.title }}
+          <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </button>
+        <div class="mega__panel" role="menu">
+          {% for link in item.items %}
+          {% assign link_active = false %}
+          {% if page.url == link.url or page.permalink == link.url %}
+            {% assign link_active = true %}
+          {% endif %}
+          <a href="{{ link.url | relative_url }}" class="mega__link {% if link_active %}is-active{% endif %}">
+            <span class="mega__link-title">{{ link.title }}</span>
+            {% if link.blurb %}
+            <span class="mega__link-blurb">{{ link.blurb }}</span>
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+      {% elsif item.cta %}
+      <a href="{{ item.url | relative_url }}"
+        class="flex items-center gap-2 text-sm font-bold px-5 py-2 rounded-full bg-brand-gold text-brand-dark hover:bg-brand-goldLight transition-all shadow-sm shrink-0">
+        {{ item.title }}
+      </a>
+      {% else %}
+      {% assign is_active = false %}
+      {% if page.url == item.url or page.permalink == item.url %}
+        {% assign is_active = true %}
+      {% endif %}
+      <a href="{{ item.url | relative_url }}"
+        class="text-sm font-bold uppercase tracking-wide transition-colors relative group shrink-0 {% if is_active %}text-brand-gold{% else %}text-gray-500 dark:text-gray-400 hover:text-brand-navy dark:hover:text-white{% endif %}">
+        {{ item.title }}
+        <span
+          class="absolute -bottom-1 left-0 h-0.5 bg-brand-gold transition-all group-hover:w-full {% if is_active %}w-full{% else %}w-0{% endif %}"></span>
+      </a>
+      {% endif %}
+      {% endfor %}
+
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors text-gray-800 dark:text-white" aria-label="Toggle theme">
+        <i class="fas fa-sun dark:hidden"></i>
+        <i class="fas fa-moon hidden dark:inline"></i>
+      </button>
+
+      <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wide shrink-0">
+        {% if page.lang == 'it' %}
+        <span class="text-brand-gold">IT</span>
+        <span class="text-gray-600 dark:text-gray-400">|</span>
+        <a href="{{ page.alt | default: '/en/' | relative_url }}"
+          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">EN</a>
+        {% else %}
+        <a href="{{ page.alt | default: '/it/' | relative_url }}"
+          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">IT</a>
+        <span class="text-gray-600 dark:text-gray-400">|</span>
+        <span class="text-brand-gold">EN</span>
+        {% endif %}
+      </div>
+    </div>
+
+    <button class="lg:hidden text-2xl text-gray-900 dark:text-white" onclick="toggleMobileMenu()" aria-label="Menu" aria-controls="mobile-menu">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<div id="mobile-menu"
+  class="fixed inset-0 bg-white dark:bg-brand-dark z-[60] transform translate-x-full transition-transform duration-300 flex flex-col overflow-y-auto">
+  <button class="absolute top-5 right-5 text-3xl text-gray-900 dark:text-white" onclick="toggleMobileMenu()" aria-label="Close menu">
+    <i class="fas fa-times"></i>
+  </button>
+
+  {% assign nav_items = site.data.navigation_en %}
+  {% if page.lang == 'it' %}
+  {% assign nav_items = site.data.navigation_it %}
+  {% endif %}
+
+  <div class="mobile-nav">
+    {% for item in nav_items %}
+    {% if item.dropdown %}
+    <details class="mobile-nav__acc"{% if forloop.first %} open{% endif %}>
+      <summary>{{ item.title }}</summary>
+      {% for link in item.items %}
+      <a href="{{ link.url | relative_url }}" onclick="toggleMobileMenu()">
+        <span>{{ link.title }}</span>
+        {% if link.blurb %}<em>{{ link.blurb }}</em>{% endif %}
+      </a>
+      {% endfor %}
+    </details>
+    {% elsif item.cta %}
+    <a href="{{ item.url | relative_url }}" class="mobile-nav__cta" onclick="toggleMobileMenu()">{{ item.title }}</a>
+    {% else %}
+    <a href="{{ item.url | relative_url }}" class="mobile-nav__top" onclick="toggleMobileMenu()">{{ item.title }}</a>
+    {% endif %}
+    {% endfor %}
+
+    <div class="mobile-nav__lang">
+      {% if page.lang == 'it' %}
+      <span class="text-brand-gold border-b-2 border-brand-gold">Italiano</span>
+      <a href="{{ page.alt | default: '/en/' | relative_url }}">English</a>
+      {% else %}
+      <a href="{{ page.alt | default: '/it/' | relative_url }}">Italiano</a>
+      <span class="text-brand-gold border-b-2 border-brand-gold">English</span>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    const megas = document.querySelectorAll('[data-mega]');
+    function closeAll(except) {
+      megas.forEach(function (m) {
+        if (m !== except) {
+          m.classList.remove('is-open');
+          const btn = m.querySelector('.mega__btn');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
+    function keepInView(mega) {
+      const panel = mega.querySelector('.mega__panel');
+      if (!panel) return;
+      mega.classList.remove('is-flip');
+      const left = mega.getBoundingClientRect().left;
+      if (left + panel.offsetWidth > window.innerWidth - 16) {
+        mega.classList.add('is-flip');
+      }
+    }
+    megas.forEach(function (mega) {
+      const btn = mega.querySelector('.mega__btn');
+      mega.addEventListener('mouseenter', function () { keepInView(mega); });
+      btn.addEventListener('focus', function () { keepInView(mega); });
+      btn.addEventListener('click', function (e) {
+        if (window.matchMedia('(hover: hover)').matches) return;
+        e.preventDefault();
+        const open = mega.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (open) {
+          keepInView(mega);
+          closeAll(mega);
+        }
+      });
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('[data-mega]')) closeAll();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeAll();
+    });
+  })();
+
+  function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const isOpen = !menu.classList.contains('translate-x-full');
+    if (isOpen) {
+      menu.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+    } else {
+      menu.classList.remove('translate-x-full');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+</script>

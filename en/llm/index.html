@@ -1,0 +1,44 @@
+---
+layout: default
+permalink: /en/llm/
+title: "The model | Nesso"
+lang: en
+locale: en_US
+alt: /it/llm/
+description: "The synonym proposal calls nobody. The model starts only if an address is set, and it does not save."
+---
+{% include page-hero-sea.html
+  kicker="The model"
+  title="It fills the empty columns. It does not decide the run."
+  lead="Without an address, no call starts. With the address, the model does not see passwords and does not enter the export."
+%}
+
+{% include pull-quote.html text="A mapping is confirmed. It is not delegated." cite="The mapping step" %}
+
+{% include llm-rail.html kicker="off" %}
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What it always does</h2>
+    <p>Propose the mapping reads the column names, in the language of the page, and proposes the Espo field, including the VAT number if the sheet has a fiscal field. An unrecognized column stays empty, to be filled by hand.</p>
+    <p>Synonyms are a list per language. They do not go on the network. They do not save the integration. A person reviews, then saves.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What it does only if you say so</h2>
+    <p>Fill the empty columns calls a model only if the address is set. It fills columns that are still empty, among the fields the sheet knows. It does not touch a column already mapped. It does not save.</p>
+    <p>The call sends the column names, at most three short cells, and the field name. It does not send the connection password. The model address does not enter the configuration export.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What it is not</h2>
+    <p>It is not an assistant that creates sheets, it does not choose the channel, it does not turn write-back on. If the address is missing, the button says so and the synonym proposal remains.</p>
+    <p>A run journal and the scheduler stay in the language of the run. The model does not rewrite them.</p>
+  </div>
+</section>
+
+<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+  <div class="max-w-5xl mx-auto space-y-10">
+    <h2 class="text-2xl font-black text-gray-900 dark:text-white">In the engine, with no network</h2>
+    {% include llm-grid.html tier="a" %}
+    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Only with an address</h2>
+    {% include llm-grid.html tier="b" %}
+    <h2 class="text-2xl font-black text-gray-900 dark:text-white">What it does not do</h2>
+    {% include llm-grid.html tier="c" %}
+  </div>
+</section>
+

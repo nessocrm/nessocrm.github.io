@@ -1,0 +1,32 @@
+---
+layout: default
+permalink: /it/architecture/
+title: "Architettura | Nesso"
+lang: it
+locale: it_IT
+alt: /en/architecture/
+description: "Espo da una parte, un canale dall'altra, il motore in mezzo. Solo API HTTP. Il database di Espo non è un'interfaccia."
+---
+{% include page-hero-sea.html
+  kicker="Architettura"
+  title="Due memorie. Una sola direzione di scrittura verso Espo."
+  lead="L'hash ricorda la riga in ingresso. Il cursore ricorda l'uscita. Nessuno dei due è una query sulle tabelle di Espo."
+%}
+
+{% include pull-quote.html text="Il volume del motore non è il database di Espo." cite="I confini" %}
+
+
+<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Tre pezzi</h2>
+    <p>Il sistema esterno consegna o riceve righe: un file, una SELECT, una chiamata, un HTTP. Nesso tiene il collegamento e l'integrazione. Espo tiene le schede, i team, la storia.</p>
+    <p>Un'integrazione ha un solo collegamento. Un collegamento può avere più integrazioni. Se il collegamento è HTTP, l'integrazione esce da Espo. Negli altri casi entra.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Dove stanno i dati</h2>
+    <p>Le schede stanno in Espo. Il motore tiene la propria memoria su un file SQLite: collegamenti, integrazioni, hash, cursore, giornale. Quel file non è un secondo CRM e non sostituisce Espo.</p>
+    <p>Senza NESSO_SECRET_KEY le password in quel volume restano in chiaro. Con la variabile, un salvataggio nuovo viene sigillato. La prova non imposta la variabile.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa non attraversa il confine</h2>
+    <p>Niente SQL sulle tabelle di Espo. Niente dump di produzione nell'Espo di prova. L'Advanced Pack non sta nel repository. La posta del CRM non passa dal motore. Gli utenti di Espo non si creano da un'anagrafica.</p>
+    <p>Due integrazioni diverse possono girare insieme. La stessa non parte due volte. Dopo un errore si aspetta l'intervallo intero, salvo retry_failed acceso.</p>
+  </div>
+</section>
+

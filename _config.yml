@@ -1,0 +1,116 @@
+title: "Nesso"
+description: "Nesso lega EspoCRM a un sistema esterno. Si scelgono il canale, la scheda e i campi. Il passaggio usa solo le API di Espo."
+baseurl: ""
+url: "https://nessocrm.github.io"
+locale: it_IT
+
+author:
+  name: "Nesso"
+  bio: "Il legame fra EspoCRM e un sistema esterno"
+
+og_image: "/assets/images/logo/favicon.svg"
+
+paginate: 20
+paginate_path: "/blog/page:num"
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+social:
+  github: "https://github.com/nessocrm/nessocrm"
+
+cta:
+  github_url: "https://github.com/nessocrm/nessocrm"
+  access_it: "/it/accesso/"
+  access_en: "/en/access/"
+  label_it: "La prova"
+  label_en: "The trial"
+
+popup:
+  en:
+    url: "/en/access/"
+    title: "Espo on one side. The other system on the other."
+    body: "The trial is the public repository. It starts an empty Espo. It does not import a production dump."
+    button: "How the trial works"
+  it:
+    url: "/it/accesso/"
+    title: "Espo da una parte. Il sistema esterno dall'altra."
+    body: "La prova è il repository pubblico. Parte un Espo vuoto. Non importa un dump di produzione."
+    button: "Come si prova"
+
+faq_it:
+  - question: "Nesso che cos'è?"
+    answer: "È il motore che porta i record fra un sistema esterno e EspoCRM. Si configurano il canale, la scheda e l'abbinamento dei campi. Da lì in poi lo stesso motore sposta i record. Non è un secondo CRM e non è un connettore con il nome di un gestionale scritto nel codice."
+  - question: "Parla con le tabelle di Espo?"
+    answer: "No. Ogni scrittura e ogni lettura verso Espo passa dalle API HTTP, con l'header Espo-Authorization. Niente SQL sulle tabelle di Espo."
+  - question: "Che canali ci sono?"
+    answer: "In ingresso: webhook, database in sola SELECT, CSV, Excel, SFTP, FTPS, un PDF il cui nome contiene la chiave dell'azienda, un documento. In uscita: HTTP. Il database può essere MySQL, MariaDB, Postgres, SQL Server o Oracle."
+  - question: "Chi vince se la cella arriva vuota?"
+    answer: "Di default vince la sorgente, anche se la cella è vuota. Un campo può avere un altro padrone, Espo: allora il giro di notte non lo svuota. È la regola che protegge la nota scritta da una persona."
+  - question: "Se il cliente sparisce dal file, che succede su Espo?"
+    answer: "Il record si chiude e resta nello storico. Non si cancella. La prima chiusura chiede conferma. Il diritto all'oblio è un altro gesto, e non è questa chiusura."
+  - question: "Scrive anche sul gestionale?"
+    answer: "No, finché non si accende la scrittura di ritorno di quell'integrazione. Accesa, tocca solo le colonne indicate."
+  - question: "Crea gli utenti di Espo da un'anagrafica?"
+    answer: "No. Un team e una persona si assegnano da una colonna o da un valore fisso. Un utente non si crea."
+  - question: "Il giro di notte può partire da solo?"
+    answer: "Sì, se la cadenza è 5 minuti, 15, un'ora, oppure un orario fisso. La stessa integrazione non parte due volte. Due integrazioni diverse possono girare insieme. Dopo un errore si aspetta l'intervallo intero, salvo che retry_failed sia acceso."
+  - question: "C'è una coda che rimanda le righe fallite?"
+    answer: "Spenta. Con retry_queue acceso, solo una riga in ingresso che ha un'identità esterna, e non nello stesso giro. L'uscita non si rimanda: il cursore riprova già il record che non è uscito."
+  - question: "Le password stanno in chiaro?"
+    answer: "Senza la variabile NESSO_SECRET_KEY, sì, nel file SQLite del volume locale. Con la variabile un salvataggio nuovo è sigillato e una password già in chiaro si legge ancora. La prova non imposta la variabile."
+  - question: "Il portale di Espo lo gestisce Nesso?"
+    answer: "No. Non crea utenti del portale e non cambia i ruoli. Se si accende la regola, l'uscita salta i record di un altro team. Spenta, l'uscita non cambia."
+  - question: "Le ricette sono il connettore del mio gestionale?"
+    answer: "No. Anagrafiche, contatti e sedi preparano un abbinamento da rivedere, sui campi che Espo ha già. Il listino punta al Product: se la scheda non c'è, i campi restano vuoti. Non è un connettore certificato."
+  - question: "Come si prova?"
+    answer: "Dal repository pubblico, con Docker. Parte un Espo vuoto. I dump di produzione non si importano. Il demo Gruppo Meridia è la prova, non un secondo prodotto."
+
+faq_en:
+  - question: "What is Nesso?"
+    answer: "It is the engine that moves records between an external system and EspoCRM. You configure the channel, the sheet and the field mapping. From then on the same engine moves the records. It is not a second CRM and it is not a connector with an ERP's name written in the code."
+  - question: "Does it talk to Espo's tables?"
+    answer: "No. Every read and every write toward Espo goes through the HTTP API, with the Espo-Authorization header. No SQL on Espo's tables."
+  - question: "Which channels are there?"
+    answer: "Inbound: webhook, a database read with SELECT only, CSV, Excel, SFTP, FTPS, a PDF whose name contains the company key, a document. Outbound: HTTP. The database can be MySQL, MariaDB, Postgres, SQL Server or Oracle."
+  - question: "Who wins if the cell arrives empty?"
+    answer: "By default the source wins, even if the cell is empty. A field can have another owner, Espo: then the night run does not clear it. That is the rule that protects a note a person wrote."
+  - question: "If the customer disappears from the file, what happens in Espo?"
+    answer: "The record is closed and stays in the history. It is not deleted. The first close asks for confirmation. The right to be forgotten is a different act, and it is not this close."
+  - question: "Does it also write back to the ERP?"
+    answer: "Not until write-back is turned on for that integration. When it is on, it touches only the columns you named."
+  - question: "Does it create Espo users from a master file?"
+    answer: "No. A team and a person are assigned from a column or from a fixed value. A user is not created."
+  - question: "Can the night run start on its own?"
+    answer: "Yes, if the cadence is 5 minutes, 15, one hour, or a fixed time. The same integration does not start twice. Two different integrations can run together. After an error it waits the whole interval, unless retry_failed is on."
+  - question: "Is there a queue that resends failed rows?"
+    answer: "It stays off. With retry_queue on, only an inbound row that has an external identity, and not in the same run. Outbound is not sent again: the cursor already retries the record that did not leave."
+  - question: "Are passwords stored in clear text?"
+    answer: "Without the NESSO_SECRET_KEY variable, yes, in the SQLite file of the local volume. With the variable a new save is sealed and a password already in clear text still opens. The trial does not set the variable."
+  - question: "Does Nesso run the Espo portal?"
+    answer: "No. It does not create portal users and it does not change roles. If the rule is on, outbound skips records of another team. Off, outbound does not change."
+  - question: "Are the recipes my ERP's connector?"
+    answer: "No. Accounts, contacts and sites prepare a mapping to review, on the fields Espo already has. The price list points at Product: if the sheet is missing, the fields stay empty. It is not a certified connector."
+  - question: "How do I try it?"
+    answer: "From the public repository, with Docker. It starts an empty Espo. Production dumps are not imported. The Gruppo Meridia demo is the proof, not a second product."
+
+keywords:
+  - EspoCRM
+  - integrazione
+  - anagrafiche
+  - webhook
+  - Nesso
+
+permalink: "/:categories/:title/"
+markdown: kramdown
+highlighter: rouge
+
+include:
+  - assets
+  - robots.txt
+
+exclude:
+  - _brand
+  - _webpages_backups

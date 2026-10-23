@@ -1,0 +1,56 @@
+<div class="relative z-10 w-full shadow-2xl overflow-hidden border border-white/10 bg-[#081628] text-white">
+  <div class="flex items-center justify-between px-4 py-3 bg-black/40 border-b border-white/5">
+    <div class="flex items-center gap-2">
+      <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+      <span class="text-[10px] font-mono uppercase tracking-widest text-gray-400">
+        {% if page.lang == 'it' %}Anteprima · anagrafiche{% else %}Preview · accounts{% endif %}
+      </span>
+    </div>
+    <span class="text-[10px] font-mono text-brand-gold">
+      {% if page.lang == 'it' %}non scrive{% else %}does not write{% endif %}
+    </span>
+  </div>
+  <div class="p-5 space-y-3 text-sm">
+    <div class="border border-brand-gold/30 bg-brand-gold/5 p-4">
+      <div class="flex justify-between items-start gap-3 mb-2">
+        <div>
+          <div class="font-bold text-white tracking-wide">Nord Est</div>
+          <div class="text-xs text-gray-400">anagrafiche:C001</div>
+        </div>
+        <span class="text-[10px] font-mono uppercase text-brand-gold border border-brand-gold/40 px-2 py-0.5">
+          {% if page.lang == 'it' %}Creerebbe{% else %}Would create{% endif %}
+        </span>
+      </div>
+      <div class="grid grid-cols-3 gap-2 text-[11px] font-mono text-gray-300">
+        <div>{% if page.lang == 'it' %}Nome{% else %}Name{% endif %}<div class="text-white">Nord Est</div></div>
+        <div>{% if page.lang == 'it' %}Città{% else %}City{% endif %}<div class="text-white">Trieste</div></div>
+        <div>{% if page.lang == 'it' %}Nota{% else %}Note{% endif %}<div class="text-gray-400">{% if page.lang == 'it' %}di Espo{% else %}Espo's{% endif %}</div></div>
+      </div>
+      <div class="mt-3 text-[11px] text-brand-goldLight">
+        {% if page.lang == 'it' %}La nota non si svuota: il padrone è Espo{% else %}The note is not cleared: Espo owns it{% endif %}
+      </div>
+    </div>
+    <div class="border border-white/10 p-4 opacity-90">
+      <div class="flex justify-between items-start gap-3 mb-2">
+        <div>
+          <div class="font-bold text-white">Lombardia</div>
+          <div class="text-xs text-gray-400">anagrafiche:C014</div>
+        </div>
+        <span class="text-[10px] font-mono uppercase text-gray-400 border border-white/15 px-2 py-0.5">
+          {% if page.lang == 'it' %}Invariata{% else %}Unchanged{% endif %}
+        </span>
+      </div>
+    </div>
+    <div class="border border-white/10 p-4 opacity-80">
+      <div class="flex justify-between items-start gap-3">
+        <div>
+          <div class="font-bold text-white">Vecchio codice</div>
+          <div class="text-xs text-gray-400">{% if page.lang == 'it' %}sparito dal file{% else %}gone from the file{% endif %}</div>
+        </div>
+        <span class="text-[10px] font-mono uppercase text-gray-400 border border-white/15 px-2 py-0.5">
+          {% if page.lang == 'it' %}Chiusura da confermare{% else %}Close to confirm{% endif %}
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

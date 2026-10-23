@@ -1,0 +1,21 @@
+{% comment %}Logo slide. {% include broker-tile.html broker=b %}{% endcomment %}
+{% assign b = include.broker %}
+{% assign inkhex = b.ink | replace: '#', '' %}
+<div class="broker-tile" title="{{ b.name }}">
+  <div class="broker-tile__mark{% if b.logo %} broker-tile__mark--face{% endif %}" style="background:{{ b.accent }};color:{{ b.ink }}">
+    {% if b.logo %}
+    <img class="broker-tile__logo broker-tile__logo--face" src="{{ b.logo | relative_url }}" alt="" width="48" height="48" loading="lazy">
+    {% elsif b.icon %}
+    <img class="broker-tile__logo" src="https://cdn.simpleicons.org/{{ b.icon }}/{{ inkhex }}" alt="" width="28" height="28" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+    <span class="broker-tile__letter" style="display:none">{{ b.letter }}</span>
+    {% else %}
+    <span class="broker-tile__letter">{{ b.letter }}</span>
+    {% endif %}
+  </div>
+  <div class="broker-tile__meta">
+    <div class="broker-tile__name">{{ b.name }}{% if b.star %} <span class="broker-tile__star" aria-hidden="true">★</span>{% endif %}</div>
+    <div class="broker-tile__status {% if b.status == 'live' %}is-live{% elsif b.status == 'sim' %}is-sim{% elsif b.status == 'next' %}is-next{% elsif b.status == 'friction' %}is-friction{% elsif b.status == 'blocked' %}is-blocked{% elsif b.status == 'institutional' %}is-institutional{% else %}is-queued{% endif %}">
+      {% if page.lang == 'it' %}{{ b.status_it }}{% else %}{{ b.status_en }}{% endif %}
+    </div>
+  </div>
+</div>
