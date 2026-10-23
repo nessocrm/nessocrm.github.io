@@ -6,6 +6,7 @@
   {% assign nx_name = 'Nord Est' %}
   {% assign nx_key = 'anagrafiche:C001' %}
   {% assign nx_note = 'Nota intatta' %}
+  {% assign nx_sheet = 'anagrafiche.csv' %}
 {% else %}
   {% assign nx_aria = 'A file enters from the left, passes through the four cubes, and the record is born in Espo. The note stays.' %}
   {% assign nx_out = 'Outside' %}
@@ -14,17 +15,28 @@
   {% assign nx_name = 'Nord Est' %}
   {% assign nx_key = 'accounts:C001' %}
   {% assign nx_note = 'Note intact' %}
+  {% assign nx_sheet = 'accounts.csv' %}
 {% endif %}
 
 <figure class="nx" role="img" aria-label="{{ nx_aria }}">
+  <div class="nx__glow" aria-hidden="true"></div>
+  <div class="nx__path" aria-hidden="true"></div>
+  <span class="nx__spark nx__spark--1" aria-hidden="true"></span>
+  <span class="nx__spark nx__spark--2" aria-hidden="true"></span>
+  <span class="nx__spark nx__spark--3" aria-hidden="true"></span>
+
   <div class="nx__file">
     <p class="nx__kicker">{{ nx_out }}</p>
-    <div class="nx__rows" aria-hidden="true">
-      <span></span><span></span><span class="is-live"></span><span></span>
+    <div class="nx__sheet">
+      <strong>{{ nx_sheet }}</strong>
+      <div class="nx__rows" aria-hidden="true">
+        <span></span><span></span><span class="is-live"></span><span></span>
+      </div>
     </div>
   </div>
 
   <div class="nx__engine">
+    <div class="nx__ring" aria-hidden="true"></div>
     {% include nesso-cubes.html size="hero" %}
   </div>
 
