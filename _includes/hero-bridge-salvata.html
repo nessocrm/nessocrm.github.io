@@ -1,0 +1,239 @@
+{% comment %}Archivio. Era l animazione della home. Non e inclusa da nessuna pagina.{% endcomment %}
+{% if page.lang == 'it' %}
+  {% assign cc_aria = 'Un giro di anagrafiche: il file si legge, la riga si abbina, l’anteprima non scrive, poi Account nasce su Espo' %}
+  {% assign cc_prompt = 'leggi il file di stanotte.' %}
+  {% assign cc_yes = 'scrivi' %}
+  {% assign cc_think = 'Sta leggendo le righe…' %}
+  {% assign cc_gate = 'Anteprima. Su Espo non è stato scritto niente.' %}
+  {% assign cc_ok = 'Account creato. La nota del commerciale non è stata toccata.' %}
+  {% assign cc_skip = 'invariata' %}
+  {% assign cc_lock = 'nuova' %}
+  {% assign cc_none = 'nessuna scrittura' %}
+  {% assign cc_ph = 'Un file, una tabella, una chiamata…' %}
+  {% assign cc_s1 = 'Legge' %}
+  {% assign cc_s2 = 'Abbina' %}
+  {% assign cc_s3 = 'Anteprima' %}
+  {% assign cc_s4 = 'Scrive' %}
+  {% assign cc_c1 = '01 · Legge — il canale, non le tabelle di Espo.' %}
+  {% assign cc_c2 = '02 · Abbina — chiave, campi, padrone.' %}
+  {% assign cc_c3 = '03 · Anteprima — si può guardare senza scrivere.' %}
+  {% assign cc_c4 = '04 · Scrive — API di Espo, se l’interruttore è acceso.' %}
+{% else %}
+  {% assign cc_aria = 'An accounts run: the file is read, the row is mapped, the preview does not write, then the Account is born in Espo' %}
+  {% assign cc_prompt = 'read tonight’s file.' %}
+  {% assign cc_yes = 'write' %}
+  {% assign cc_think = 'Reading the rows…' %}
+  {% assign cc_gate = 'Preview. Nothing has been written to Espo.' %}
+  {% assign cc_ok = 'Account created. The salesperson’s note was not touched.' %}
+  {% assign cc_skip = 'unchanged' %}
+  {% assign cc_lock = 'new' %}
+  {% assign cc_none = 'no write' %}
+  {% assign cc_ph = 'A file, a table, a call…' %}
+  {% assign cc_s1 = 'Read' %}
+  {% assign cc_s2 = 'Map' %}
+  {% assign cc_s3 = 'Preview' %}
+  {% assign cc_s4 = 'Write' %}
+  {% assign cc_c1 = '01 · Read — the channel, not Espo’s tables.' %}
+  {% assign cc_c2 = '02 · Map — key, fields, owner.' %}
+  {% assign cc_c3 = '03 · Preview — you can look without writing.' %}
+  {% assign cc_c4 = '04 · Write — Espo’s API, if the switch is on.' %}
+{% endif %}
+
+<figure class="cc-win" data-claude-code data-beat="idle" role="img" aria-label="{{ cc_aria }}">
+  <div class="cc-win__glow" aria-hidden="true"></div>
+  <div class="cc-win__frame">
+    <header class="cc-win__bar">
+      <span class="cc-win__spark" aria-hidden="true">✻</span>
+      <span class="cc-win__title">Nesso — anagrafiche</span>
+      <div class="cc-win__ctrls" aria-hidden="true"><span>&#8722;</span><span>&#9633;</span><span>&#10005;</span></div>
+    </header>
+
+    <div class="cc-win__meta">
+      <span class="cc-win__spark">✻</span>
+      <span>motore</span>
+      <span class="cc-win__sep">·</span>
+      <span>CSV</span>
+      <span class="cc-win__sep">·</span>
+      <span>Account</span>
+    </div>
+
+    <p class="cc-caption" data-cc-caption>{{ cc_c1 }}</p>
+
+    <div class="cc-win__body">
+      <div class="cc-row" data-cc="boot" data-beat="idle">
+        <p class="cc-boot">nessocrm <span>anagrafiche</span></p>
+      </div>
+
+      <div class="cc-row is-user" data-cc="u1" data-beat="scan" data-caption="{{ cc_c1 }}">
+        <span class="cc-prompt">❯</span>
+        <span class="cc-typed" data-type="{{ cc_prompt }}"></span>
+      </div>
+
+      <div class="cc-row" data-cc="think" data-beat="scan" data-caption="{{ cc_c1 }}">
+        <span class="cc-spin" aria-hidden="true"></span>
+        <span>{{ cc_think }}</span>
+      </div>
+
+      <div class="cc-row" data-cc="scan" data-beat="scan" data-caption="{{ cc_c1 }}">
+        <div class="cc-tool">
+          <div class="cc-tool__name"><i>⏺</i> read_rows <span>clienti.csv</span></div>
+          <div class="cc-tool__out">
+            <div class="is-skip"><span class="cc-dim">⎿</span> C014 <i>{{ cc_skip }}</i> hash uguale</div>
+            <div class="is-skip"><span class="cc-dim">⎿</span> riga 18 <i>{{ cc_skip }}</i> manca la colonna</div>
+            <div class="is-hit"><span class="cc-dim">⎿</span> C001 <b>{{ cc_lock }}</b> Account</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cc-row" data-cc="preview" data-beat="propose" data-caption="{{ cc_c2 }}">
+        <div class="cc-tool">
+          <div class="cc-tool__name"><i>⏺</i> preview_row <span>anagrafiche:C001</span></div>
+          <div class="cc-ticket">
+            <div><em>Nome</em><strong>Nord Est</strong></div>
+            <div><em>Città</em><strong class="is-tp">Trieste</strong></div>
+            <div><em>Nota</em><strong class="is-sl">di Espo</strong></div>
+          </div>
+          <div class="cc-tool__out">
+            <div><span class="cc-dim">⎿</span> preview_id <code>pv_8f3a91</code></div>
+            <div class="cc-banner">{{ cc_none }}</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cc-row" data-cc="ask" data-beat="confirm" data-caption="{{ cc_c3 }}">
+        <div class="cc-gate">
+          <p>{{ cc_gate }}</p>
+          <b>{% if page.lang == 'it' %}Confermi?{% else %}Confirm?{% endif %}</b>
+        </div>
+      </div>
+
+      <div class="cc-row is-user" data-cc="u2" data-beat="confirm" data-caption="{{ cc_c3 }}">
+        <span class="cc-prompt">❯</span>
+        <span class="cc-typed" data-type="{{ cc_yes }}"></span>
+      </div>
+
+      <div class="cc-row" data-cc="confirm" data-beat="cover" data-caption="{{ cc_c4 }}">
+        <div class="cc-tool is-ok">
+          <div class="cc-tool__name"><i>⏺</i> upsert <span>Account</span></div>
+          <div class="cc-tool__out">
+            <div><span class="cc-dim">⎿</span> POST /api/v1/Account</div>
+            <div><span class="cc-dim">⎿</span> cExternalKey <code>anagrafiche:C001</code></div>
+            <div><span class="cc-dim">⎿</span> nota non toccata</div>
+          </div>
+        </div>
+        <p class="cc-say is-win">{{ cc_ok }}</p>
+      </div>
+    </div>
+
+    <ol class="cc-steps">
+      <li data-step="scan"><i>01</i>{{ cc_s1 }}</li>
+      <li data-step="propose"><i>02</i>{{ cc_s2 }}</li>
+      <li data-step="confirm"><i>03</i>{{ cc_s3 }}</li>
+      <li data-step="cover"><i>04</i>{{ cc_s4 }}</li>
+    </ol>
+
+    <div class="cc-win__composer">
+      <span class="cc-prompt">❯</span>
+      <span class="cc-caret" aria-hidden="true"></span>
+      <span class="cc-ph">{{ cc_ph }}</span>
+    </div>
+  </div>
+</figure>
+
+<script>
+  (function () {
+    var root = document.querySelector('[data-claude-code]');
+    if (!root) return;
+    var rows = root.querySelectorAll('[data-cc]');
+    var composer = root.querySelector('.cc-win__composer');
+    var caption = root.querySelector('[data-cc-caption]');
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var timer;
+
+    function typeInto(el, text, done) {
+      var i = 0;
+      el.textContent = '';
+      function tick() {
+        i += 1;
+        el.textContent = text.slice(0, i);
+        if (i < text.length) timer = window.setTimeout(tick, 18 + Math.random() * 24);
+        else if (done) done();
+      }
+      tick();
+    }
+
+    function setBeat(row) {
+      var beat = row.getAttribute('data-beat') || 'idle';
+      var text = row.getAttribute('data-caption');
+      root.setAttribute('data-beat', beat);
+      if (caption && text) caption.textContent = text;
+    }
+
+    function reset() {
+      rows.forEach(function (r) { r.classList.remove('is-in'); });
+      root.querySelectorAll('.cc-typed').forEach(function (t) { t.textContent = ''; });
+      composer.classList.remove('is-busy');
+      root.setAttribute('data-beat', 'idle');
+      root.classList.remove('is-flash');
+    }
+
+    function play() {
+      window.clearTimeout(timer);
+      reset();
+      if (reduce) {
+        rows.forEach(function (r) { r.classList.add('is-in'); });
+        root.querySelectorAll('.cc-typed').forEach(function (t) {
+          t.textContent = t.getAttribute('data-type') || '';
+        });
+        composer.classList.add('is-busy');
+        root.setAttribute('data-beat', 'cover');
+        if (caption) caption.textContent = root.querySelector('[data-cc="confirm"]').getAttribute('data-caption');
+        return;
+      }
+      var seq = [
+        { id: 'boot', wait: 350 },
+        { id: 'u1', type: true, hold: 700 },
+        { id: 'think', wait: 1300 },
+        { id: 'scan', wait: 1800 },
+        { id: 'preview', wait: 2200 },
+        { id: 'ask', wait: 2400 },
+        { id: 'u2', type: true, hold: 650 },
+        { id: 'confirm', wait: 3400, flash: true }
+      ];
+      var i = 0;
+      function next() {
+        if (i >= seq.length) {
+          timer = window.setTimeout(play, 2400);
+          return;
+        }
+        var step = seq[i++];
+        var row = root.querySelector('[data-cc="' + step.id + '"]');
+        if (!row) { next(); return; }
+        row.classList.add('is-in');
+        setBeat(row);
+        if (step.flash) {
+          root.classList.add('is-flash');
+          window.setTimeout(function () { root.classList.remove('is-flash'); }, 900);
+        }
+        var body = root.querySelector('.cc-win__body');
+        if (body) body.scrollTop = body.scrollHeight;
+        composer.classList.add('is-busy');
+        var typed = row.querySelector('.cc-typed');
+        if (step.type && typed) {
+          typeInto(typed, typed.getAttribute('data-type') || '', function () {
+            timer = window.setTimeout(next, step.hold || 600);
+          });
+        } else {
+          timer = window.setTimeout(next, step.wait);
+        }
+      }
+      next();
+    }
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) window.clearTimeout(timer);
+      else play();
+    });
+    play();
+  })();
+</script>
