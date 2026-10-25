@@ -4,11 +4,11 @@
   accent: "#5589CA"
   ink: "#FFFFFF"
   status: live
-  status_it: Senza rete
+  status_it: "Elaborazione locale"
   status_en: No network
   tier: a
   kind: rule
-  blurb_it: "Legge i nomi delle colonne, in italiano o in inglese, e propone il campo Espo. Una colonna sconosciuta resta vuota. Non salva finché una persona non conferma."
+  blurb_it: "Propone i campi di EspoCRM a partire dai nomi delle colonne in italiano e inglese. Le corrispondenze vanno verificate prima del salvataggio."
   blurb_en: "It reads the column names, in Italian or in English, and proposes the Espo field. An unknown column stays empty. It does not save until a person confirms."
 - id: synonyms
   name: Sinonimi
@@ -16,11 +16,11 @@
   accent: "#E4A133"
   ink: "#1B2430"
   status: live
-  status_it: Per lingua
+  status_it: "Italiano e inglese"
   status_en: Per language
   tier: a
   kind: rule
-  blurb_it: "L'elenco è per lingua. Non è un modello. Se il nome della colonna è già un sinonimo noto, la proposta nasce da lì."
+  blurb_it: "Un elenco di sinonimi riconosce i nomi più comuni delle colonne, senza chiamare un modello esterno."
   blurb_en: "The list is per language. It is not a model. If the column name is already a known synonym, the proposal comes from there."
 - id: empty
   name: Colonne vuote
@@ -28,11 +28,11 @@
   accent: "#8B939C"
   ink: "#FFFFFF"
   status: next
-  status_it: Solo se c'è un indirizzo
+  status_it: "Modello opzionale"
   status_en: Only if an address is set
   tier: b
   kind: model
-  blurb_it: "«Completa le colonne vuote» chiama un modello solo se l'indirizzo è impostato. Riempie le colonne ancora vuote. Non salva. Senza indirizzo non parte nessuna chiamata."
+  blurb_it: "Con un indirizzo di modello configurato, puoi richiedere suggerimenti per le colonne ancora da abbinare."
   blurb_en: "\"Fill the empty columns\" calls a model only if the address is set. It fills columns that are still empty. It does not save. Without an address, no call starts."
 - id: nosave
   name: Non salva
@@ -40,11 +40,11 @@
   accent: "#243040"
   ink: "#E4A133"
   status: blocked
-  status_it: La persona conferma
+  status_it: "Conferma richiesta"
   status_en: A person confirms
   tier: c
   rail: false
-  blurb_it: "Né i sinonimi né il modello scrivono l'integrazione. L'abbinamento si rivede e poi si salva."
+  blurb_it: "Gli abbinamenti proposti non vengono salvati automaticamente. Puoi rivederli e confermare la configurazione."
   blurb_en: "Neither the synonyms nor the model write the integration. The mapping is reviewed, and then it is saved."
 - id: nopass
   name: Niente password
@@ -52,9 +52,9 @@
   accent: "#243040"
   ink: "#E4A133"
   status: blocked
-  status_it: Non escono
+  status_it: "Credenziali escluse"
   status_en: They do not leave
   tier: c
   rail: false
-  blurb_it: "La chiamata, se parte, manda nomi di colonne e poche celle. Non manda la password del collegamento. L'indirizzo del modello non entra nello scarico della configurazione."
+  blurb_it: "Il modello può ricevere nomi di colonne e campioni di celle. Le password del collegamento non sono incluse nella richiesta."
   blurb_en: "The call, if it starts, sends column names and a few cells. It does not send the connection password. The model address does not enter the configuration export."

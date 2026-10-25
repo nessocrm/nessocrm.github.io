@@ -1,32 +1,28 @@
 ---
 layout: default
 permalink: /it/filosofia/
-title: "Decisioni | Nesso"
+title: "Principi di progettazione | Nesso"
 lang: it
 locale: it_IT
 alt: /en/philosophy/
-description: "Decisioni chiuse: Espo da una parte, la sorgente vince, chiudere non è cancellare, la scrittura di ritorno è spenta."
+description: "Nesso rende esplicite le decisioni che contano in un’integrazione: quali dati trasferire, chi può aggiornarli e come controllare gli esiti."
 ---
 {% include page-hero-sea.html
-  kicker="Decisioni"
-  title="Poche, e non si ritrattano a ogni file."
-  lead="Nesso ha sempre Espo da una parte. Il nome dell'altro sistema non sta nel codice. La posta resta in Espo."
+  kicker="Principi di progettazione"
+  title="Automazione con regole leggibili e risultati verificabili."
+  lead="Nesso rende esplicite le decisioni che contano in un’integrazione: quali dati trasferire, chi può aggiornarli e come controllare gli esiti."
 %}
-
-{% include pull-quote.html text="Una decisione chiusa si riconosce perché il default non la contraddice." cite="Le decisioni" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Espo da una parte</h2>
-    <p>Non esiste un giro senza Espo. L'altro lato è un canale. Il prodotto non diventa un ponte generico fra due sistemi qualsiasi.</p>
-    <p>Le API HTTP sono l'unico modo di scrivere su Espo. Le tabelle non sono un'interfaccia.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">La sorgente è la verità dei suoi campi</h2>
-    <p>Di default una cella vuota svuota il campo. È fastidioso e corretto. L'eccezione è esplicita: il padrone del campo è Espo, e allora il giro non tocca quel valore.</p>
-    <p>La scrittura di ritorno resta spenta finché qualcuno non la accende, e anche allora solo sulle colonne che ha nominato.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Chiudere, non cancellare</h2>
-    <p>Una riga sparita chiude il record e tiene la storia. La prima chiusura chiede conferma. Non è una cancellazione e non è l'oblio.</p>
-    <p>Gli utenti non si creano da un'anagrafica. Il portale non si amministra da qui: il filtro, spento di default, non crea utenti e non cambia i ruoli.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">EspoCRM resta il riferimento operativo</h2>
+    <p>Le informazioni continuano a essere gestite nelle schede del CRM. Nesso si occupa del trasferimento e conserva la memoria operativa necessaria a eseguirlo e monitorarlo.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Ogni campo ha una regola dichiarata</h2>
+    <p>Per ciascun campo stabilisci se prevale la sorgente esterna o il valore gestito in EspoCRM. Anche il comportamento dei valori vuoti deve essere scelto e verificato.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">L’avvio deve essere verificabile</h2>
+    <p>Anteprima, sola lettura e attivazione progressiva permettono di valutare un flusso prima di applicare le modifiche. Errori e conflitti vengono raccolti nel registro delle attività.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Funzioni e limiti devono essere chiari</h2>
+    <p>Il sito presenta il prodotto; il manuale descrive configurazione e comportamento operativo. Le opzioni che cambiano le scritture richiedono una scelta esplicita e una verifica nell’ambiente di destinazione.</p>
   </div>
 </section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

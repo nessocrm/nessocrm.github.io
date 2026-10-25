@@ -1,38 +1,28 @@
 ---
 layout: default
 permalink: /it/universo/
-title: "Schede | Nesso"
+title: "Schede e campi EspoCRM | Nesso"
 lang: it
 locale: it_IT
 alt: /en/universe/
-description: "Nesso lavora sulle schede che Espo ha già, e ne crea una se manca. Non inventa entità."
+description: "Nesso legge le schede e i campi disponibili nella tua installazione EspoCRM e li rende selezionabili nella configurazione delle integrazioni."
 ---
 {% include page-hero-sea.html
-  kicker="Schede"
-  title="Una scheda nuova ha il prefisso C. I campi non ne prendono un secondo."
-  lead="Account, Contatto, Lead, Opportunità, Caso, Compito, Riunione, Chiamata, Documento sono schede standard. La chiave sta in cExternalKey."
+  kicker="Schede e campi EspoCRM"
+  title="Lavora sulle schede del tuo CRM, anche personalizzate."
+  lead="Nesso legge le schede e i campi disponibili nella tua installazione EspoCRM e li rende selezionabili nella configurazione delle integrazioni."
 %}
-
-{% include pull-quote.html text="Il listino guarda Product. Se la scheda non c'è, i campi restano vuoti." cite="Le schede" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quelle che Espo ha già</h2>
-    <p>Il motore non inventa nomi di entità. Legge le schede che questa installazione espone. Su una scheda standard la chiave esterna è il campo custom cExternalKey.</p>
-    <p>Due integrazioni sulla stessa scheda non si pestano i piedi: la chiave contiene l'id dell'integrazione. Un file di anagrafiche e un altro di sedi possono finire entrambi su Account, con chiavi diverse.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quelle che si creano qui</h2>
-    <p>Se la scheda non esiste, Nesso la crea via API. Si indicano singolare e plurale. Espo mette il prefisso C. I campi della scheda nuova non ricevono un secondo prefisso. La chiave si chiama externalKey.</p>
-    <p>Una scheda creata qui non è un secondo CRM. È una scheda Espo, visibile a chi ha il team. Il team e la persona assegnata arrivano da una colonna o da un team fisso.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quelle che non si toccano</h2>
-    <p>Gli utenti di Espo non si creano da un'anagrafica. Una colonna di persone non diventa un elenco di login.</p>
-    <p>Il listino della ricetta punta a Product. Se questa installazione non ha la scheda, i campi del listino restano vuoti e la ricetta non inventa il catalogo.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Le informazioni che gestisci già</h2>
+    <p>Aziende, Contatti, Lead e le altre schede esposte da EspoCRM possono essere utilizzate nei flussi. L’elenco deriva dalla tua installazione e dalle estensioni disponibili.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Nuove schede e nuovi campi</h2>
+    <p>Se il processo richiede una scheda personalizzata, puoi crearla da Nesso tramite le API di EspoCRM. Puoi aggiungere campi con il tipo appropriato e configurare relazioni con altre schede.</p>
+    <p>Le schede create restano in EspoCRM e ne seguono il modello di dati e i permessi.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Compatibilità verificabile</h2>
+    <p>I modelli predefiniti utilizzano i campi disponibili nel CRM. Il modello listino richiede la scheda Product: se non è presente, le corrispondenze restano da completare dopo aver predisposto la scheda.</p>
+    <p>L’assegnazione a team e utenti esistenti è configurabile. L’importazione di un’anagrafica non crea nuovi utenti di accesso a EspoCRM.</p>
   </div>
 </section>
-
-<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
-  <div class="max-w-5xl mx-auto">
-    {% include universe-book.html %}
-  </div>
-</section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

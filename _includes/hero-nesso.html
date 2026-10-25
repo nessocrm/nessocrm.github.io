@@ -1,16 +1,16 @@
 {% if page.lang == 'it' %}
-  {% assign nx_aria = 'Un file entra da sinistra, passa dai quattro cubi, e su Espo nasce il record. La nota resta.' %}
-  {% assign nx_out = 'Fuori' %}
-  {% assign nx_in = 'Espo' %}
+  {% assign nx_aria = 'Nesso trasferisce i dati di un file in EspoCRM. La nota del record esistente viene preservata se il campo è configurato con priorità al CRM.' %}
+  {% assign nx_out = 'Sistema esterno' %}
+  {% assign nx_in = 'EspoCRM' %}
   {% assign nx_row = 'C001' %}
   {% assign nx_name = 'Nord Est' %}
   {% assign nx_key = 'anagrafiche:C001' %}
-  {% assign nx_note = 'Nota intatta' %}
+  {% assign nx_note = 'Nota CRM preservata' %}
   {% assign nx_sheet = 'anagrafiche.csv' %}
 {% else %}
   {% assign nx_aria = 'A file enters from the left, passes through the four cubes, and the record is born in Espo. The note stays.' %}
   {% assign nx_out = 'Outside' %}
-  {% assign nx_in = 'Espo' %}
+  {% assign nx_in = 'EspoCRM' %}
   {% assign nx_row = 'C001' %}
   {% assign nx_name = 'Nord Est' %}
   {% assign nx_key = 'accounts:C001' %}

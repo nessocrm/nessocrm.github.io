@@ -1,32 +1,28 @@
 ---
 layout: default
 permalink: /it/scan/
-title: "Il giro | Nesso"
+title: "Pianificazione e monitoraggio | Nesso"
 lang: it
 locale: it_IT
 alt: /en/scan/
-description: "La cadenza è a mano, 5 minuti, 15, un'ora, o un orario fisso. La stessa integrazione non parte due volte."
+description: "Scegli quando eseguire i trasferimenti e controlla l’ultimo esito, la prossima esecuzione e le anomalie dalla stessa interfaccia."
 ---
 {% include page-hero-sea.html
-  kicker="Il giro"
-  title="Ogni quarto d'ora, se lo chiedi. Non da solo per far vedere movimento."
-  lead="In home il numero delle anagrafiche vale solo se il giro di oggi verso Account è riuscito. Un successo di ieri non viene presentato come oggi."
+  kicker="Pianificazione e monitoraggio"
+  title="Aggiornamenti programmati, risultati consultabili."
+  lead="Scegli quando eseguire i trasferimenti e controlla l’ultimo esito, la prossima esecuzione e le anomalie dalla stessa interfaccia."
 %}
-
-{% include pull-quote.html text="Il pianificatore non è un quarto d'ora guardato sul contenitore." cite="Come si prova la cadenza" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quando parte</h2>
-    <p>Le cadenze sono quattro intervalli: spento, 5 minuti, 15, 60. In più un orario fisso, per esempio le 02:10. Un'integrazione in pausa viene saltata dal pianificatore e dal webhook. Esegui ora no.</p>
-    <p>I quindici minuti sono provati con un orologio finto: un secondo prima non parte, allo scadere parte una volta, e non riparte nello stesso minuto. Non è un quarto d'ora osservato sul contenitore.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Due giri, non uno solo</h2>
-    <p>Due integrazioni diverse possono girare insieme. La stessa non parte due volte: la seconda riceve che un'esecuzione è già in corso. Se è già in corso, il pianificatore la salta e non scrive un errore ogni trenta secondi.</p>
-    <p>Dopo un errore l'orologio si aggiorna e si aspetta l'intervallo intero. Solo con retry_failed acceso l'orologio resta fermo, e il giro può ripresentarsi prima.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quello che la home mostra</h2>
-    <p>La percentuale di anagrafiche allineate conta le integrazioni in ingresso verso Account. Se il giro di oggi fallisce, non si mostra la percentuale e l'ora di ieri non viene spacciata per oggi.</p>
-    <p>Un file atteso entro un'ora, se quell'ora passa senza un giro riuscito, accende il bordo rosso. Un file già in elaborati non viene riletto. Un avviso di giro fallito si accende una volta, con il nome dell'integrazione.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">La frequenza adatta al tuo processo</h2>
+    <p>Avvia un’integrazione manualmente, ogni 5 minuti, ogni 15 minuti, ogni ora o a un orario fisso. Puoi indicare anche un’integrazione da eseguire prima.</p>
+    <p>I webhook ricevono i dati quando il sistema esterno li invia: impostare una cadenza non genera nuove richieste al sistema sorgente.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Lo stato di ogni integrazione</h2>
+    <p>L’elenco mostra l’ultimo successo, l’ultimo errore, il tempo trascorso dall’ultimo successo e la prossima esecuzione. Il riepilogo distingue record creati, aggiornati, invariati, chiusi e scartati.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Segnalazioni per i flussi da controllare</h2>
+    <p>Puoi impostare un orario entro cui attendere un file o una soglia di inattività. Nesso segnala nell’applicazione le elaborazioni fallite e i flussi senza aggiornamenti riusciti oltre la soglia configurata.</p>
+    <p>Le esecuzioni pianificate della stessa integrazione non si sovrappongono. Dopo un errore, il comportamento dei nuovi tentativi dipende dalle opzioni configurate.</p>
   </div>
 </section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

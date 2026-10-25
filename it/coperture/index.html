@@ -1,32 +1,29 @@
 ---
 layout: default
 permalink: /it/coperture/
-title: "Il campo | Nesso"
+title: "Regole di aggiornamento | Nesso"
 lang: it
 locale: it_IT
 alt: /en/covered/
-description: "Di default vince la sorgente, anche la cella vuota. Un campo può avere come padrone Espo."
+description: "Per ogni campo puoi stabilire se prevale il valore del sistema esterno oppure quello già presente in EspoCRM. Le regole rendono esplicito il comportamento degli aggiornamenti."
 ---
 {% include page-hero-sea.html
-  kicker="Il campo"
-  title="La nota del commerciale non si cancella di notte."
-  lead="Il padrone si sceglie campo per campo. Il giro notturno non svuota un campo il cui padrone è Espo."
+  kicker="Regole di aggiornamento"
+  title="Decidi quali dati aggiornare e quali preservare."
+  lead="Per ogni campo puoi stabilire se prevale il valore del sistema esterno oppure quello già presente in EspoCRM. Le regole rendono esplicito il comportamento degli aggiornamenti."
 %}
-
-{% include pull-quote.html text="Svuotare un campo è una scrittura. Ha un padrone." cite="Il padrone del campo" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Vince la sorgente</h2>
-    <p>Il default è la sorgente. Se il file di stanotte porta la città vuota, la città su Espo diventa vuota. È il comportamento che ci si aspetta da un caricamento: il file è la verità di quei campi.</p>
-    <p>Lo svuotamento non è un effetto collaterale su tutta la scheda. Vale sui campi che la sorgente possiede. Un campo non abbinato non viene toccato.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Vince Espo</h2>
-    <p>Si può dire che un campo è di Espo. Una nota scritta da una persona, un valore corretto a mano, restano. Se il file porta un valore diverso, quel valore finisce in coda da guardare. Il campo su Espo non cambia.</p>
-    <p>In creazione il campo si scrive lo stesso: non esiste ancora una nota da proteggere. Dal giro successivo il padrone conta.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Chi ha scritto per ultimo</h2>
-    <p>Il badge sul record dice chi ha scritto per ultimo. Serve a chi deve capire se la riga è ancora quella del file o se qualcuno in Espo l'ha corretta.</p>
-    <p>Non è una cronologia legale. È il segno, sul record, dell'ultimo giro che l'ha toccato.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Campi aggiornati dalla sorgente</h2>
+    <p>Per impostazione predefinita, Nesso applica il valore ricevuto dal sistema esterno. Anche un valore vuoto può svuotare il campo corrispondente nel CRM: questa regola va verificata durante la configurazione.</p>
+    <p>È una scelta utile per le informazioni di cui il gestionale è il riferimento, come la ragione sociale o l’indirizzo amministrativo.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Campi gestiti in EspoCRM</h2>
+    <p>Per le informazioni aggiornate dal team, puoi assegnare la priorità a EspoCRM. Nei record esistenti, il trasferimento conserva il valore del CRM e raccoglie le differenze per la verifica.</p>
+    <p>Per esempio, una nota commerciale può restare protetta anche quando il file del gestionale contiene una nota diversa o vuota. Alla creazione di un nuovo record, il valore iniziale può comunque provenire dalla sorgente.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Record non più presenti nella sorgente</h2>
+    <p>Se è configurata la gestione delle assenze e la scheda dispone di uno stato compatibile, Nesso può chiudere i record non più presenti. Il record resta consultabile nello storico.</p>
+    <p>La prima chiusura richiede conferma. La chiusura operativa non equivale alla cancellazione dei dati personali.</p>
   </div>
 </section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

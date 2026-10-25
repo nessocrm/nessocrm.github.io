@@ -1,30 +1,17 @@
 ---
 layout: default
 permalink: /it/faq/
-title: "Domande | Nesso"
+title: "Domande frequenti | Nesso"
 lang: it
 locale: it_IT
 alt: /en/faq/
-description: "Cos'è Nesso, cosa non fa, come si prova. Le risposte stanno anche nel manuale del repository."
+description: "Funzioni, compatibilità e requisiti: cosa sapere prima di collegare EspoCRM ai tuoi sistemi."
 ---
 {% include page-hero-sea.html
-  kicker="Domande"
-  title="Le stesse risposte del manuale, in breve."
-  lead="Se una frase di questa pagina e una frase del manuale divergono, vale il manuale: cambia insieme al codice."
+  kicker="Domande frequenti"
+  title="Le risposte per valutare Nesso."
+  lead="Funzioni, compatibilità e requisiti: cosa sapere prima di collegare EspoCRM ai tuoi sistemi."
 %}
 
-{% include pull-quote.html text="Il manuale è la cartella docs." cite="Il repository" %}
-
-<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
-  <div class="max-w-4xl mx-auto">{% include accordion-faq.html %}</div>
-</section>
-
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Oltre l'elenco</h2>
-    <p>Nesso non è un secondo CRM. Ha sempre Espo da una parte e un canale dall'altra. Le scritture verso Espo passano dalle API HTTP. Non c'è una query sulle tabelle.</p>
-    <p>La coda di ritento, il filtro del portale, il sigillo e la scrittura di ritorno esistono e restano spenti. La prova non li accende. Senza NESSO_SECRET_KEY la password nel volume resta in chiaro.</p>
-    <p>Le ricette non sono un connettore certificato. Il listino guarda Product: se la scheda non c'è, i campi restano vuoti. La posta resta in Espo.</p>
-  </div>
-</section>
-{% include cta-band.html title="La prova è il repository." lead="Niente modulo. Si clona, si alza un Espo vuoto, si legge la cartella docs." %}
+<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface"><div class="max-w-4xl mx-auto">{% include accordion-faq.html %}</div></section>
+{% include cta-band.html title="Passa dalle domande alla prova." lead="Il repository include codice, istruzioni e demo locale con dati fittizi." %}

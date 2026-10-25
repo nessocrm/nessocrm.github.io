@@ -1,32 +1,28 @@
 ---
 layout: default
 permalink: /it/skill/
-title: "Regole | Nesso"
+title: "Regole sui dati | Nesso"
 lang: it
 locale: it_IT
 alt: /en/skills/
-description: "Padrone del campo, chiave, duplicato, data, telefono. Sono regole del carico, non strategie."
+description: "Configura trasformazioni, campi obbligatori, relazioni e gestione dei duplicati prima di trasferire le informazioni in EspoCRM."
 ---
 {% include page-hero-sea.html
-  kicker="Regole"
-  title="Il giro applica regole. Non inventa un mestiere."
-  lead="Ogni campo ha un padrone. Una data si legge in tre formati. Un telefono italiano diventa +39. Un duplicato si scarta o si adotta, se l'integrazione lo dice."
+  kicker="Regole sui dati"
+  title="Dati diversi, regole di importazione esplicite."
+  lead="Configura trasformazioni, campi obbligatori, relazioni e gestione dei duplicati prima di trasferire le informazioni in EspoCRM."
 %}
-
-{% include pull-quote.html text="Una regola che non è scritta non scatta." cite="Il carico" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Il padrone</h2>
-    <p>Di default vince la sorgente, anche se la cella arriva vuota. Lo svuotamento vale solo sui campi della sorgente. Se il padrone è Espo, il valore diverso finisce in coda da guardare e il campo su Espo resta.</p>
-    <p>In creazione si scrive anche il campo di Espo: il record non esiste ancora, e non c'è una nota da proteggere. Dal giro dopo, il padrone conta.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">La chiave e il duplicato</h2>
-    <p>L'identità è una convenzione unica: id dell'integrazione, due punti, valore esterno. Due integrazioni sulla stessa scheda non si mescolano, perché la chiave contiene l'integrazione.</p>
-    <p>Se Espo rifiuta perché esiste già un record simile con un'altra chiave, la riga viene scartata. Si può dire all'integrazione di adottare quel record. Non è il comportamento di default.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Prima di Espo</h2>
-    <p>Una data illeggibile non inventa un giorno. Un elenco deve avere almeno un valore, se il campo nuovo è un elenco. Il telefono italiano viene messo in forma internazionale. L'errore di Espo, se nomina un campo, riporta quel nome.</p>
-    <p>Manca una colonna obbligatoria: il file non si sposta e lo scarto è uno solo. Manca una cella: la riga si scarta e le altre proseguono, se la colonna c'è.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Associa e trasforma i valori</h2>
+    <p>Copia un valore, separa le parti di un testo, imposta una costante o converti i valori di un elenco. Le regole supportano anche la normalizzazione dei telefoni italiani e la lettura dei formati di data previsti.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Identifica i record e gestisci le relazioni</h2>
+    <p>Scegli una o più colonne per identificare ciascun record. Per esempio, codice società e codice cliente possono distinguere anagrafiche appartenenti a società diverse.</p>
+    <p>Puoi collegare il record a un’altra scheda di EspoCRM. Se il riferimento manca, la configurazione stabilisce se scartare la riga, lasciare il collegamento vuoto o creare il record collegato.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Rendi visibili i problemi</h2>
+    <p>I campi obbligatori e i controlli sui dati aiutano a individuare le righe incomplete. Se manca una colonna obbligatoria, il file resta in attesa di correzione; gli errori di singole righe vengono registrati.</p>
+    <p>La gestione dei duplicati è configurabile. I controlli fiscali possono segnalare una partita IVA o un codice fiscale già presente, sui campi predisposti.</p>
   </div>
 </section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

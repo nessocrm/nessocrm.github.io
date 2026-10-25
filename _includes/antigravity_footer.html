@@ -11,14 +11,14 @@
             </a>
             <p class="text-gray-500 mb-2 text-sm font-bold uppercase tracking-widest">
                 {% if page.lang == 'it' %}
-                Espo da una parte. Il sistema esterno dall'altra.
+                Integrazioni e controllo dei dati per EspoCRM.
                 {% else %}
                 Espo on one side. The external system on the other.
                 {% endif %}
             </p>
             <p class="text-gray-400 text-sm mb-6 leading-relaxed">
                 {% if page.lang == 'it' %}
-                Nesso porta i record fra un sistema esterno e EspoCRM. Canale, scheda, campi. Solo le API di Espo.
+                Collega i sistemi aziendali, configura le regole di aggiornamento e controlla gli esiti dei trasferimenti.
                 {% else %}
                 Nesso moves records between an external system and EspoCRM. Channel, sheet, fields. Espo's API only.
                 {% endif %}
@@ -45,36 +45,36 @@
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/scan/{% else %}/en/scan/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Il giro{% else %}The run{% endif %}</a>
+                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Pianificazione{% else %}The run{% endif %}</a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/skill/{% else %}/en/skills/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}Regole{% else %}Rules{% endif %}
+                                {% if page.lang == 'it' %}Regole sui dati{% else %}Rules{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/universo/{% else %}/en/universe/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}Schede{% else %}Sheets{% endif %}
+                                {% if page.lang == 'it' %}Schede e campi{% else %}Sheets{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/coperture/{% else %}/en/covered/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}Il campo{% else %}The field{% endif %}
+                                {% if page.lang == 'it' %}Regole di aggiornamento{% else %}The field{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/ordini/{% else %}/en/orders/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}Il record{% else %}The record{% endif %}
+                                {% if page.lang == 'it' %}Importazione ed esportazione{% else %}The record{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/rischio/{% else %}/en/risk/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}Cosa può andare storto{% else %}What can go wrong{% endif %}
+                                {% if page.lang == 'it' %}Controlli e verifiche{% else %}What can go wrong{% endif %}
                             </a>
                         </li>
                         <li>
@@ -83,7 +83,7 @@
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/llm/{% else %}/en/llm/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Il modello{% else %}The model{% endif %}</a>
+                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Abbinamento assistito{% else %}The model{% endif %}</a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/architecture/{% else %}/en/architecture/{% endif %}"
@@ -91,7 +91,7 @@
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/strategies/{% else %}/en/strategies/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Ricette{% else %}Recipes{% endif %}</a>
+                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Modelli di configurazione{% else %}Recipes{% endif %}</a>
                         </li>
                     </ul>
                     <ul class="space-y-2.5 text-sm text-gray-500">
@@ -110,7 +110,7 @@
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/filosofia/{% else %}/en/philosophy/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}Decisioni{% else %}Decisions{% endif %}
+                                {% if page.lang == 'it' %}Principi di progettazione{% else %}Decisions{% endif %}
                             </a>
                         </li>
                         <li>
@@ -122,7 +122,7 @@
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/accesso/{% else %}/en/access/{% endif %}"
                                 class="hover:text-brand-gold transition-colors">
-                                {% if page.lang == 'it' %}La prova{% else %}The trial{% endif %}
+                                {% if page.lang == 'it' %}Prova Nesso{% else %}The trial{% endif %}
                             </a>
                         </li>
                     </ul>
@@ -137,7 +137,7 @@
                     </li>
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Diario{% else %}Journal{% endif %}</a>
+                            class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Approfondimenti{% else %}Journal{% endif %}</a>
                     </li>
                     <li>
                         <a href="{{ site.social.github }}" target="_blank" rel="noopener"
@@ -176,14 +176,14 @@
         <p>
             &copy; {{ site.time | date: '%Y' }} Nesso.
             {% if page.lang == 'it' %}
-            Non è un connettore certificato. Il passaggio usa le API di Espo.
+            Integrazione tramite API EspoCRM. Compatibilità e requisiti da verificare nel manuale.
             {% else %}
             Not a certified connector. The passage uses Espo's API.
             {% endif %}
         </p>
         <p class="md:text-right max-w-lg">
             {% if page.lang == 'it' %}
-            Repository pubblico. La prova parte con un Espo vuoto.
+            Codice pubblico e demo locale con dati fittizi.
             {% else %}
             Public repository. The trial starts with an empty Espo.
             {% endif %}

@@ -5,10 +5,10 @@
   accent: "#5589CA"
   ink: "#FFFFFF"
   status: live
-  status_it: Entra
+  status_it: "In ingresso"
   status_en: Inbound
   tier: a
-  blurb_it: "Il sistema esterno chiama un indirizzo. Il motore confronta il token e manda la riga alle integrazioni in ingresso di quel collegamento."
+  blurb_it: "Ricevi dati da siti e applicazioni tramite un indirizzo con token. La verifica della firma del messaggio è configurabile."
   blurb_en: "The external system calls an address. The engine checks the token and sends the row to that connection's inbound integrations."
 - id: database
   name: Database
@@ -16,10 +16,10 @@
   accent: "#243040"
   ink: "#F4F5F7"
   status: live
-  status_it: Solo SELECT
+  status_it: "Lettura database"
   status_en: SELECT only
   tier: a
-  blurb_it: "MySQL, MariaDB, Postgres, SQL Server o Oracle. Il motore legge una SELECT. Senza TLS, MySQL resta la connessione di prima."
+  blurb_it: "Importa dati con query SELECT da MySQL, MariaDB, PostgreSQL, SQL Server e Oracle. TLS e tunnel SSH sono opzioni del collegamento."
   blurb_en: "MySQL, MariaDB, Postgres, SQL Server or Oracle. The engine reads one SELECT. Without TLS, MySQL stays the connection it was."
 - id: csv
   name: CSV
@@ -27,10 +27,10 @@
   accent: "#E4A133"
   ink: "#1B2430"
   status: live
-  status_it: File
+  status_it: "Importazione file"
   status_en: File
   tier: a
-  blurb_it: "Un file in una cartella. Anche con il punto e virgola. Se manca una colonna obbligatoria il file resta dov'è. Se le righe entrano, il file va in elaborati."
+  blurb_it: "Importa file CSV con virgola o punto e virgola. I file elaborati vengono archiviati; se manca una colonna obbligatoria restano in attesa di correzione."
   blurb_en: "A file in a folder. A semicolon is fine. If a required column is missing the file stays put. If the rows enter, the file moves to elaborati."
 - id: http
   name: HTTP
@@ -38,10 +38,10 @@
   accent: "#58C97A"
   ink: "#1B2430"
   status: live
-  status_it: Esce
+  status_it: "In uscita"
   status_en: Outbound
   tier: a
-  blurb_it: "Espo è la sorgente. Il cursore avanza solo dopo i POST riusciti. Se l'indirizzo è vuoto, la casella del motore accumula."
+  blurb_it: "Invia i campi selezionati di EspoCRM a una destinazione HTTP. L’avanzamento viene registrato dopo le consegne riuscite."
   blurb_en: "Espo is the source. The cursor moves only after the POSTs that succeeded. If the address is empty, the engine inbox keeps the rows."
 - id: excel
   name: Excel
@@ -49,10 +49,10 @@
   accent: "#8B939C"
   ink: "#FFFFFF"
   status: live
-  status_it: Come il CSV
+  status_it: "Importazione Excel"
   status_en: Same as CSV
   tier: b
-  blurb_it: "Stesse colonne del CSV. Non è un canale diverso: è lo stesso ingresso, un altro foglio."
+  blurb_it: "Importa fogli XLSX utilizzando la prima riga come intestazione e gli abbinamenti configurati per le colonne."
   blurb_en: "The same columns as CSV. It is not a different channel: it is the same inbound, another sheet."
 - id: sftp
   name: SFTP
@@ -60,10 +60,10 @@
   accent: "#8B939C"
   ink: "#FFFFFF"
   status: live
-  status_it: File remoto
+  status_it: "Trasferimento remoto"
   status_en: Remote file
   tier: b
-  blurb_it: "Il file sta su un server, non nella cartella locale. Dopo la lettura va in elaborati, e non viene riletto."
+  blurb_it: "Importa CSV ed Excel da un server SFTP e archivia i file elaborati. In uscita puoi consegnare file CSV."
   blurb_en: "The file sits on a server, not in the local folder. After the read it moves to elaborati, and it is not read again."
 - id: pdf
   name: PDF
@@ -71,10 +71,10 @@
   accent: "#E4A133"
   ink: "#1B2430"
   status: live
-  status_it: Sul cliente
+  status_it: "Documenti sul cliente"
   status_en: On the customer
   tier: b
-  blurb_it: "Il nome del file contiene la chiave dell'azienda. Diventa un documento sul cliente. Senza la chiave intera, il file resta."
+  blurb_it: "Associa un PDF all’azienda di EspoCRM quando il nome del file contiene la sua chiave identificativa completa."
   blurb_en: "The file name contains the company key. It becomes a document on the customer. Without the whole key, the file stays."
 - id: documento
   name: Documento
@@ -82,10 +82,10 @@
   accent: "#5589CA"
   ink: "#FFFFFF"
   status: live
-  status_it: Cartella
+  status_it: "Importazione documenti"
   status_en: Folder
   tier: b
-  blurb_it: "Un documento in una cartella di Espo, con un team se lo si indica. Cartella e team sono facoltativi."
+  blurb_it: "Importa file come documenti di EspoCRM. Puoi indicare una cartella di destinazione e un team."
   blurb_en: "A document in an Espo folder, with a team if you name one. Folder and team are optional."
 - id: writeback
   name: Ritorno
@@ -93,11 +93,11 @@
   accent: "#243040"
   ink: "#E4A133"
   status: queued
-  status_it: Spento
+  status_it: "Da abilitare"
   status_en: Off
   tier: c
   rail: false
-  blurb_it: "La scrittura verso il gestionale resta spenta finché non la si accende su quell'integrazione. Allora tocca solo le colonne indicate."
+  blurb_it: "La scrittura di ritorno al database esterno si abilita sulla singola integrazione ed è limitata alle colonne configurate."
   blurb_en: "Writing back to the ERP stays off until you turn it on for that integration. Then it touches only the columns you named."
 - id: retry
   name: Ritento
@@ -105,11 +105,11 @@
   accent: "#243040"
   ink: "#E4A133"
   status: queued
-  status_it: Spento
+  status_it: "Da abilitare"
   status_en: Off
   tier: c
   rail: false
-  blurb_it: "La coda è spenta. Accesa, riguarda una riga in ingresso con identità esterna, non l'uscita e non lo stesso giro."
+  blurb_it: "La coda dei nuovi tentativi riguarda le righe in ingresso con identificativo esterno e le riprende in esecuzioni successive."
   blurb_en: "The queue is off. On, it applies to an inbound row with an external identity, not to outbound and not to the same run."
 - id: portal
   name: Portale
@@ -117,11 +117,11 @@
   accent: "#243040"
   ink: "#E4A133"
   status: queued
-  status_it: Non è un portale
+  status_it: "Filtro opzionale"
   status_en: Not a portal
   tier: c
   rail: false
-  blurb_it: "Nesso non crea utenti del portale e non cambia i ruoli. La regola, se accesa, tiene fuori dall'uscita i record di un altro team."
+  blurb_it: "Il filtro per team può limitare i record in uscita. Nesso non crea utenti del portale e non ne modifica i ruoli."
   blurb_en: "Nesso does not create portal users and does not change roles. The rule, if on, keeps another team's records out of outbound."
 - id: secrets
   name: Segreti
@@ -129,11 +129,11 @@
   accent: "#243040"
   ink: "#E4A133"
   status: queued
-  status_it: In chiaro se manca la chiave
+  status_it: "Richiede configurazione"
   status_en: Clear text without the key
   tier: c
   rail: false
-  blurb_it: "Senza NESSO_SECRET_KEY la password del database resta in chiaro nel volume. Con la variabile i salvataggi nuovi si sigillano."
+  blurb_it: "NESSO_SECRET_KEY abilita la protezione delle nuove credenziali salvate. Senza la variabile, le credenziali nel volume locale restano in chiaro."
   blurb_en: "Without NESSO_SECRET_KEY the database password stays in clear text on the volume. With the variable, new saves are sealed."
 - id: mail
   name: Posta
@@ -141,11 +141,11 @@
   accent: "#8B939C"
   ink: "#FFFFFF"
   status: blocked
-  status_it: Resta in Espo
+  status_it: "Gestita in EspoCRM"
   status_en: Stays in Espo
   tier: d
   rail: false
-  blurb_it: "La posta del CRM non si riscrive qui. Nesso non la manda."
+  blurb_it: "La gestione della posta del CRM resta in EspoCRM. Nesso non invia notifiche email dal proprio motore."
   blurb_en: "CRM mail is not rewritten here. Nesso does not send it."
 - id: advanced
   name: Advanced Pack
@@ -153,11 +153,11 @@
   accent: "#8B939C"
   ink: "#FFFFFF"
   status: blocked
-  status_it: Non si pubblica
+  status_it: "Estensione separata"
   status_en: Not published
   tier: d
   rail: false
-  blurb_it: "Report e processi dell'Advanced Pack restano di Espo. Il pacchetto non entra nel repository."
+  blurb_it: "Le funzioni dell’Advanced Pack appartengono all’estensione EspoCRM, che non viene distribuita nel repository Nesso."
   blurb_en: "Advanced Pack reports and processes stay Espo's. The package does not enter the repository."
 - id: users
   name: Utenti Espo
@@ -165,11 +165,11 @@
   accent: "#8B939C"
   ink: "#FFFFFF"
   status: blocked
-  status_it: Non nascono da un file
+  status_it: "Assegnazione record"
   status_en: Not born from a file
   tier: d
   rail: false
-  blurb_it: "Un'anagrafica persone non crea utenti. Il team e l'assegnatario si indicano, l'utente no."
+  blurb_it: "Puoi assegnare i record a team e utenti esistenti. Le anagrafiche importate non generano utenti di accesso."
   blurb_en: "A people master does not create users. The team and the assignee are named. The user is not."
 - id: sql
   name: SQL su Espo
@@ -177,11 +177,11 @@
   accent: "#1B2430"
   ink: "#FFFFFF"
   status: blocked
-  status_it: Non è il prodotto
+  status_it: "Accesso tramite API"
   status_en: Not the product
   tier: e
   rail: false
-  blurb_it: "Niente query sulle tabelle di Espo. Se serve un record, si passa dall'API."
+  blurb_it: "Le letture e le scritture su EspoCRM passano dalle API HTTP, senza query sul database del CRM."
   blurb_en: "No queries on Espo's tables. If a record is needed, it goes through the API."
 - id: anybridge
   name: Due sistemi qualunque
@@ -189,11 +189,11 @@
   accent: "#1B2430"
   ink: "#FFFFFF"
   status: blocked
-  status_it: Non è il prodotto
+  status_it: "Dedicato a EspoCRM"
   status_en: Not the product
   tier: e
   rail: false
-  blurb_it: "Nesso ha sempre Espo da un lato. Non è un ponte fra due gestionali."
+  blurb_it: "Nesso gestisce integrazioni in cui EspoCRM è uno dei sistemi collegati."
   blurb_en: "Nesso always has Espo on one side. It is not a bridge between two ERPs."
 - id: dump
   name: Dump di produzione
@@ -201,9 +201,9 @@
   accent: "#1B2430"
   ink: "#FFFFFF"
   status: blocked
-  status_it: Non si importa
+  status_it: "Dati dimostrativi"
   status_en: Not imported
   tier: e
   rail: false
-  blurb_it: "La prova usa un Espo vuoto. Il backup di produzione non si monta e non si importa."
+  blurb_it: "La demo locale installa EspoCRM e carica dati fittizi. Non richiede l’importazione di database di produzione."
   blurb_en: "The trial uses an empty Espo. The production backup is not mounted and not imported."

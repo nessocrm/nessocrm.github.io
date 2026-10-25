@@ -1,35 +1,32 @@
 ---
 layout: default
 permalink: /it/per-chi/
-title: "Per chi | Nesso"
+title: "A chi si rivolge | Nesso"
 lang: it
 locale: it_IT
 alt: /en/who-its-for/
-description: "Quattro ruoli: chi tiene il numero, chi ha la nota, chi controlla la partita IVA, chi installa."
+description: "Nesso si rivolge alle aziende che usano EspoCRM e ai professionisti che devono integrarlo con gestionali, siti web e altri sistemi aziendali."
 ---
 {% include page-hero-sea.html
-  kicker="Per chi"
-  title="Quattro persone. Lo stesso giro."
-  lead="Il titolare guarda un numero. Il commerciale tiene la nota. L'amministrazione guarda l'anteprima. Chi installa consegna senza lasciare le password in una pagina."
+  kicker="A chi si rivolge"
+  title="Dati coerenti per chi lavora. Controllo per chi gestisce."
+  lead="Nesso si rivolge alle aziende che usano EspoCRM e ai professionisti che devono integrarlo con gestionali, siti web e altri sistemi aziendali."
 %}
-
-{% include pull-quote.html text="Un numero in home non è una dashboard." cite="Le quattro persone" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Chi tiene il numero</h2>
-    <p>In home c'è un solo numero che conta: le anagrafiche allineate oggi, e il saldo se c'è un importo. Vale solo se il giro di oggi verso Account è riuscito. È un controllo. Non scrive.</p>
-    <p>Se il giro fallisce, il numero non viene mostrato con l'ora di ieri. Un file atteso che non arriva accende il bordo.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Chi ha la nota</h2>
-    <p>Il commerciale scrive sul record. Il campo della nota ha come padrone Espo, così il file di notte non la svuota. Il badge dice chi ha scritto per ultimo.</p>
-    <p>Se il file porta un valore diverso, quel valore finisce in coda da guardare. Non sovrascrive la nota.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Chi controlla</h2>
-    <p>L'amministrazione apre l'anteprima. Vede una partita IVA già presente prima che il giro scriva. Può annullare quello che il giro ha scritto.</p>
-    <p>La prima chiusura di record spariti chiede conferma. Un file troncato non chiude l'elenco da solo.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Chi installa</h2>
-    <p>Quattro passi: collegamento, scheda, abbinamento, giro. La ricetta è un punto di partenza da rivedere, non un connettore certificato. Il piano di accensione dice cosa resta spento.</p>
-    <p>La pagina di consegna non contiene le password. Senza NESSO_SECRET_KEY il volume le tiene in chiaro: va detto a chi riceve la prova, non nascosto.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Direzione: verifica lo stato degli aggiornamenti</h2>
+    <p>Consulta l’esito delle integrazioni e l’indicatore di allineamento delle anagrafiche. Quando sono configurati importi da confrontare, puoi verificare anche la quadratura dei totali.</p>
+    <p>Un’elaborazione fallita o un file atteso non elaborato viene segnalato: puoi distinguere un aggiornamento riuscito da una situazione che richiede attenzione.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Vendite: conserva il lavoro svolto nel CRM</h2>
+    <p>Note commerciali e informazioni inserite dal team possono restare sotto il controllo di EspoCRM. Configurando questa regola sui singoli campi, gli aggiornamenti esterni non sovrascrivono i valori già presenti.</p>
+    <p>Le differenze vengono raccolte per la verifica. L’indicazione Origine Nesso aiuta a riconoscere l’ultimo aggiornamento del record.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Amministrazione: controlla prima di importare</h2>
+    <p>L’anteprima mostra le modifiche previste e i controlli fiscali segnalano partite IVA o codici fiscali già presenti. Puoi esaminare gli scarti e usare la funzione di annullamento dell’elaborazione.</p>
+    <p>La chiusura dei record assenti dalla sorgente, quando prevista dalla configurazione, richiede conferma alla prima esecuzione.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Consulenti e integratori: configura e consegna</h2>
+    <p>Un percorso in quattro passaggi guida la configurazione. I modelli predefiniti per anagrafiche, contatti, sedi e listini offrono una base da adattare ai dati del cliente.</p>
+    <p>La pagina di consegna riepiloga integrazioni, orari e regole dei campi, senza includere password o token. Per l’adozione serve una verifica tecnica dell’ambiente e dei flussi da collegare.</p>
   </div>
 </section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

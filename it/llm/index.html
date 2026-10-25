@@ -1,44 +1,28 @@
 ---
 layout: default
 permalink: /it/llm/
-title: "Il modello | Nesso"
+title: "Abbinamento assistito | Nesso"
 lang: it
 locale: it_IT
 alt: /en/llm/
-description: "La proposta per sinonimi non chiama nessuno. Il modello parte solo se c'è un indirizzo, e non salva."
+description: "Nesso propone le corrispondenze tra le colonne della sorgente e i campi di EspoCRM. Puoi rivedere ogni proposta prima di salvare l’integrazione."
 ---
 {% include page-hero-sea.html
-  kicker="Il modello"
-  title="Riempie le colonne vuote. Non decide il giro."
-  lead="Senza un indirizzo non parte nessuna chiamata. Con l'indirizzo, il modello non vede le password e non entra nello scarico."
+  kicker="Abbinamento assistito"
+  title="Configura i campi con un aiuto in più."
+  lead="Nesso propone le corrispondenze tra le colonne della sorgente e i campi di EspoCRM. Puoi rivedere ogni proposta prima di salvare l’integrazione."
 %}
-
-{% include pull-quote.html text="Un abbinamento si conferma. Non si delega." cite="Il passo di abbinamento" %}
-
-{% include llm-rail.html kicker="off" %}
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quello che fa sempre</h2>
-    <p>Proponi l'abbinamento legge i nomi delle colonne, nella lingua della pagina, e propone il campo Espo, compresa la partita IVA se la scheda ha un campo fiscale. Una colonna non riconosciuta resta vuota, da compilare a mano.</p>
-    <p>I sinonimi sono un elenco per lingua. Non escono in rete. Non salvano l'integrazione. La persona rivede e poi salva.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quello che fa solo se glielo dici</h2>
-    <p>Completa le colonne vuote chiama un modello solo se l'indirizzo è impostato. Riempie le colonne ancora vuote, fra i campi che la scheda conosce. Non tocca una colonna già abbinata. Non salva.</p>
-    <p>La chiamata manda i nomi delle colonne, al massimo tre celle corte, e il nome del campo. Non manda la password del collegamento. L'indirizzo del modello non entra nello scarico della configurazione.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Quello che non è</h2>
-    <p>Non è un assistente che crea le schede, non sceglie il canale, non accende la scrittura di ritorno. Se l'indirizzo manca, il pulsante lo dice e la proposta per sinonimi resta.</p>
-    <p>Il giornale di un giro e il pianificatore restano nella lingua del giro. Il modello non li riscrive.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Proposte basate sui nomi delle colonne</h2>
+    <p>La funzione Proponi l’abbinamento riconosce nomi e sinonimi in italiano e inglese e suggerisce il campo corrispondente nel CRM. Funziona localmente, senza chiamare un servizio esterno.</p>
+    <p>Le colonne non riconosciute restano da associare manualmente. I valori di esempio aiutano a controllare che la corrispondenza sia corretta.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Assistenza con un modello opzionale</h2>
+    <p>Se configuri l’indirizzo di un modello, la funzione Completa le colonne vuote può proporre gli abbinamenti ancora mancanti. Le associazioni già definite restano invariate.</p>
+    <p>La richiesta può includere i nomi delle colonne e un piccolo campione di celle. Le password del collegamento non vengono inviate. Prima dell’attivazione, valuta quali dati saranno trasmessi al servizio scelto.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">La configurazione resta sotto il tuo controllo</h2>
+    <p>Le proposte non salvano automaticamente l’integrazione. Verifichi le corrispondenze e confermi il risultato. Senza un indirizzo di modello configurato, non viene effettuata alcuna chiamata al modello.</p>
   </div>
 </section>
-
-<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
-  <div class="max-w-5xl mx-auto space-y-10">
-    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Nel motore, senza rete</h2>
-    {% include llm-grid.html tier="a" %}
-    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Solo con un indirizzo</h2>
-    {% include llm-grid.html tier="b" %}
-    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Non lo fa</h2>
-    {% include llm-grid.html tier="c" %}
-  </div>
-</section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

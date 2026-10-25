@@ -5,28 +5,26 @@ title: "Come funziona | Nesso"
 lang: it
 locale: it_IT
 alt: /en/how-it-works/
-description: "Un record entra da un canale, prende una chiave, e nasce su Espo solo tramite le API."
+description: "Configura il trasferimento dei dati tra EspoCRM e i tuoi strumenti aziendali: scegli la sorgente, associa i campi e verifica il risultato prima di attivare il flusso."
 ---
 {% include page-hero-sea.html
   kicker="Come funziona"
-  title="Due oggetti. Un giro. Nessuna query sulle tabelle."
-  lead="Il collegamento è il canale. L'integrazione è la regola: quale scheda, quale colonna è l'identità, quale campo finisce dove, ogni quanto."
+  title="Collega i sistemi. Definisci le regole. Automatizza gli aggiornamenti."
+  lead="Configura il trasferimento dei dati tra EspoCRM e i tuoi strumenti aziendali: scegli la sorgente, associa i campi e verifica il risultato prima di attivare il flusso."
 %}
-
-{% include pull-quote.html text="Un file non è un'opinione." cite="Il prodotto, in una frase" %}
-
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Perché il giro è corto</h2>
-    <p>Chi configura non scrive una stored procedure e non apre le tabelle del CRM. Sceglie il canale, la scheda e l'abbinamento. Da lì lo stesso motore sposta i record, qualunque sia la scheda.</p>
-    <p>Un webhook di un sito può alimentare i Lead e, con una seconda integrazione, i Contatti. Un'integrazione ha un solo collegamento. Se il collegamento è HTTP, l'integrazione esce da Espo. Negli altri casi entra.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">In ingresso</h2>
-    <p>Il sistema esterno consegna una riga: una chiamata, una SELECT, un file. La chiave è l'id dell'integrazione più il valore esterno. Sulle schede standard il campo è cExternalKey. Sulle schede create da Nesso è externalKey.</p>
-    <p>Se l'hash della riga è già quello salvato, Espo non viene richiamato: la riga è invariata. Se la chiave c'è già, è un aggiornamento. Se non c'è, è una creazione. Un secondo invio identico non duplica.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">In uscita</h2>
-    <p>Il cursore ricorda l'ultimo modifiedAt e l'id Espo. Il giro legge pagine da 50 e manda solo i campi abbinati. Il cursore HTTP avanza solo dopo i POST riusciti. Se manca la chiave esterna, il pull si ferma: i record dopo non escono.</p>
-    <p>Sono due memorie diverse. L'hash è la memoria dell'ingresso. Il cursore è la memoria dell'uscita. Un secondo giro, se in Espo nessuno ha toccato quei record, esporta zero.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">1. Collega la sorgente dei dati</h2>
+    <p>Crea un collegamento al sistema esterno. Puoi ricevere dati tramite webhook, leggere un database o importare file CSV ed Excel, anche da server SFTP e FTPS. Per inviare dati da EspoCRM a un altro sistema, configura una destinazione HTTP o un trasferimento file supportato.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">2. Scegli quali informazioni trasferire</h2>
+    <p>Seleziona la scheda di EspoCRM da aggiornare, per esempio Aziende, Contatti o Lead. Associa ogni colonna della sorgente al campo corrispondente nel CRM e indica il codice che identifica ciascun record.</p>
+    <p>Puoi trasformare i valori, collegare record tra loro e stabilire quali campi devono essere aggiornati dalla sorgente e quali devono conservare le modifiche fatte nel CRM.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">3. Controlla il risultato in anteprima</h2>
+    <p>Prima di scrivere su EspoCRM, verifica quali record verrebbero creati, aggiornati o chiusi. Gli errori e i conflitti sono consultabili, così puoi correggere la configurazione prima di attivarla.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">4. Pianifica e monitora</h2>
+    <p>Avvia il trasferimento manualmente, ogni 5 o 15 minuti, ogni ora oppure a un orario prestabilito. Dalla schermata Attività puoi consultare risultati, righe scartate e conflitti.</p>
+    <p>Nesso riconosce i dati già elaborati per evitare aggiornamenti ripetitivi. Negli invii HTTP registra l’avanzamento dopo le consegne riuscite, così i record non consegnati possono essere ripresi nelle esecuzioni successive.</p>
   </div>
 </section>
-
+{% include cta-band.html title="Scopri come Nesso si adatta ai tuoi flussi." lead="Esplora la demo locale e verifica le funzioni nel manuale del prodotto." %}

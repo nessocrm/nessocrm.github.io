@@ -1,34 +1,28 @@
 ---
 layout: default
 permalink: /it/cookie/
-title: "Cookie | Nesso"
+title: "Cookie e memoria locale | Nesso"
 lang: it
 locale: it_IT
 alt: /en/cookie/
-description: "Queste pagine non impostano un cookie di analytics o di marketing. Il tema e l'avviso chiuso restano nel browser."
+description: "Il sito utilizza la memoria locale del browser per ricordare il tema e la chiusura del riquadro informativo. Non include strumenti di analytics o pixel di marketing."
 ---
 {% include page-hero-sea.html
-  kicker="Cookie"
-  title="Niente pixel. Il browser ricorda due cose."
-  lead="Il tema (chiaro o scuro) e la chiusura dell'avviso stanno nella memoria locale del browser, su questo dispositivo. Non partono verso un modulo."
+  kicker="Cookie e memoria locale"
+  title="Le preferenze salvate durante la navigazione."
+  lead="Il sito utilizza la memoria locale del browser per ricordare il tema e la chiusura del riquadro informativo. Non include strumenti di analytics o pixel di marketing."
 %}
-
-{% include pull-quote.html text="Non c'è un muro «accetta tutti»." cite="Questo sito" %}
-
-<section class="pt-4 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto">{% include legal-nav.html %}</div>
-</section>
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa resta sul dispositivo</h2>
-    <p>La scelta del tema è una voce di memoria locale, theme. La chiusura dell'avviso in basso è un'altra voce, cta_popup_closed. Non sono cookie di profilazione e queste pagine non li mandano a un server proprio.</p>
-    <p>La pagina iniziale guarda la lingua del browser e apre l'italiano o l'inglese. Non salva una preferenza.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa caricano le pagine</h2>
-    <p>Il carattere arriva da Google Fonts. Lo stile arriva da un CDN di Tailwind. Le icone arrivano da un CDN. Sono richieste verso terzi. Questo sito non aggiunge un tag di analytics sopra quelle richieste.</p>
-    <p>GitHub Pages ospita i file. I log dell'hosting sono di GitHub, secondo le condizioni di GitHub, non di un modulo su queste pagine.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa queste pagine non fanno</h2>
-    <p>Non c'è un modulo. Non si raccoglie un indirizzo email. Non si apre un conto. Il motore, se lo si avvia dal repository, è un altro programma: la sua memoria non passa da questa pagina.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Preferenze sul dispositivo</h2>
+    <p>La chiave theme conserva la scelta tra tema chiaro e scuro. La chiave cta_popup_closed ricorda la chiusura del riquadro informativo. Questi valori sono salvati nella memoria locale del browser.</p>
+    <p>Puoi eliminarli dalle impostazioni del browser cancellando i dati del sito. La pagina iniziale usa la lingua del browser per indirizzare alla versione italiana o inglese, senza salvare una preferenza di lingua.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Risorse esterne</h2>
+    <p>I caratteri vengono caricati da Google Fonts, gli stili dal CDN di Tailwind e le icone da un CDN. Questi caricamenti comportano richieste ai rispettivi servizi.</p>
+    <p>I file del sito sono ospitati su GitHub Pages. La gestione dei log dell’hosting dipende dal servizio GitHub.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Applicazione Nesso</h2>
+    <p>La memoria locale di queste pagine è distinta dai dati conservati dall’applicazione installata. Per questi ultimi consulta il manuale del prodotto e la pagina Privacy.</p>
   </div>
 </section>
-
+{% include legal-nav.html %}

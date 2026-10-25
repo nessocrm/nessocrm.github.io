@@ -1,35 +1,27 @@
 ---
 layout: default
 permalink: /it/disclaimer/
-title: "Disclaimer | Nesso"
+title: "Informazioni sul prodotto | Nesso"
 lang: it
 locale: it_IT
 alt: /en/disclaimer/
-description: "Nesso non è un connettore certificato, non è un consulente, non è un secondo CRM. La prova parte da un Espo vuoto."
+description: "Nesso è uno strumento di integrazione per EspoCRM. La demo e la documentazione permettono di valutarne il comportamento prima dell’adozione."
 ---
 {% include page-hero-sea.html
-  kicker="Disclaimer"
-  title="Un abbinamento da rivedere. Non un certificato."
-  lead="Le ricette non certificano il sistema dall'altra parte. Il nome di quel sistema non sta nel codice. Espo resta il CRM."
+  kicker="Informazioni sul prodotto"
+  title="Funzionalità disponibili e ambito di utilizzo."
+  lead="Nesso è uno strumento di integrazione per EspoCRM. La demo e la documentazione permettono di valutarne il comportamento prima dell’adozione."
 %}
-
-{% include pull-quote.html text="Questo sito non scrive su Espo." cite="I limiti" %}
-
-<section class="pt-4 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto">{% include legal-nav.html %}</div>
-</section>
 
 <section class="py-20 px-6 bg-white dark:bg-brand-dark">
   <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa è</h2>
-    <p>Nesso è un motore che sposta record fra un canale e EspoCRM, tramite le API HTTP di Espo. Il codice è nel repository pubblico github.com/nessocrm/nessocrm. Questo sito lo racconta. Non è il programma.</p>
-    <p>La demo descritta nel manuale è una prova di un giro. Non è un cliente pubblicato qui e non è un secondo prodotto.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa non è</h2>
-    <p>Non è un connettore certificato. Non è un parere fiscale, contabile o legale. Non sostituisce il gestionale e non sostituisce chi controlla una partita IVA. Non crea utenti di Espo da un'anagrafica.</p>
-    <p>La scrittura di ritorno, la coda di ritento, il filtro del portale e il sigillo dei segreti restano spenti finché chi installa non li accende. Senza la variabile NESSO_SECRET_KEY la password nel volume del motore resta in chiaro.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Cosa non va messo nella prova</h2>
-    <p>L'Espo di prova resta vuoto. Non si importano dump di produzione, non si copiano allegati, non si monta il backup. L'Advanced Pack non sta nel repository.</p>
-    <p>Una chiusura di record spariti non è una cancellazione e non è l'oblio. La prima chiusura chiede conferma nel programma, non su questo sito.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Compatibilità con i sistemi esterni</h2>
+    <p>I canali disponibili supportano i formati e i protocolli descritti nel manuale. I modelli di configurazione preparano abbinamenti da verificare e non rappresentano connettori certificati per specifici gestionali.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Ambiente dimostrativo</h2>
+    <p>La demo Gruppo Meridia utilizza dati fittizi e non rappresenta un cliente o un caso di successo commerciale. La prova locale non richiede database o allegati di produzione.</p>
+    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Configurazione e responsabilità operative</h2>
+    <p>Prima dell’adozione occorre verificare regole sui campi, permessi, opzioni di scrittura e protezione delle credenziali. Le funzioni di controllo dei dati non costituiscono un parere fiscale, contabile o legale.</p>
+    <p>La chiusura operativa di un record conserva lo storico e non equivale alla cancellazione dei dati personali. Per i comportamenti specifici consulta il manuale del prodotto.</p>
   </div>
 </section>
-
+{% include legal-nav.html %}

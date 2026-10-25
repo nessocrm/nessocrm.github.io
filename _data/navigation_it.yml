@@ -1,63 +1,63 @@
-﻿- title: Prodotto
+- title: Prodotto
   dropdown: true
   items:
     - title: Come funziona
       url: /it/come-funziona/
-      blurb: Canale, scheda, giro del record
+      blurb: Dalla sorgente al CRM, in quattro passaggi
+    - title: Regole di aggiornamento
+      url: /it/coperture/
+      blurb: Quali campi aggiornare e quali preservare
+    - title: Controlli e verifiche
+      url: /it/rischio/
+      blurb: Anteprima, sola lettura e blocco scritture
+    - title: Pianificazione e monitoraggio
+      url: /it/scan/
+      blurb: Frequenze, risultati e anomalie
+    - title: Schede e campi
+      url: /it/universo/
+      blurb: Schede standard e personalizzate
+    - title: Abbinamento assistito
+      url: /it/llm/
+      blurb: Suggerimenti da verificare e confermare
+    - title: Regole sui dati
+      url: /it/skill/
+      blurb: Trasformazioni, relazioni e duplicati
+    - title: Importazione ed esportazione
+      url: /it/ordini/
+      blurb: Identità dei record ed esiti dei trasferimenti
     - title: Architettura
       url: /it/architecture/
-      blurb: Espo da una parte, le API dall'altra
-    - title: Il modello
-      url: /it/llm/
-      blurb: Propone l'abbinamento. Non salva.
-    - title: Il giro
-      url: /it/scan/
-      blurb: Cadenza, e il numero di stamattina
-    - title: Regole
-      url: /it/skill/
-      blurb: Padrone, chiave, scarto
-    - title: Schede
-      url: /it/universo/
-      blurb: Quelle che Espo ha già
-    - title: Il campo
-      url: /it/coperture/
-      blurb: Chi vince se la cella è vuota
-    - title: Il record
-      url: /it/ordini/
-      blurb: Come entra e come esce
-    - title: Cosa può andare storto
-      url: /it/rischio/
-      blurb: Anteprima, lettura, interruttore
-- title: Canali
+      blurb: Componenti, API e permessi
+- title: Integrazioni
   dropdown: true
   items:
-    - title: Canali
+    - title: Canali disponibili
       url: /it/broker/
-      blurb: File, tabella, chiamata, uscita
-    - title: Ricette
+      blurb: File, database, webhook e HTTP
+    - title: Modelli di configurazione
       url: /it/strategies/
-      blurb: Un abbinamento da rivedere
-    - title: La prova
+      blurb: Anagrafiche, contatti, sedi e listini
+    - title: Demo locale
       url: /it/accesso/
-      blurb: Il repository, un Espo vuoto
-- title: Nesso
+      blurb: Valuta il prodotto con dati fittizi
+- title: Progetto
   dropdown: true
   align: end
   items:
     - title: Perché Nesso
       url: /it/confronto/
-      blurb: Non è SQL, non è un secondo CRM
-    - title: Per chi
+      blurb: Configurazione e controllo dei trasferimenti
+    - title: A chi si rivolge
       url: /it/per-chi/
-      blurb: Chi deve fidarsi del giro
-    - title: Decisioni
+      blurb: Aziende, consulenti e integratori
+    - title: Principi di progettazione
       url: /it/filosofia/
-      blurb: Quelle che il codice rispetta
+      blurb: Regole esplicite e risultati verificabili
     - title: Il progetto
       url: /it/chi-siamo/
-      blurb: Il repository pubblico
+      blurb: Codice pubblico e documentazione
 - title: FAQ
   url: /it/faq/
-- title: La prova
+- title: Prova Nesso
   url: /it/accesso/
   cta: true
