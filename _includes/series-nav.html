@@ -1,13 +1,13 @@
 {% assign chapters = site.posts | where: "series", page.series | where: "lang", page.lang | sort: "series_order" %}
-<nav class="mt-16 pt-8 border-t border-gray-200 dark:border-white/10" aria-label="{% if page.lang == 'it' %}La serie{% else %}The series{% endif %}">
-  <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-4">{% if page.lang == 'it' %}La serie, in ordine{% else %}The series, in order{% endif %}</p>
+<nav class="mt-16 pt-8 border-t border-line" aria-label="{% if page.lang == 'it' %}La serie{% else %}The series{% endif %}">
+  <p class="text-xs font-bold uppercase tracking-widest text-muted mb-4">{% if page.lang == 'it' %}La serie, in ordine{% else %}The series, in order{% endif %}</p>
   <ol class="space-y-3">
     {% for chapter in chapters %}
-    <li class="text-gray-700 dark:text-gray-300">
+    <li class="text-ink">
       {% if chapter.url == page.url %}
-      <span class="font-bold text-gray-900 dark:text-white">{{ chapter.series_order }}. {{ chapter.title }}</span>
+      <span class="font-bold text-ink">{{ chapter.series_order }}. {{ chapter.title }}</span>
       {% else %}
-      <a class="hover:text-brand-gold" href="{{ chapter.url | relative_url }}">{{ chapter.series_order }}. {{ chapter.title }}</a>
+      <a class="hover:text-link" href="{{ chapter.url | relative_url }}">{{ chapter.series_order }}. {{ chapter.title }}</a>
       {% endif %}
     </li>
     {% endfor %}

@@ -16,15 +16,15 @@ description: "By default the source wins, including the empty cell. A field can 
 {% include pull-quote.html text="Clearing a field is a write. It has an owner." cite="The field owner" %}
 
 
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The source wins</h2>
+<section class="py-20 px-6 bg-surface">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-muted leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The source wins</h2>
     <p>The default is the source. If tonight's file brings an empty city, the city on Espo becomes empty. It is the behavior expected of a load: the file is the truth of those fields.</p>
     <p>Clearing is not a side effect on the whole sheet. It applies to the fields the source owns. An unmapped field is not touched.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Espo wins</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Espo wins</h2>
     <p>A field can be said to belong to Espo. A note written by a person, a value corrected by hand, stay. If the file brings a different value, that value goes into a queue to look at. The field on Espo does not change.</p>
     <p>On create the field is written anyway: there is not yet a note to protect. From the next run the owner counts.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Who wrote last</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Who wrote last</h2>
     <p>The badge on the record says who wrote last. It is there for whoever needs to see whether the row is still the file's or whether someone in Espo corrected it.</p>
     <p>It is not a legal history. It is the mark, on the record, of the last run that touched it.</p>
   </div>

@@ -127,11 +127,11 @@
   background:
     radial-gradient(circle at 52% 48%, rgba(85, 137, 202, 0.22), transparent 36%),
     radial-gradient(circle at 18% 72%, rgba(228, 161, 51, 0.12), transparent 34%),
-    #1B2430;
+    #262626;
   color: #F4F5F7;
   overflow: hidden;
   box-shadow:
-    0 28px 70px rgba(27, 36, 48, 0.34),
+    0 28px 70px rgba(38,38,38, 0.34),
     inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 @media (min-width: 700px) {
@@ -320,7 +320,7 @@
   padding: 0.35rem 0.7rem;
   border-radius: 999px;
   background: #E4A133;
-  color: #1B2430;
+  color: #262626;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.05em;
@@ -337,7 +337,7 @@
   .nx__sheet {
     padding: 1.15rem 1.2rem;
     backdrop-filter: blur(8px);
-    background: rgba(27, 36, 48, 0.72);
+    background: rgba(38,38,38, 0.72);
   }
   .nx__sheet strong { font-size: 0.88rem; }
   .nx__rows { gap: 0.55rem; }
@@ -346,7 +346,7 @@
     padding: 1.25rem 1.3rem;
     gap: 0.35rem;
     backdrop-filter: blur(8px);
-    background: rgba(27, 36, 48, 0.72);
+    background: rgba(38,38,38, 0.72);
   }
   .nx__card strong { font-size: 1.45rem; }
   .nx__card em, .nx__card span { font-size: 0.92rem; }

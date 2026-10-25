@@ -9,11 +9,11 @@
   <div class="max-w-6xl mx-auto relative z-10">
     <div class="page-hero__copy">
       {% if include.kicker %}
-      <p class="text-sm font-mono text-brand-gold uppercase tracking-[0.3em] mb-5">{{ include.kicker }}</p>
+      <p class="text-sm font-mono text-accent uppercase tracking-[0.3em] mb-5">{{ include.kicker }}</p>
       {% endif %}
       <h1 class="text-4xl md:text-6xl font-black tracking-tight mb-6">{{ include.title }}</h1>
       {% if include.lead %}
-      <p class="text-xl text-gray-300 max-w-3xl leading-relaxed">{{ include.lead }}</p>
+      <p class="text-xl text-muted max-w-3xl leading-relaxed">{{ include.lead }}</p>
       {% endif %}
       <p class="page-hero__course-legend">{% if page.lang == 'it' %}Integrazioni per EspoCRM{% else %}Espo on one side{% endif %}</p>
     </div>

@@ -1,4 +1,4 @@
-﻿<nav class="fixed w-full z-50 transition-all duration-300 bg-white/80 dark:bg-brand-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-white/5"
+﻿<nav class="fixed w-full z-50 transition-all duration-300 bg-surface/80 backdrop-blur-md border-b border-line"
   id="navbar">
   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center gap-4">
 
@@ -44,7 +44,7 @@
       </div>
       {% elsif item.cta %}
       <a href="{{ item.url | relative_url }}"
-        class="flex items-center gap-2 text-sm font-bold px-5 py-2 rounded-full bg-brand-gold text-brand-dark hover:bg-brand-goldLight transition-all shadow-sm shrink-0">
+        class="flex items-center gap-2 text-sm font-bold px-5 py-2 rounded-full bg-accent-fill text-on-accent hover:bg-accent-hover transition-all shadow-sm shrink-0">
         {{ item.title }}
       </a>
       {% else %}
@@ -53,43 +53,43 @@
         {% assign is_active = true %}
       {% endif %}
       <a href="{{ item.url | relative_url }}"
-        class="text-sm font-bold uppercase tracking-wide transition-colors relative group shrink-0 {% if is_active %}text-brand-gold{% else %}text-gray-500 dark:text-gray-400 hover:text-brand-navy dark:hover:text-white{% endif %}">
+        class="text-sm font-bold uppercase tracking-wide transition-colors relative group shrink-0 {% if is_active %}text-accent{% else %}text-muted hover:text-link hover:text-ink{% endif %}">
         {{ item.title }}
         <span
-          class="absolute -bottom-1 left-0 h-0.5 bg-brand-gold transition-all group-hover:w-full {% if is_active %}w-full{% else %}w-0{% endif %}"></span>
+          class="absolute -bottom-1 left-0 h-0.5 bg-accent-fill transition-all group-hover:w-full {% if is_active %}w-full{% else %}w-0{% endif %}"></span>
       </a>
       {% endif %}
       {% endfor %}
 
-      <button id="theme-toggle" class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors text-gray-800 dark:text-white" aria-label="Toggle theme">
+      <button id="theme-toggle" class="p-2 rounded-full hover:bg-ink/5 transition-colors text-ink" aria-label="Toggle theme">
         <i class="fas fa-sun dark:hidden"></i>
         <i class="fas fa-moon hidden dark:inline"></i>
       </button>
 
       <div class="flex items-center gap-2 text-sm font-bold uppercase tracking-wide shrink-0">
         {% if page.lang == 'it' %}
-        <span class="text-brand-gold">IT</span>
-        <span class="text-gray-600 dark:text-gray-400">|</span>
+        <span class="text-accent">IT</span>
+        <span class="text-muted">|</span>
         <a href="{{ page.alt | default: '/en/' | relative_url }}"
-          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">EN</a>
+          class="text-muted hover:text-ink transition-colors">EN</a>
         {% else %}
         <a href="{{ page.alt | default: '/it/' | relative_url }}"
-          class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">IT</a>
-        <span class="text-gray-600 dark:text-gray-400">|</span>
-        <span class="text-brand-gold">EN</span>
+          class="text-muted hover:text-ink transition-colors">IT</a>
+        <span class="text-muted">|</span>
+        <span class="text-accent">EN</span>
         {% endif %}
       </div>
     </div>
 
-    <button class="lg:hidden text-2xl text-gray-900 dark:text-white" onclick="toggleMobileMenu()" aria-label="Menu" aria-controls="mobile-menu">
+    <button class="lg:hidden text-2xl text-ink" onclick="toggleMobileMenu()" aria-label="Menu" aria-controls="mobile-menu">
       <i class="fas fa-bars"></i>
     </button>
   </div>
 </nav>
 
 <div id="mobile-menu"
-  class="fixed inset-0 bg-white dark:bg-brand-dark z-[60] transform translate-x-full transition-transform duration-300 flex flex-col overflow-y-auto">
-  <button class="absolute top-5 right-5 text-3xl text-gray-900 dark:text-white" onclick="toggleMobileMenu()" aria-label="Close menu">
+  class="fixed inset-0 bg-surface z-[60] transform translate-x-full transition-transform duration-300 flex flex-col overflow-y-auto">
+  <button class="absolute top-5 right-5 text-3xl text-ink" onclick="toggleMobileMenu()" aria-label="Close menu">
     <i class="fas fa-times"></i>
   </button>
 
@@ -119,11 +119,11 @@
 
     <div class="mobile-nav__lang">
       {% if page.lang == 'it' %}
-      <span class="text-brand-gold border-b-2 border-brand-gold">Italiano</span>
+      <span class="text-accent border-b-2 border-brand-gold">Italiano</span>
       <a href="{{ page.alt | default: '/en/' | relative_url }}">English</a>
       {% else %}
       <a href="{{ page.alt | default: '/it/' | relative_url }}">Italiano</a>
-      <span class="text-brand-gold border-b-2 border-brand-gold">English</span>
+      <span class="text-accent border-b-2 border-brand-gold">English</span>
       {% endif %}
     </div>
   </div>

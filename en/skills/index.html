@@ -16,15 +16,15 @@ description: "Field owner, key, duplicate, date, phone. They are load rules, not
 {% include pull-quote.html text="A rule that is not written does not fire." cite="The load" %}
 
 
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The owner</h2>
+<section class="py-20 px-6 bg-surface">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-muted leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The owner</h2>
     <p>By default the source wins, even if the cell arrives empty. Clearing applies only to the source fields. If the owner is Espo, the different value goes into a queue to look at and the field on Espo stays.</p>
     <p>On create, the Espo-owned field is written too: the record does not exist yet, and there is no note to protect. From the next run, the owner counts.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The key and the duplicate</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The key and the duplicate</h2>
     <p>Identity is one convention: integration id, a colon, external value. Two integrations on the same sheet do not mix, because the key contains the integration.</p>
     <p>If Espo refuses because a similar record already exists with another key, the row is rejected. The integration can be told to adopt that record. It is not the default.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Before Espo</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Before Espo</h2>
     <p>An unreadable date does not invent a day. A list must have at least one value, if the new field is a list. An Italian phone is put into international form. An Espo error, if it names a field, reports that name.</p>
     <p>A required column is missing: the file is not moved and the reject is a single one. A cell is missing: the row is rejected and the others continue, if the column is there.</p>
   </div>

@@ -1,7 +1,7 @@
 {% comment %}Venues we will not fake. {% include broker-out.html %}{% endcomment %}
 <div class="grid md:grid-cols-2 gap-10">
   <div>
-    <p class="font-mono text-xs text-brand-gold tracking-widest mb-3">{% if page.lang == 'it' %}RESTA FUORI{% else %}STAYS OUT{% endif %}</p>
+    <p class="font-mono text-xs text-accent tracking-widest mb-3">{% if page.lang == 'it' %}RESTA FUORI{% else %}STAYS OUT{% endif %}</p>
     <ul class="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
       {% for b in site.data.brokers %}
       {% if b.tier == 'd' %}
@@ -11,7 +11,7 @@
     </ul>
   </div>
   <div>
-    <p class="font-mono text-xs tracking-widest mb-3 text-red-400/80">{% if page.lang == 'it' %}NON È NESSO{% else %}NOT NESSO{% endif %}</p>
+    <p class="font-mono text-xs tracking-widest mb-3 text-danger">{% if page.lang == 'it' %}NON È NESSO{% else %}NOT NESSO{% endif %}</p>
     <ul class="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed">
       {% for b in site.data.brokers %}
       {% if b.tier == 'e' %}

@@ -17,26 +17,26 @@ description: "Webhook, read-only database, CSV, Excel, SFTP, FTPS, PDF, document
 
 {% include broker-rail.html %}
 
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The ones that run</h2>
+<section class="py-20 px-6 bg-surface">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-muted leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The ones that run</h2>
     <p>Inbound: webhook, a SELECT on the external database, CSV, Excel, SFTP, FTPS, PDF, document. Outbound: HTTP, with the cursor. Direction follows the channel. An HTTP integration does not become a load.</p>
     <p>The external database is read. Its tables are not written from here, until write-back is on, and even then only the named columns.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The ones that exist and stay off</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The ones that exist and stay off</h2>
     <p>Write-back, retry queue, portal filter, secret seal: the code is there, the default switch is off. Turning them on is a choice of whoever installs, not a behavior of the trial.</p>
     <p>The trial does not set NESSO_SECRET_KEY, does not turn the queue on, does not turn the portal on, does not turn write-back on.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">What does not pass through here</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">What does not pass through here</h2>
     <p>CRM mail stays in Espo. The Advanced Pack is not rewritten. Espo users are not created from a master. There is no bridge without Espo on one side. A production dump is not imported.</p>
   </div>
 </section>
 
-<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+<section class="py-16 px-6 bg-canvas">
   <div class="max-w-5xl mx-auto space-y-10">
-    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Inbound and outbound</h2>
+    <h2 class="text-2xl font-black text-ink">Inbound and outbound</h2>
     {% include broker-grid.html tier="a" %}
-    <h2 class="text-2xl font-black text-gray-900 dark:text-white">Files and documents</h2>
+    <h2 class="text-2xl font-black text-ink">Files and documents</h2>
     {% include broker-grid.html tier="b" %}
-    <h2 class="text-2xl font-black text-gray-900 dark:text-white">In the engine, off</h2>
+    <h2 class="text-2xl font-black text-ink">In the engine, off</h2>
     {% include broker-grid.html tier="c" %}
   </div>
 </section>

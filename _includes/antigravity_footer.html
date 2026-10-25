@@ -1,4 +1,4 @@
-﻿<footer class="bg-brand-dark border-t border-white/5 pt-8 pb-12 px-6">
+﻿<footer class="bg-brand-night border-t border-white/5 pt-8 pb-12 px-6 brand-inverse">
     <div class="max-w-7xl mx-auto mb-10">
         {% include disclaimer-strip.html %}
     </div>
@@ -9,14 +9,14 @@
                 class="inline-block mb-6 hover:opacity-90 transition-opacity">
                 {% include brand-logo.html theme="dark" %}
             </a>
-            <p class="text-gray-500 mb-2 text-sm font-bold uppercase tracking-widest">
+            <p class="text-muted mb-2 text-sm font-bold uppercase tracking-widest">
                 {% if page.lang == 'it' %}
                 Integrazioni e controllo dei dati per EspoCRM.
                 {% else %}
                 Espo on one side. The external system on the other.
                 {% endif %}
             </p>
-            <p class="text-gray-400 text-sm mb-6 leading-relaxed">
+            <p class="text-muted text-sm mb-6 leading-relaxed">
                 {% if page.lang == 'it' %}
                 Collega i sistemi aziendali, configura le regole di aggiornamento e controlla gli esiti dei trasferimenti.
                 {% else %}
@@ -25,7 +25,7 @@
             </p>
             <div class="flex gap-2">
                 <a href="{{ site.social.github }}" target="_blank" rel="noopener"
-                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-gray-400"
+                    class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-muted"
                     title="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
@@ -34,94 +34,94 @@
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 w-full lg:flex-1 lg:max-w-3xl">
             <div class="col-span-2">
-                <h4 class="font-bold mb-4 text-white text-sm uppercase tracking-wider">{% if page.lang == 'it' %}Prodotto{% else %}Product{% endif %}</h4>
+                <h4 class="font-bold mb-4 text-ink text-sm uppercase tracking-wider">{% if page.lang == 'it' %}Prodotto{% else %}Product{% endif %}</h4>
                 <div class="grid grid-cols-2 gap-x-8 gap-y-1">
-                    <ul class="space-y-2.5 text-sm text-gray-500">
+                    <ul class="space-y-2.5 text-sm text-muted">
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/come-funziona/{% else %}/en/how-it-works/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Come funziona{% else %}How it works{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/scan/{% else %}/en/scan/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Pianificazione{% else %}The run{% endif %}</a>
+                                class="hover:text-link transition-colors">{% if page.lang == 'it' %}Pianificazione{% else %}The run{% endif %}</a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/skill/{% else %}/en/skills/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Regole sui dati{% else %}Rules{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/universo/{% else %}/en/universe/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Schede e campi{% else %}Sheets{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/coperture/{% else %}/en/covered/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Regole di aggiornamento{% else %}The field{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/ordini/{% else %}/en/orders/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Importazione ed esportazione{% else %}The record{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/rischio/{% else %}/en/risk/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Controlli e verifiche{% else %}What can go wrong{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/broker/{% else %}/en/brokers/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Canali{% else %}Channels{% endif %}</a>
+                                class="hover:text-link transition-colors">{% if page.lang == 'it' %}Canali{% else %}Channels{% endif %}</a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/llm/{% else %}/en/llm/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Abbinamento assistito{% else %}The model{% endif %}</a>
+                                class="hover:text-link transition-colors">{% if page.lang == 'it' %}Abbinamento assistito{% else %}The model{% endif %}</a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/architecture/{% else %}/en/architecture/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Architettura{% else %}Architecture{% endif %}</a>
+                                class="hover:text-link transition-colors">{% if page.lang == 'it' %}Architettura{% else %}Architecture{% endif %}</a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/strategies/{% else %}/en/strategies/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Modelli di configurazione{% else %}Recipes{% endif %}</a>
+                                class="hover:text-link transition-colors">{% if page.lang == 'it' %}Modelli di configurazione{% else %}Recipes{% endif %}</a>
                         </li>
                     </ul>
-                    <ul class="space-y-2.5 text-sm text-gray-500">
+                    <ul class="space-y-2.5 text-sm text-muted">
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/confronto/{% else %}/en/compare/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Perché Nesso{% else %}Why Nesso{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/per-chi/{% else %}/en/who-its-for/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Per chi{% else %}Who it is for{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/filosofia/{% else %}/en/philosophy/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Principi di progettazione{% else %}Decisions{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/chi-siamo/{% else %}/en/about/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Il progetto{% else %}The project{% endif %}
                             </a>
                         </li>
                         <li>
                             <a href="{% if page.lang == 'it' %}/it/accesso/{% else %}/en/access/{% endif %}"
-                                class="hover:text-brand-gold transition-colors">
+                                class="hover:text-link transition-colors">
                                 {% if page.lang == 'it' %}Prova Nesso{% else %}The trial{% endif %}
                             </a>
                         </li>
@@ -129,42 +129,42 @@
                 </div>
             </div>
             <div>
-                <h4 class="font-bold mb-4 text-white text-sm uppercase tracking-wider">{% if page.lang == 'it' %}Risorse{% else %}Resources{% endif %}</h4>
-                <ul class="space-y-2.5 text-sm text-gray-500">
+                <h4 class="font-bold mb-4 text-ink text-sm uppercase tracking-wider">{% if page.lang == 'it' %}Risorse{% else %}Resources{% endif %}</h4>
+                <ul class="space-y-2.5 text-sm text-muted">
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/faq/{% else %}/en/faq/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">FAQ</a>
+                            class="hover:text-link transition-colors">FAQ</a>
                     </li>
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/blog/{% else %}/en/blog/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">{% if page.lang == 'it' %}Approfondimenti{% else %}Journal{% endif %}</a>
+                            class="hover:text-link transition-colors">{% if page.lang == 'it' %}Approfondimenti{% else %}Journal{% endif %}</a>
                     </li>
                     <li>
                         <a href="{{ site.social.github }}" target="_blank" rel="noopener"
-                            class="hover:text-brand-gold transition-colors">GitHub</a>
+                            class="hover:text-link transition-colors">GitHub</a>
                     </li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-4 text-white text-sm uppercase tracking-wider">{% if page.lang == 'it' %}Legale{% else %}Legal{% endif %}</h4>
-                <ul class="space-y-2.5 text-sm text-gray-500">
+                <h4 class="font-bold mb-4 text-ink text-sm uppercase tracking-wider">{% if page.lang == 'it' %}Legale{% else %}Legal{% endif %}</h4>
+                <ul class="space-y-2.5 text-sm text-muted">
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/disclaimer/{% else %}/en/disclaimer/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">Disclaimer</a>
+                            class="hover:text-link transition-colors">Disclaimer</a>
                     </li>
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/termini/{% else %}/en/terms/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">
+                            class="hover:text-link transition-colors">
                             {% if page.lang == 'it' %}Termini{% else %}Terms{% endif %}
                         </a>
                     </li>
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/privacy/{% else %}/en/privacy/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">Privacy</a>
+                            class="hover:text-link transition-colors">Privacy</a>
                     </li>
                     <li>
                         <a href="{% if page.lang == 'it' %}/it/cookie/{% else %}/en/cookie/{% endif %}"
-                            class="hover:text-brand-gold transition-colors">Cookie</a>
+                            class="hover:text-link transition-colors">Cookie</a>
                     </li>
                 </ul>
             </div>
@@ -172,7 +172,7 @@
     </div>
 
     <div
-        class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-gray-500 text-xs">
+        class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-muted text-xs">
         <p>
             &copy; {{ site.time | date: '%Y' }} Nesso.
             {% if page.lang == 'it' %}

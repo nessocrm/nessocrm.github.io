@@ -2,7 +2,7 @@
   name: Proponi l'abbinamento
   letter: Ab
   accent: "#5589CA"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: live
   status_it: "Elaborazione locale"
   status_en: No network
@@ -14,7 +14,7 @@
   name: Sinonimi
   letter: Si
   accent: "#E4A133"
-  ink: "#1B2430"
+  ink: "#262626"
   status: live
   status_it: "Italiano e inglese"
   status_en: Per language
@@ -26,7 +26,7 @@
   name: Colonne vuote
   letter: Vu
   accent: "#8B939C"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: next
   status_it: "Modello opzionale"
   status_en: Only if an address is set
@@ -37,7 +37,7 @@
 - id: nosave
   name: Non salva
   letter: "No"
-  accent: "#243040"
+  accent: "#262626"
   ink: "#E4A133"
   status: blocked
   status_it: "Conferma richiesta"
@@ -49,7 +49,7 @@
 - id: nopass
   name: Niente password
   letter: "No"
-  accent: "#243040"
+  accent: "#262626"
   ink: "#E4A133"
   status: blocked
   status_it: "Credenziali escluse"

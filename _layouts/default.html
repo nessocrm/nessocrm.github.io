@@ -20,25 +20,30 @@
                         mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
                     },
                     colors: {
+                        // Exact logo colors, retained aliases and theme-aware roles.
                         brand: {
-                            navy: '#243040',
-                            gold: '#E4A133',
-                            goldLight: '#F0C36A',
-                            indigo: '#5589CA',
-                            purple: '#C4A35A',
-                            purpleLight: '#D4B87A',
-                            pink: '#3D5A9E',
-                            pinkLight: '#7A93C9',
-                            dark: '#0B1F3A',
-                            surface: '#12263F',
-                            muted: '#8A9BB0',
-                            ink: '#0B1F3A',
-                            paper: '#F7F4EE',
-                            blue: '#3D5A9E',
-                            green: '#58C97A',
-                            black: '#1B2430',
-                            gray: '#12263F',
-                        }
+                            navy: '#262626', gold: '#E4A133', goldLight: '#F0BB5E',
+                            indigo: '#5589CA', purple: '#5589CA', purpleLight: '#8FB9EB',
+                            pink: '#58C97A', pinkLight: '#A3E3B6',
+                            dark: '#262626', surface: '#303337', muted: '#8B939C',
+                            ink: '#262626', paper: '#F4F5F7', blue: '#5589CA',
+                            green: '#58C97A', black: '#262626', gray: '#8B939C',
+                            night: '#262626',
+                        },
+                        canvas: 'rgb(var(--canvas) / <alpha-value>)',
+                        surface: 'rgb(var(--surface) / <alpha-value>)',
+                        ink: 'rgb(var(--ink) / <alpha-value>)',
+                        muted: 'rgb(var(--muted) / <alpha-value>)',
+                        line: 'rgb(var(--line) / <alpha-value>)',
+                        accent: 'rgb(var(--accent) / <alpha-value>)',
+                        link: 'rgb(var(--link) / <alpha-value>)',
+                        success: 'rgb(var(--success) / <alpha-value>)',
+                        danger: 'rgb(var(--danger) / <alpha-value>)',
+                        action: 'rgb(var(--action) / <alpha-value>)',
+                        'on-action': 'rgb(var(--on-action) / <alpha-value>)',
+                        'accent-fill': 'rgb(var(--accent-fill) / <alpha-value>)',
+                        'accent-hover': 'rgb(var(--accent-hover) / <alpha-value>)',
+                        'on-accent': 'rgb(var(--on-accent) / <alpha-value>)',
                     },
                     borderRadius: {
                         'pill': '9999px',
@@ -62,8 +67,8 @@
                             '100%': { transform: 'translateX(-100%)' },
                         },
                         glowPulse: {
-                            '0%, 100%': { boxShadow: '0 0 20px rgba(196, 163, 90, 0.35)' },
-                            '50%': { boxShadow: '0 0 60px rgba(196, 163, 90, 0.55), 0 0 100px rgba(11, 31, 58, 0.25)' },
+                            '0%, 100%': { boxShadow: '0 0 20px rgba(228,161,51, 0.35)' },
+                            '50%': { boxShadow: '0 0 60px rgba(228,161,51, 0.55), 0 0 100px rgba(38,38,38, 0.25)' },
                         }
                     }
                 },
@@ -233,15 +238,15 @@
 
         /* Neon glow utilities */
         .glow-purple {
-            box-shadow: 0 0 15px rgba(196, 163, 90, 0.25), inset 0 0 10px rgba(196, 163, 90, 0.08);
+            box-shadow: 0 0 15px rgba(228,161,51, 0.25), inset 0 0 10px rgba(228,161,51, 0.08);
         }
 
         .glow-pink {
-            box-shadow: 0 0 15px rgba(61, 90, 158, 0.25), inset 0 0 10px rgba(61, 90, 158, 0.08);
+            box-shadow: 0 0 15px rgba(85,137,202, 0.25), inset 0 0 10px rgba(85,137,202, 0.08);
         }
 
         .text-glow {
-            text-shadow: 0 0 20px rgba(196, 163, 90, 0.5);
+            text-shadow: 0 0 20px rgba(228,161,51, 0.5);
         }
 
         /* Noise overlay */
@@ -258,23 +263,23 @@
         .bg-grid-pattern {
             background-size: 40px 40px;
             background-image:
-                linear-gradient(to right, rgba(11, 31, 58, 0.06) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(11, 31, 58, 0.06) 1px, transparent 1px);
+                linear-gradient(to right, rgba(38,38,38, 0.06) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(38,38,38, 0.06) 1px, transparent 1px);
         }
         .dark .bg-grid-pattern {
             background-image:
-                linear-gradient(to right, rgba(196, 163, 90, 0.08) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(196, 163, 90, 0.08) 1px, transparent 1px);
+                linear-gradient(to right, rgba(228,161,51, 0.08) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(228,161,51, 0.08) 1px, transparent 1px);
         }
 
         .gradient-text {
-            background: linear-gradient(135deg, #C4A35A 0%, #D4B87A 100%);
+            background: linear-gradient(135deg, #E4A133 0%, #F0BB5E 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         html:not(.dark) .gradient-text {
-            background: linear-gradient(135deg, #0B1F3A 0%, #3D5A9E 100%);
+            background: linear-gradient(135deg, #262626 0%, #5589CA 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -282,12 +287,12 @@
 
         /* Code block styles */
         .code-block {
-            background: #0f172a;
-            border: 1px solid rgba(196, 163, 90, 0.25);
+            background: #262626;
+            border: 1px solid rgba(228,161,51, 0.25);
             border-radius: 4px;
             font-family: ui-monospace, 'Courier New', monospace;
             font-size: 0.875rem;
-            color: #C4A35A;
+            color: #E4A133;
             padding: 1.5rem;
             overflow-x: auto;
         }
@@ -332,21 +337,21 @@
         /* Card hover glow */
         .card-glow {
             transition: all 0.3s ease;
-            border: 1px solid rgba(196, 163, 90, 0.2);
+            border: 1px solid rgba(228,161,51, 0.2);
             border-radius: 0.5rem;
         }
 
         .card-glow:hover {
-            border-color: rgba(196, 163, 90, 0.5);
-            box-shadow: inset 0 0 20px rgba(196, 163, 90, 0.04), 0 0 20px rgba(196, 163, 90, 0.12);
+            border-color: rgba(228,161,51, 0.5);
+            box-shadow: inset 0 0 20px rgba(228,161,51, 0.04), 0 0 20px rgba(228,161,51, 0.12);
             transform: translateY(-2px);
         }
         html:not(.dark) .card-glow {
-            border-color: rgba(11, 31, 58, 0.32);
+            border-color: rgba(38,38,38, 0.32);
         }
         html:not(.dark) .card-glow:hover {
-            border-color: #0B1F3A;
-            box-shadow: 0 16px 36px rgba(11, 31, 58, 0.1);
+            border-color: #262626;
+            box-shadow: 0 16px 36px rgba(38,38,38, 0.1);
         }
 
         /* Scrollbar */
@@ -359,16 +364,16 @@
         }
 
         ::-webkit-scrollbar-thumb {
-            background: #0B1F3A;
+            background: #262626;
             border-radius: 0px;
         }
 
         .dark ::-webkit-scrollbar-track {
-            background: #0B1F3A;
+            background: #262626;
         }
 
         .dark ::-webkit-scrollbar-thumb {
-            background: #C4A35A;
+            background: #E4A133;
         }
 
         .loading-dots:after {
@@ -397,10 +402,11 @@
             }
         }
     </style>
+    <link rel="stylesheet" href="{{ '/assets/css/brand-theme.css' | relative_url }}">
 </head>
 
 <body
-    class="overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark bg-white dark:bg-brand-dark text-gray-900 dark:text-white transition-colors duration-300">
+    class="overflow-x-hidden selection:bg-brand-gold selection:text-brand-dark bg-canvas text-ink transition-colors duration-300">
 
     {% include antigravity_nav.html %}
 

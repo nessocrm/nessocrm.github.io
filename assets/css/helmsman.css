@@ -41,11 +41,11 @@ footer .brand-logo {
   min-width: 220px;
   padding: 0.85rem 1.1rem;
   background: rgba(255,255,255,0.92);
-  border: 1px solid rgba(11,31,58,0.08);
-  box-shadow: 0 10px 30px rgba(11,31,58,0.06);
+  border: 1px solid rgba(38,38,38,0.08);
+  box-shadow: 0 10px 30px rgba(38,38,38,0.06);
 }
 .dark .broker-tile {
-  background: rgba(8,22,40,0.9);
+  background: rgba(38,38,38,0.9);
   border-color: rgba(255,255,255,0.08);
   box-shadow: 0 12px 40px rgba(0,0,0,0.25);
 }
@@ -63,40 +63,40 @@ footer .brand-logo {
 .broker-tile__name {
   font-weight: 800;
   font-size: 0.9rem;
-  color: #0B1F3A;
+  color: #262626;
   line-height: 1.2;
 }
-.dark .broker-tile__name { color: #F7F4EE; }
+.dark .broker-tile__name { color: #F4F5F7; }
 .broker-tile__status {
   font-family: ui-monospace, monospace;
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-top: 0.15rem;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
-.broker-tile__status.is-live { color: #C4A35A; }
-.broker-tile__status.is-sim { color: #3D5A9E; }
-.broker-tile__status.is-next { color: #C4A35A; }
+.broker-tile__status.is-live { color: #E4A133; }
+.broker-tile__status.is-sim { color: #5589CA; }
+.broker-tile__status.is-next { color: #E4A133; }
 .broker-tile__status.is-friction { color: #C48A3A; }
 .broker-tile__status.is-blocked { color: #B45353; }
-.broker-tile__status.is-institutional { color: #8A9BB0; }
+.broker-tile__status.is-institutional { color: #B9C2CC; }
 .broker-tile__star {
-  color: #C4A35A;
+  color: #E4A133;
   font-size: 0.72em;
   vertical-align: 0.12em;
 }
 
 .broker-card {
   padding: 1.25rem;
-  border: 1px solid rgba(196,163,90,0.18);
-  background: linear-gradient(180deg, rgba(196,163,90,0.06), transparent 40%);
+  border: 1px solid rgba(228,161,51,0.18);
+  background: linear-gradient(180deg, rgba(228,161,51,0.06), transparent 40%);
   transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 .broker-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(196,163,90,0.5);
-  box-shadow: 0 20px 50px rgba(11,31,58,0.12);
+  border-color: rgba(228,161,51,0.5);
+  box-shadow: 0 20px 50px rgba(38,38,38,0.12);
 }
 .broker-card .broker-tile {
   min-width: 0;
@@ -116,14 +116,14 @@ footer .brand-logo {
   position: relative;
   overflow: hidden;
   padding: 9rem 1.5rem 5rem;
-  background: #081628;
+  background: #262626;
   color: #fff;
 }
 .page-hero__goldline {
   position: absolute;
   left: 0; right: 0; top: 0;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #C4A35A, transparent);
+  background: linear-gradient(90deg, transparent, #E4A133, transparent);
   animation: gold-scan 3.5s ease-in-out infinite;
 }
 @keyframes gold-scan {
@@ -139,7 +139,7 @@ footer .brand-logo {
   flex-shrink: 0;
   overflow: hidden;
   margin: 0 auto;
-  background: radial-gradient(circle at 50% 46%, rgba(196,163,90,0.14), transparent 58%);
+  background: radial-gradient(circle at 50% 46%, rgba(228,161,51,0.14), transparent 58%);
 }
 .page-hero__seal-ring {
   position: absolute;
@@ -149,11 +149,11 @@ footer .brand-logo {
 }
 .page-hero__seal-ring--outer {
   inset: 16px;
-  border: 1px solid rgba(196,163,90,0.28);
+  border: 1px solid rgba(228,161,51,0.28);
 }
 .page-hero__seal-ring--cover {
   inset: 44px;
-  border: 1.5px solid rgba(196,163,90,0.7);
+  border: 1.5px solid rgba(228,161,51,0.7);
 }
 .page-hero__seal-axis {
   position: absolute;
@@ -162,7 +162,7 @@ footer .brand-logo {
   bottom: 52px;
   width: 1px;
   margin-left: -0.5px;
-  background: linear-gradient(180deg, rgba(196,163,90,0.7), rgba(196,163,90,0.08) 70%, transparent);
+  background: linear-gradient(180deg, rgba(228,161,51,0.7), rgba(228,161,51,0.08) 70%, transparent);
   pointer-events: none;
 }
 .page-hero__seal-tick {
@@ -172,7 +172,7 @@ footer .brand-logo {
   width: 2px;
   height: 18px;
   margin-left: -1px;
-  background: #C4A35A;
+  background: #E4A133;
   border-radius: 1px;
   pointer-events: none;
 }
@@ -184,8 +184,8 @@ footer .brand-logo {
   height: 12px;
   margin: -6px 0 0 -6px;
   border-radius: 50%;
-  background: #C4A35A;
-  box-shadow: 0 0 0 5px #081628, 0 0 0 6px rgba(196,163,90,0.75);
+  background: #E4A133;
+  box-shadow: 0 0 0 5px #262626, 0 0 0 6px rgba(228,161,51,0.75);
   pointer-events: none;
 }
 .page-hero__seal-word {
@@ -199,7 +199,7 @@ footer .brand-logo {
   font-size: 0.62rem;
   letter-spacing: 0.34em;
   text-transform: uppercase;
-  color: rgba(196,163,90,0.88);
+  color: rgba(228,161,51,0.88);
   pointer-events: none;
 }
 @media (min-width: 1024px) {
@@ -237,7 +237,7 @@ footer .brand-logo {
   letter-spacing: 0.08em;
   line-height: 1.45;
   text-transform: uppercase;
-  color: rgba(196,163,90,0.75);
+  color: rgba(228,161,51,0.75);
   overflow-wrap: break-word;
 }
 @media (min-width: 1024px) {
@@ -264,7 +264,7 @@ footer .brand-logo {
   position: absolute;
   inset: 12%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(196,163,90,0.26), transparent 66%);
+  background: radial-gradient(circle, rgba(228,161,51,0.26), transparent 66%);
   filter: blur(28px);
   animation: page-hero-wash-pulse 9s ease-in-out infinite;
 }
@@ -310,8 +310,8 @@ footer .brand-logo {
 
 .helm-orbit {
   background:
-    radial-gradient(circle at 20% 20%, rgba(196,163,90,0.18), transparent 40%),
-    radial-gradient(circle at 80% 80%, rgba(61,90,158,0.2), transparent 42%);
+    radial-gradient(circle at 20% 20%, rgba(228,161,51,0.18), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(85,137,202,0.2), transparent 42%);
 }
 .helm-wheel {
   display: block;
@@ -329,8 +329,8 @@ footer .brand-logo {
 .flow-step {
   position: relative;
   padding: 1.75rem;
-  border: 1px solid rgba(196,163,90,0.2);
-  background: rgba(8,22,40,0.55);
+  border: 1px solid rgba(228,161,51,0.2);
+  background: rgba(38,38,38,0.55);
   overflow: hidden;
 }
 .flow-step::after {
@@ -338,7 +338,7 @@ footer .brand-logo {
   position: absolute;
   inset: auto 0 0 0;
   height: 2px;
-  background: linear-gradient(90deg, #C4A35A, transparent);
+  background: linear-gradient(90deg, #E4A133, transparent);
   transform: scaleX(0);
   transform-origin: left;
   animation: flow-ink 2.8s ease-in-out infinite;
@@ -376,14 +376,14 @@ footer .brand-logo {
   margin: 0 auto;
   border-radius: 50%;
   background:
-    repeating-radial-gradient(circle, rgba(196,163,90,0.18) 0 1px, transparent 1px 18%);
-  border: 1px solid rgba(196,163,90,0.35);
+    repeating-radial-gradient(circle, rgba(228,161,51,0.18) 0 1px, transparent 1px 18%);
+  border: 1px solid rgba(228,161,51,0.35);
   overflow: hidden;
 }
 .radar__sweep {
   position: absolute;
   inset: 0;
-  background: conic-gradient(from 0deg, transparent 0 70%, rgba(196,163,90,0.45) 85%, transparent 100%);
+  background: conic-gradient(from 0deg, transparent 0 70%, rgba(228,161,51,0.45) 85%, transparent 100%);
   animation: radar-sweep 3.2s linear infinite;
 }
 @keyframes radar-sweep {
@@ -393,9 +393,9 @@ footer .brand-logo {
   position: absolute;
   width: 8px;
   height: 8px;
-  background: #C4A35A;
+  background: #E4A133;
   border-radius: 50%;
-  box-shadow: 0 0 12px #C4A35A;
+  box-shadow: 0 0 12px #E4A133;
   animation: blip 2.4s ease-in-out infinite;
 }
 .radar__blip--a { top: 28%; left: 62%; animation-delay: 0.2s; }
@@ -415,7 +415,7 @@ footer .brand-logo {
 .gauge > span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, #3D8B6E, #C4A35A);
+  background: linear-gradient(90deg, #3D8B6E, #E4A133);
   animation: gauge-fill 2.2s ease-out forwards;
 }
 @keyframes gauge-fill {
@@ -443,7 +443,7 @@ footer .brand-logo {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  border: 1px solid rgba(196,163,90,0.2);
+  border: 1px solid rgba(228,161,51,0.2);
 }
 .compare-row div {
   padding: 1.25rem 1.5rem;
@@ -456,25 +456,25 @@ footer .brand-logo {
   color: #f87171;
 }
 .compare-row div:last-child {
-  background: rgba(196,163,90,0.08);
+  background: rgba(228,161,51,0.08);
 }
 
 .broker-rail {
   background:
-    radial-gradient(ellipse 70% 80% at 10% 50%, rgba(196,163,90,0.08), transparent),
-    radial-gradient(ellipse 50% 80% at 90% 50%, rgba(61,90,158,0.12), transparent),
-    #050d18;
-  border-block: 1px solid rgba(196,163,90,0.18);
+    radial-gradient(ellipse 70% 80% at 10% 50%, rgba(228,161,51,0.08), transparent),
+    radial-gradient(ellipse 50% 80% at 90% 50%, rgba(85,137,202,0.12), transparent),
+    #202225;
+  border-block: 1px solid rgba(228,161,51,0.18);
 }
 .broker-rail .broker-tile {
   background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
-  border: 1px solid rgba(196,163,90,0.22);
+  border: 1px solid rgba(228,161,51,0.22);
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
   min-width: 248px;
   padding: 1.05rem 1.25rem;
   backdrop-filter: blur(8px);
 }
-.broker-rail .broker-tile__name { color: #F7F4EE; }
+.broker-rail .broker-tile__name { color: #F4F5F7; }
 .broker-tile__mark {
   border-radius: 0.4rem;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.12), 0 10px 22px rgba(0,0,0,0.28);
@@ -506,8 +506,8 @@ footer .brand-logo {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 55% at 12% 18%, rgba(196,163,90,0.2), transparent 52%),
-    radial-gradient(ellipse 55% 45% at 92% 78%, rgba(61,90,158,0.32), transparent 58%),
+    radial-gradient(ellipse 80% 55% at 12% 18%, rgba(228,161,51,0.2), transparent 52%),
+    radial-gradient(ellipse 55% 45% at 92% 78%, rgba(85,137,202,0.32), transparent 58%),
     radial-gradient(circle at 72% 18%, rgba(255,255,255,0.07), transparent 28%);
   animation: aurora-drift 16s ease-in-out infinite alternate;
   pointer-events: none;
@@ -517,9 +517,9 @@ footer .brand-logo {
   position: absolute;
   inset: 0;
   background-image: radial-gradient(1px 1px at 12% 22%, rgba(255,255,255,0.35), transparent),
-    radial-gradient(1px 1px at 28% 68%, rgba(196,163,90,0.5), transparent),
+    radial-gradient(1px 1px at 28% 68%, rgba(228,161,51,0.5), transparent),
     radial-gradient(1px 1px at 64% 18%, rgba(255,255,255,0.25), transparent),
-    radial-gradient(1px 1px at 82% 44%, rgba(196,163,90,0.4), transparent),
+    radial-gradient(1px 1px at 82% 44%, rgba(228,161,51,0.4), transparent),
     radial-gradient(1px 1px at 48% 86%, rgba(255,255,255,0.2), transparent);
   animation: star-twinkle 5s ease-in-out infinite;
   pointer-events: none;
@@ -545,7 +545,7 @@ footer .brand-logo {
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.25;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .pull-quote figcaption {
   margin-top: 1rem;
@@ -553,7 +553,7 @@ footer .brand-logo {
   font-size: 0.7rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 
 .order-ladder {
@@ -566,8 +566,8 @@ footer .brand-logo {
   gap: 1rem;
   align-items: center;
   padding: 1rem 1.15rem;
-  border: 1px solid rgba(196,163,90,0.22);
-  background: rgba(8,22,40,0.7);
+  border: 1px solid rgba(228,161,51,0.22);
+  background: rgba(38,38,38,0.7);
   animation: ticket-in 0.8s ease both;
 }
 .order-ticket.is-reject {
@@ -576,19 +576,19 @@ footer .brand-logo {
   animation: ticket-shake 3.6s ease-in-out infinite;
 }
 .order-ticket.is-ok {
-  box-shadow: 0 0 0 0 rgba(196,163,90,0.0);
+  box-shadow: 0 0 0 0 rgba(228,161,51,0.0);
   animation: ticket-in 0.8s ease both, ticket-glow 3.2s ease-in-out infinite;
 }
 .order-ticket__tag {
   font-family: ui-monospace, monospace;
   font-size: 0.65rem;
   letter-spacing: 0.14em;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .order-ticket em {
   font-style: normal;
   font-size: 0.75rem;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .order-ticket.is-reject em { color: #fca5a5; }
 @keyframes ticket-in {
@@ -596,8 +596,8 @@ footer .brand-logo {
   to { opacity: 1; transform: none; }
 }
 @keyframes ticket-glow {
-  0%, 100% { box-shadow: 0 0 0 rgba(196,163,90,0); }
-  50% { box-shadow: 0 0 28px rgba(196,163,90,0.22); }
+  0%, 100% { box-shadow: 0 0 0 rgba(228,161,51,0); }
+  50% { box-shadow: 0 0 28px rgba(228,161,51,0.22); }
 }
 @keyframes ticket-shake {
   0%, 92%, 100% { transform: translateX(0); }
@@ -613,9 +613,9 @@ footer .brand-logo {
   height: 170px;
   padding: 1.25rem;
   background:
-    linear-gradient(180deg, rgba(196,163,90,0.08), transparent 40%),
+    linear-gradient(180deg, rgba(228,161,51,0.08), transparent 40%),
     repeating-linear-gradient(180deg, transparent 0 33px, rgba(255,255,255,0.04) 33px 34px);
-  border: 1px solid rgba(196,163,90,0.22);
+  border: 1px solid rgba(228,161,51,0.22);
 }
 .candle {
   flex: 1;
@@ -639,8 +639,8 @@ footer .brand-logo {
   gap: 1rem;
   align-items: flex-start;
   padding: 1.1rem 1.2rem;
-  border: 1px solid rgba(196,163,90,0.18);
-  background: rgba(8,22,40,0.55);
+  border: 1px solid rgba(228,161,51,0.18);
+  background: rgba(38,38,38,0.55);
 }
 .veto-card__no {
   font-family: ui-monospace, monospace;
@@ -662,13 +662,13 @@ footer .brand-logo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0;
-  border: 1px solid rgba(196,163,90,0.25);
+  border: 1px solid rgba(228,161,51,0.25);
   overflow: hidden;
 }
 .day-strip__tick {
   padding: 1.35rem 1.1rem;
-  border-right: 1px solid rgba(196,163,90,0.18);
-  background: rgba(8,22,40,0.45);
+  border-right: 1px solid rgba(228,161,51,0.18);
+  background: rgba(38,38,38,0.45);
   position: relative;
 }
 .day-strip__tick:last-child { border-right: 0; }
@@ -677,7 +677,7 @@ footer .brand-logo {
   position: absolute;
   left: 0; right: 0; top: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #C4A35A, transparent);
+  background: linear-gradient(90deg, transparent, #E4A133, transparent);
   transform: scaleX(0);
   animation: flow-ink 3.2s ease-in-out infinite;
 }
@@ -688,28 +688,28 @@ footer .brand-logo {
   display: block;
   font-family: ui-monospace, monospace;
   font-size: 0.7rem;
-  color: #C4A35A;
+  color: #E4A133;
   letter-spacing: 0.12em;
   margin-bottom: 0.5rem;
 }
 .day-strip__tick strong { display: block; font-size: 1.05rem; margin-bottom: 0.25rem; }
 .day-strip__tick em { font-style: normal; font-size: 0.8rem; color: #9ca3af; }
-.day-strip__tick.is-gold { background: rgba(196,163,90,0.12); }
+.day-strip__tick.is-gold { background: rgba(228,161,51,0.12); }
 
 .venue-duel {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0;
-  border: 1px solid rgba(196,163,90,0.25);
+  border: 1px solid rgba(228,161,51,0.25);
 }
 .venue-duel article {
   padding: 2rem 1.75rem;
 }
 .venue-duel article:nth-child(odd) {
-  border-right: 1px solid rgba(196,163,90,0.2);
+  border-right: 1px solid rgba(228,161,51,0.2);
 }
 .venue-duel article:nth-child(-n+2) {
-  border-bottom: 1px solid rgba(196,163,90,0.2);
+  border-bottom: 1px solid rgba(228,161,51,0.2);
 }
 .venue-duel article:nth-child(1) {
   background: linear-gradient(180deg, rgba(242,201,76,0.08), transparent);
@@ -727,7 +727,7 @@ footer .brand-logo {
 
 .gold-rule {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(196,163,90,0.7), transparent);
+  background: linear-gradient(90deg, transparent, rgba(228,161,51,0.7), transparent);
   margin: 2.5rem 0;
 }
 
@@ -742,10 +742,10 @@ footer .brand-logo {
     border-right: 0;
   }
   .venue-duel article:nth-child(-n+2) {
-    border-bottom: 1px solid rgba(196,163,90,0.18);
+    border-bottom: 1px solid rgba(228,161,51,0.18);
   }
   .venue-duel article:not(:last-child) {
-    border-bottom: 1px solid rgba(196,163,90,0.18);
+    border-bottom: 1px solid rgba(228,161,51,0.18);
   }
   .order-ticket {
     grid-template-columns: 1fr;
@@ -776,7 +776,7 @@ footer .brand-logo {
 .mega.is-open .mega__btn,
 .mega:hover .mega__btn,
 .mega:focus-within .mega__btn {
-  color: #0B1F3A;
+  color: #262626;
 }
 .dark .mega__btn:hover,
 .dark .mega__btn.is-active,
@@ -785,8 +785,8 @@ footer .brand-logo {
 .dark .mega:focus-within .mega__btn {
   color: #fff;
 }
-.mega__btn.is-active { color: #C4A35A; }
-.dark .mega__btn.is-active { color: #C4A35A; }
+.mega__btn.is-active { color: #E4A133; }
+.dark .mega__btn.is-active { color: #E4A133; }
 .mega__btn i {
   font-size: 0.6rem;
   transition: transform 0.2s ease;
@@ -804,8 +804,8 @@ footer .brand-logo {
   max-width: min(17.5rem, calc(100vw - 1.5rem));
   padding: 0.7rem 0.65rem;
   background: rgba(255,255,255,0.97);
-  border: 1px solid rgba(11,31,58,0.08);
-  box-shadow: 0 24px 60px rgba(11,31,58,0.14);
+  border: 1px solid rgba(38,38,38,0.08);
+  box-shadow: 0 24px 60px rgba(38,38,38,0.14);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -827,7 +827,7 @@ footer .brand-logo {
   height: 0.9rem;
 }
 .dark .mega__panel {
-  background: rgba(8,22,40,0.97);
+  background: rgba(38,38,38,0.97);
   border-color: rgba(255,255,255,0.08);
   box-shadow: 0 24px 60px rgba(0,0,0,0.45);
 }
@@ -848,22 +848,22 @@ footer .brand-logo {
 }
 .mega__link:hover,
 .mega__link.is-active {
-  background: rgba(196,163,90,0.1);
+  background: rgba(228,161,51,0.1);
 }
 .mega__link-title {
   display: block;
   font-size: 0.9rem;
   font-weight: 700;
-  color: #0B1F3A;
+  color: #262626;
   line-height: 1.25;
 }
-.dark .mega__link-title { color: #F7F4EE; }
+.dark .mega__link-title { color: #F4F5F7; }
 .mega__link-blurb {
   display: block;
   margin-top: 0.12rem;
   font-size: 0.72rem;
   font-weight: 500;
-  color: #8A9BB0;
+  color: #B9C2CC;
   letter-spacing: 0;
   text-transform: none;
   line-height: 1.35;
@@ -878,7 +878,7 @@ footer .brand-logo {
   gap: 0.35rem;
 }
 .mobile-nav__acc {
-  border-bottom: 1px solid rgba(11,31,58,0.08);
+  border-bottom: 1px solid rgba(38,38,38,0.08);
   padding: 0.15rem 0 0.55rem;
 }
 .dark .mobile-nav__acc { border-bottom-color: rgba(255,255,255,0.08); }
@@ -892,7 +892,7 @@ footer .brand-logo {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   padding: 0.7rem 0;
 }
 .mobile-nav__acc summary::-webkit-details-marker { display: none; }
@@ -900,8 +900,8 @@ footer .brand-logo {
   content: "";
   width: 0.45rem;
   height: 0.45rem;
-  border-right: 2px solid #C4A35A;
-  border-bottom: 2px solid #C4A35A;
+  border-right: 2px solid #E4A133;
+  border-bottom: 2px solid #E4A133;
   transform: rotate(45deg);
   transition: transform 0.18s ease;
   margin-bottom: 0.2rem;
@@ -915,7 +915,7 @@ footer .brand-logo {
   display: block;
   font-size: 1.02rem;
   font-weight: 700;
-  color: #0B1F3A;
+  color: #262626;
   padding: 0.55rem 0 0.45rem;
   text-decoration: none;
 }
@@ -925,26 +925,26 @@ footer .brand-logo {
   font-style: normal;
   font-size: 0.75rem;
   font-weight: 500;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .dark .mobile-nav__acc a,
-.dark .mobile-nav__top { color: #F7F4EE; }
+.dark .mobile-nav__top { color: #F4F5F7; }
 .mobile-nav__top {
-  border-bottom: 1px solid rgba(11,31,58,0.08);
+  border-bottom: 1px solid rgba(38,38,38,0.08);
   padding: 0.85rem 0;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
 }
-.dark .mobile-nav__top { color: #C4A35A; border-bottom-color: rgba(255,255,255,0.08); }
+.dark .mobile-nav__top { color: #E4A133; border-bottom-color: rgba(255,255,255,0.08); }
 .mobile-nav__heading {
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.35rem;
 }
 .mobile-nav__cta {
@@ -955,8 +955,8 @@ footer .brand-logo {
   font-weight: 800;
   padding: 0.7rem 1.25rem;
   border-radius: 9999px;
-  background: #C4A35A;
-  color: #0B1F3A;
+  background: #E4A133;
+  color: #262626;
 }
 .mobile-nav__lang {
   display: flex;
@@ -1149,7 +1149,7 @@ footer .brand-logo {
   font-weight: 700;
   letter-spacing: 0.01em;
   color: #faf9f5;
-  background: linear-gradient(90deg, rgba(217,119,87,0.18), rgba(196,163,90,0.08));
+  background: linear-gradient(90deg, rgba(217,119,87,0.18), rgba(228,161,51,0.08));
   border-top: 1px solid rgba(217,119,87,0.22);
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
@@ -1163,11 +1163,11 @@ footer .brand-logo {
 }
 .cc-tool__out .is-hit {
   color: #faf9f5;
-  background: rgba(196,163,90,0.1);
+  background: rgba(228,161,51,0.1);
   margin: 0.25rem -0.4rem;
   padding: 0.2rem 0.4rem;
 }
-.cc-tool__out .is-hit b { color: #C4A35A; }
+.cc-tool__out .is-hit b { color: #E4A133; }
 .cc-ticket {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1203,13 +1203,13 @@ footer .brand-logo {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #C4A35A;
-  border: 1px solid rgba(196,163,90,0.45);
+  color: #E4A133;
+  border: 1px solid rgba(228,161,51,0.45);
 }
 .cc-gate {
   padding: 0.85rem 0.9rem;
-  border: 1px solid rgba(196,163,90,0.5);
-  background: linear-gradient(180deg, rgba(196,163,90,0.16), rgba(28,25,23,0.4));
+  border: 1px solid rgba(228,161,51,0.5);
+  background: linear-gradient(180deg, rgba(228,161,51,0.16), rgba(28,25,23,0.4));
   animation: cc-pulse-border 1.6s ease-in-out infinite;
 }
 .cc-gate p {
@@ -1221,10 +1221,10 @@ footer .brand-logo {
   font-size: 1.15rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .cc-say.is-win {
-  color: #C4A35A;
+  color: #E4A133;
   font-weight: 700;
 }
 .cc-steps {
@@ -1261,14 +1261,14 @@ footer .brand-logo {
   background: rgba(217,119,87,0.14);
 }
 .cc-win.is-flash .cc-win__frame {
-  box-shadow: 0 0 0 1px rgba(196,163,90,0.7), 0 28px 80px rgba(196,163,90,0.25);
+  box-shadow: 0 0 0 1px rgba(228,161,51,0.7), 0 28px 80px rgba(228,161,51,0.25);
 }
 .cc-win.is-flash .cc-win__glow {
-  background: radial-gradient(ellipse at 50% 40%, rgba(196,163,90,0.55), transparent 62%);
+  background: radial-gradient(ellipse at 50% 40%, rgba(228,161,51,0.55), transparent 62%);
 }
 @keyframes cc-pulse-border {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(196,163,90,0.15); }
-  50% { box-shadow: 0 0 0 6px rgba(196,163,90,0.08); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(228,161,51,0.15); }
+  50% { box-shadow: 0 0 0 6px rgba(228,161,51,0.08); }
 }
 @keyframes cc-spin { to { transform: rotate(360deg); } }
 @keyframes cc-blink {
@@ -1293,7 +1293,7 @@ footer .brand-logo {
 .hero-cine__glow {
   position: absolute;
   inset: 6% 2% 2%;
-  background: radial-gradient(ellipse at 50% 30%, rgba(196,163,90,0.4), transparent 64%);
+  background: radial-gradient(ellipse at 50% 30%, rgba(228,161,51,0.4), transparent 64%);
   filter: blur(46px);
   z-index: 0;
   animation: hc-glow 5s ease-in-out infinite;
@@ -1305,12 +1305,12 @@ footer .brand-logo {
   transform: rotateX(5deg) rotateY(-5deg);
   transform-origin: 50% 80%;
   background:
-    radial-gradient(90% 70% at 100% 0%, rgba(196,163,90,0.12), transparent 42%),
-    linear-gradient(165deg, #10243f 0%, #081628 48%, #050d18 100%);
-  border: 1px solid rgba(196,163,90,0.38);
+    radial-gradient(90% 70% at 100% 0%, rgba(228,161,51,0.12), transparent 42%),
+    linear-gradient(165deg, #10243f 0%, #262626 48%, #202225 100%);
+  border: 1px solid rgba(228,161,51,0.38);
   box-shadow:
     0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 40px 90px rgba(5,13,24,0.58);
+    0 40px 90px rgba(32,34,37,0.58);
 }
 .hero-cine__chrome {
   display: flex;
@@ -1324,15 +1324,15 @@ footer .brand-logo {
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 50%;
-  background: #C4A35A;
-  box-shadow: 0 0 12px #C4A35A;
+  background: #E4A133;
+  box-shadow: 0 0 12px #E4A133;
   animation: hc-pulse 1.4s ease-in-out infinite;
 }
 .hero-cine__chrome strong {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #F7F4EE;
+  color: #F4F5F7;
 }
 .hero-cine__chrome em {
   margin-left: auto;
@@ -1341,7 +1341,7 @@ footer .brand-logo {
   font-size: 0.62rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .hero-cine__stage {
   position: relative;
@@ -1373,14 +1373,14 @@ footer .brand-logo {
   font-size: 0.68rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.35rem;
 }
 .hero-cine__title {
   font-size: clamp(1.15rem, 2.4vw, 1.55rem);
   font-weight: 900;
   line-height: 1.15;
-  color: #F7F4EE;
+  color: #F4F5F7;
   letter-spacing: -0.03em;
   margin-bottom: 1rem;
   max-width: 22rem;
@@ -1398,15 +1398,15 @@ footer .brand-logo {
   width: 8.8rem;
   height: 8.8rem;
   border-radius: 50%;
-  border: 1px solid rgba(196,163,90,0.4);
-  background: repeating-radial-gradient(circle, rgba(196,163,90,0.2) 0 1px, transparent 1px 22%);
+  border: 1px solid rgba(228,161,51,0.4);
+  background: repeating-radial-gradient(circle, rgba(228,161,51,0.2) 0 1px, transparent 1px 22%);
   overflow: hidden;
-  box-shadow: 0 0 40px rgba(196,163,90,0.18) inset;
+  box-shadow: 0 0 40px rgba(228,161,51,0.18) inset;
 }
 .hero-cine__sweep {
   position: absolute;
   inset: 0;
-  background: conic-gradient(from 0deg, transparent 0 62%, rgba(196,163,90,0.7) 88%, transparent 100%);
+  background: conic-gradient(from 0deg, transparent 0 62%, rgba(228,161,51,0.7) 88%, transparent 100%);
   animation: hc-sweep 2.4s linear infinite;
 }
 .hero-cine__blip {
@@ -1416,8 +1416,8 @@ footer .brand-logo {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #C4A35A;
-  box-shadow: 0 0 16px #C4A35A;
+  background: #E4A133;
+  box-shadow: 0 0 16px #E4A133;
   animation: hc-blip 1.6s ease-in-out infinite;
 }
 .hero-cine__names {
@@ -1432,7 +1432,7 @@ footer .brand-logo {
   align-items: baseline;
   padding: 0.72rem 0.2rem;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  color: #8A9BB0;
+  color: #B9C2CC;
   opacity: 0;
   transform: translateX(12px);
 }
@@ -1444,7 +1444,7 @@ footer .brand-logo {
 .hero-cine[data-scene="scan"] .hero-cine__names li:nth-child(3) { animation-delay: 1.2s; }
 .hero-cine__names b {
   font-size: 0.95rem;
-  color: #F7F4EE;
+  color: #F4F5F7;
 }
 .hero-cine__names span { font-size: 0.72rem; }
 .hero-cine__names i {
@@ -1456,17 +1456,17 @@ footer .brand-logo {
 }
 .hero-cine__names .is-skip i { color: #6b7280; }
 .hero-cine__names .is-hit {
-  color: #C4A35A;
-  background: linear-gradient(90deg, rgba(196,163,90,0.12), transparent);
+  color: #E4A133;
+  background: linear-gradient(90deg, rgba(228,161,51,0.12), transparent);
 }
 .hero-cine__names .is-hit b,
-.hero-cine__names .is-hit i { color: #C4A35A; }
+.hero-cine__names .is-hit i { color: #E4A133; }
 
 .hero-cine__ticket {
   margin-top: 0.2rem;
   padding: 1.15rem 1.2rem 1.05rem;
-  border: 1px solid rgba(196,163,90,0.5);
-  background: linear-gradient(180deg, rgba(196,163,90,0.16), rgba(8,22,40,0.5));
+  border: 1px solid rgba(228,161,51,0.5);
+  background: linear-gradient(180deg, rgba(228,161,51,0.16), rgba(38,38,38,0.5));
   box-shadow: 0 24px 50px rgba(0,0,0,0.28);
   transform: scale(0.94);
 }
@@ -1490,8 +1490,8 @@ footer .brand-logo {
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #081628;
-  background: #C4A35A;
+  color: #262626;
+  background: #E4A133;
   padding: 0.28rem 0.55rem;
 }
 .hero-cine__metrics {
@@ -1516,7 +1516,7 @@ footer .brand-logo {
   font-size: 0.62rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .hero-cine__metrics strong {
   display: block;
@@ -1532,7 +1532,7 @@ footer .brand-logo {
   font-size: 0.72rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #D4B87A;
+  color: #F0BB5E;
 }
 
 .hero-cine__helm-wrap {
@@ -1549,8 +1549,8 @@ footer .brand-logo {
   width: 12.5rem;
   height: 12.5rem;
   border-radius: 50%;
-  border: 1px solid rgba(196,163,90,0.25);
-  box-shadow: 0 0 0 18px rgba(196,163,90,0.05);
+  border: 1px solid rgba(228,161,51,0.25);
+  box-shadow: 0 0 0 18px rgba(228,161,51,0.05);
 }
 .hero-cine[data-scene="confirm"] .hero-cine__ring {
   animation: hc-ring 1.8s ease-out 0.2s both;
@@ -1558,7 +1558,7 @@ footer .brand-logo {
 .hero-cine__helm {
   width: 8.5rem;
   height: 8.5rem;
-  filter: drop-shadow(0 0 18px rgba(196,163,90,0.45));
+  filter: drop-shadow(0 0 18px rgba(228,161,51,0.45));
 }
 .hero-cine[data-scene="confirm"] .hero-cine__helm {
   animation: hc-turn 1.4s cubic-bezier(0.16,1,0.3,1) 0.15s both;
@@ -1567,8 +1567,8 @@ footer .brand-logo {
   margin-top: 1rem;
   padding: 0.55rem 1.35rem;
   border-radius: 999px;
-  background: #C4A35A;
-  color: #081628;
+  background: #E4A133;
+  color: #262626;
   font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1580,7 +1580,7 @@ footer .brand-logo {
 .hero-cine__sub {
   text-align: center;
   font-size: 0.8rem;
-  color: #8A9BB0;
+  color: #B9C2CC;
   margin-top: 0.35rem;
 }
 
@@ -1606,8 +1606,8 @@ footer .brand-logo {
   animation: hc-stamp 0.55s cubic-bezier(0.16,1,0.3,1) 0.7s both;
 }
 .hero-cine__split .is-ok {
-  border: 1px solid rgba(196,163,90,0.45);
-  background: rgba(196,163,90,0.1);
+  border: 1px solid rgba(228,161,51,0.45);
+  background: rgba(228,161,51,0.1);
 }
 .hero-cine__split .is-no {
   border: 2px solid #ef4444;
@@ -1619,19 +1619,19 @@ footer .brand-logo {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero-cine__split .is-ok b { color: #C4A35A; }
+.hero-cine__split .is-ok b { color: #E4A133; }
 .hero-cine__split .is-no b { color: #f87171; }
 .hero-cine__split span {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #F7F4EE;
+  color: #F4F5F7;
 }
 .hero-cine__split em {
   margin-top: auto;
   font-style: normal;
   font-family: ui-monospace, monospace;
   font-size: 0.68rem;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 
 .hero-cine__steps {
@@ -1647,7 +1647,7 @@ footer .brand-logo {
   padding: 0.7rem 0.65rem;
   font-size: 0.68rem;
   font-weight: 700;
-  color: #8A9BB0;
+  color: #B9C2CC;
   border-right: 1px solid rgba(255,255,255,0.05);
   transition: color 0.3s ease, background 0.3s ease;
 }
@@ -1658,15 +1658,15 @@ footer .brand-logo {
   font-family: ui-monospace, monospace;
   font-size: 0.58rem;
   letter-spacing: 0.14em;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.15rem;
 }
 .hero-cine[data-scene="scan"] [data-step="scan"],
 .hero-cine[data-scene="propose"] [data-step="propose"],
 .hero-cine[data-scene="confirm"] [data-step="confirm"],
 .hero-cine[data-scene="cover"] [data-step="cover"] {
-  color: #F7F4EE;
-  background: rgba(196,163,90,0.14);
+  color: #F4F5F7;
+  background: rgba(228,161,51,0.14);
 }
 
 @keyframes hc-pulse {
@@ -1747,7 +1747,7 @@ footer .brand-logo {
 .hero-bridge__glow {
   position: absolute;
   inset: 8% 4% 4%;
-  background: radial-gradient(ellipse at 50% 40%, rgba(196,163,90,0.32), transparent 62%);
+  background: radial-gradient(ellipse at 50% 40%, rgba(228,161,51,0.32), transparent 62%);
   filter: blur(42px);
   z-index: 0;
   animation: hb-glow var(--hb) ease-in-out infinite;
@@ -1757,12 +1757,12 @@ footer .brand-logo {
   z-index: 1;
   overflow: hidden;
   background:
-    radial-gradient(120% 80% at 0% 0%, rgba(196,163,90,0.08), transparent 46%),
-    linear-gradient(180deg, #0d1f38 0%, #081628 55%, #050d18 100%);
-  border: 1px solid rgba(196,163,90,0.28);
+    radial-gradient(120% 80% at 0% 0%, rgba(228,161,51,0.08), transparent 46%),
+    linear-gradient(180deg, #303337 0%, #262626 55%, #202225 100%);
+  border: 1px solid rgba(228,161,51,0.28);
   box-shadow:
     0 0 0 1px rgba(255,255,255,0.04) inset,
-    0 30px 80px rgba(5,13,24,0.55);
+    0 30px 80px rgba(32,34,37,0.55);
 }
 .hero-bridge__chrome {
   display: flex;
@@ -1776,8 +1776,8 @@ footer .brand-logo {
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 50%;
-  background: #C4A35A;
-  box-shadow: 0 0 10px #C4A35A;
+  background: #E4A133;
+  box-shadow: 0 0 10px #E4A133;
   animation: hb-pulse 1.6s ease-in-out infinite;
 }
 .hero-bridge__title {
@@ -1785,7 +1785,7 @@ footer .brand-logo {
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #F7F4EE;
+  color: #F4F5F7;
 }
 .hero-bridge__scanline {
   margin-left: auto;
@@ -1793,7 +1793,7 @@ footer .brand-logo {
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .hero-bridge__live {
   display: inline-flex;
@@ -1803,13 +1803,13 @@ footer .brand-logo {
   font-size: 0.62rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .hero-bridge__live i {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
-  background: #C4A35A;
+  background: #E4A133;
   animation: hb-pulse 1.2s ease-in-out infinite;
 }
 .hero-bridge__stage {
@@ -1823,23 +1823,23 @@ footer .brand-logo {
   width: 9.2rem;
   height: 9.2rem;
   border-radius: 50%;
-  border: 1px solid rgba(196,163,90,0.35);
+  border: 1px solid rgba(228,161,51,0.35);
   background:
-    repeating-radial-gradient(circle, rgba(196,163,90,0.16) 0 1px, transparent 1px 22%);
+    repeating-radial-gradient(circle, rgba(228,161,51,0.16) 0 1px, transparent 1px 22%);
   overflow: hidden;
   opacity: 0.95;
 }
 .hero-bridge__ring {
   position: absolute;
   inset: 18%;
-  border: 1px solid rgba(196,163,90,0.25);
+  border: 1px solid rgba(228,161,51,0.25);
   border-radius: 50%;
 }
 .hero-bridge__ring--2 { inset: 38%; }
 .hero-bridge__sweep {
   position: absolute;
   inset: 0;
-  background: conic-gradient(from 0deg, transparent 0 68%, rgba(196,163,90,0.55) 86%, transparent 100%);
+  background: conic-gradient(from 0deg, transparent 0 68%, rgba(228,161,51,0.55) 86%, transparent 100%);
   animation: hb-sweep 3s linear infinite;
 }
 .hero-bridge__blip {
@@ -1847,7 +1847,7 @@ footer .brand-logo {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #8A9BB0;
+  background: #B9C2CC;
   opacity: 0.35;
 }
 .hero-bridge__blip.is-a { top: 24%; left: 62%; }
@@ -1856,8 +1856,8 @@ footer .brand-logo {
 .hero-bridge__blip.is-lock {
   top: 36%;
   left: 58%;
-  background: #C4A35A;
-  box-shadow: 0 0 14px #C4A35A;
+  background: #E4A133;
+  box-shadow: 0 0 14px #E4A133;
   animation: hb-lock-blip var(--hb) ease-in-out infinite;
 }
 .hero-bridge__names {
@@ -1877,14 +1877,14 @@ footer .brand-logo {
   align-items: center;
   padding: 0.32rem 0;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  color: #8A9BB0;
+  color: #B9C2CC;
   opacity: 0;
   transform: translateX(-10px);
   animation: hb-name var(--hb) ease-in-out infinite;
   animation-delay: calc(var(--i) * 0.35s);
 }
 .hero-bridge__names .is-hit {
-  color: #C4A35A;
+  color: #E4A133;
   font-weight: 700;
 }
 .hero-bridge__names em {
@@ -1911,14 +1911,14 @@ footer .brand-logo {
   animation: hb-fill var(--hb) ease-in-out infinite;
 }
 .hero-bridge__stop {
-  stroke: #C4A35A;
+  stroke: #E4A133;
   stroke-width: 1.5;
   stroke-dasharray: 5 5;
   opacity: 0;
   animation: hb-stop var(--hb) ease-in-out infinite;
 }
 .hero-bridge__stop-label {
-  fill: #C4A35A;
+  fill: #E4A133;
   font-size: 9px;
   font-family: ui-monospace, monospace;
   letter-spacing: 0.12em;
@@ -1926,7 +1926,7 @@ footer .brand-logo {
   animation: hb-stop var(--hb) ease-in-out infinite;
 }
 .hero-bridge__entry {
-  fill: #C4A35A;
+  fill: #E4A133;
   opacity: 0;
   animation: hb-entry var(--hb) ease-in-out infinite;
 }
@@ -1943,8 +1943,8 @@ footer .brand-logo {
   right: 6.6rem;
   bottom: 4.4rem;
   padding: 0.85rem 1rem;
-  background: linear-gradient(180deg, rgba(196,163,90,0.14), rgba(8,22,40,0.92));
-  border: 1px solid rgba(196,163,90,0.4);
+  background: linear-gradient(180deg, rgba(228,161,51,0.14), rgba(38,38,38,0.92));
+  border: 1px solid rgba(228,161,51,0.4);
   box-shadow: 0 18px 40px rgba(0,0,0,0.35);
   opacity: 0;
   transform: translateY(18px) scale(0.98);
@@ -1965,7 +1965,7 @@ footer .brand-logo {
 }
 .hero-bridge__ticket-top span {
   display: block;
-  color: #8A9BB0;
+  color: #B9C2CC;
   font-size: 0.68rem;
   margin-top: 0.1rem;
 }
@@ -1974,8 +1974,8 @@ footer .brand-logo {
   font-family: ui-monospace, monospace;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C4A35A;
-  border: 1px solid rgba(196,163,90,0.45);
+  color: #E4A133;
+  border: 1px solid rgba(228,161,51,0.45);
   padding: 0.2rem 0.45rem;
   font-weight: 700;
 }
@@ -1985,7 +1985,7 @@ footer .brand-logo {
   gap: 0.5rem;
   font-family: ui-monospace, monospace;
   font-size: 0.65rem;
-  color: #8A9BB0;
+  color: #B9C2CC;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -2013,7 +2013,7 @@ footer .brand-logo {
   right: 0;
 }
 .hero-bridge__wait {
-  color: #D4B87A;
+  color: #F0BB5E;
   animation: hb-wait var(--hb) linear infinite;
 }
 .hero-bridge__yes {
@@ -2021,8 +2021,8 @@ footer .brand-logo {
   width: max-content;
   padding: 0.28rem 0.7rem;
   border-radius: 999px;
-  background: #C4A35A;
-  color: #081628;
+  background: #E4A133;
+  color: #262626;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2048,7 +2048,7 @@ footer .brand-logo {
 .hero-bridge__helm svg {
   width: 100%;
   height: 100%;
-  filter: drop-shadow(0 0 12px rgba(196,163,90,0.45));
+  filter: drop-shadow(0 0 12px rgba(228,161,51,0.45));
   animation: hb-helm var(--hb) ease-in-out infinite;
   transform-origin: 50% 50%;
 }
@@ -2059,8 +2059,8 @@ footer .brand-logo {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #C4A35A;
-  box-shadow: 0 0 16px #C4A35A;
+  background: #E4A133;
+  box-shadow: 0 0 16px #E4A133;
   opacity: 0;
   animation: hb-packet var(--hb) cubic-bezier(0.22,1,0.36,1) infinite;
 }
@@ -2078,7 +2078,7 @@ footer .brand-logo {
   padding: 0.35rem 0.55rem;
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(255,255,255,0.04);
-  color: #F7F4EE;
+  color: #F4F5F7;
   font-size: 0.7rem;
   font-weight: 800;
 }
@@ -2088,7 +2088,7 @@ footer .brand-logo {
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .hero-bridge__chip.is-alpaca {
   animation: hb-chip var(--hb) linear infinite;
@@ -2134,7 +2134,7 @@ footer .brand-logo {
   padding: 0.65rem 0.7rem;
   font-size: 0.68rem;
   font-weight: 700;
-  color: #8A9BB0;
+  color: #B9C2CC;
   border-right: 1px solid rgba(255,255,255,0.05);
 }
 .hero-bridge__steps li:last-child { border-right: 0; }
@@ -2143,7 +2143,7 @@ footer .brand-logo {
   font-family: ui-monospace, monospace;
   font-size: 0.58rem;
   letter-spacing: 0.14em;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .hero-bridge__steps li {
   animation: hb-step-dim var(--hb) linear infinite;
@@ -2218,9 +2218,9 @@ footer .brand-logo {
   92%, 100% { opacity: 0; }
 }
 @keyframes hb-helm {
-  0%, 44% { transform: rotate(0deg); filter: drop-shadow(0 0 8px rgba(196,163,90,0.25)); }
-  52%, 72% { transform: rotate(55deg); filter: drop-shadow(0 0 18px rgba(196,163,90,0.8)); }
-  100% { transform: rotate(360deg); filter: drop-shadow(0 0 8px rgba(196,163,90,0.25)); }
+  0%, 44% { transform: rotate(0deg); filter: drop-shadow(0 0 8px rgba(228,161,51,0.25)); }
+  52%, 72% { transform: rotate(55deg); filter: drop-shadow(0 0 18px rgba(228,161,51,0.8)); }
+  100% { transform: rotate(360deg); filter: drop-shadow(0 0 8px rgba(228,161,51,0.25)); }
 }
 @keyframes hb-packet {
   0%, 60% { opacity: 0; transform: translate(0, 0) scale(0.4); }
@@ -2230,7 +2230,7 @@ footer .brand-logo {
 }
 @keyframes hb-chip {
   0%, 64% { border-color: rgba(255,255,255,0.1); box-shadow: none; }
-  70%, 84% { border-color: #C4A35A; box-shadow: 0 0 22px rgba(196,163,90,0.45); }
+  70%, 84% { border-color: #E4A133; box-shadow: 0 0 22px rgba(228,161,51,0.45); }
   100% { border-color: rgba(255,255,255,0.1); }
 }
 @keyframes hb-veto {
@@ -2239,26 +2239,26 @@ footer .brand-logo {
   100% { opacity: 0; }
 }
 @keyframes hb-step-dim {
-  0%, 100% { color: #8A9BB0; background: transparent; }
+  0%, 100% { color: #B9C2CC; background: transparent; }
 }
 @keyframes hb-step-1 {
-  0%, 22% { color: #F7F4EE; background: rgba(196,163,90,0.12); }
-  28%, 100% { color: #8A9BB0; background: transparent; }
+  0%, 22% { color: #F4F5F7; background: rgba(228,161,51,0.12); }
+  28%, 100% { color: #B9C2CC; background: transparent; }
 }
 @keyframes hb-step-2 {
-  0%, 22% { color: #8A9BB0; background: transparent; }
-  24%, 44% { color: #F7F4EE; background: rgba(196,163,90,0.12); }
-  50%, 100% { color: #8A9BB0; background: transparent; }
+  0%, 22% { color: #B9C2CC; background: transparent; }
+  24%, 44% { color: #F4F5F7; background: rgba(228,161,51,0.12); }
+  50%, 100% { color: #B9C2CC; background: transparent; }
 }
 @keyframes hb-step-3 {
-  0%, 44% { color: #8A9BB0; background: transparent; }
-  46%, 62% { color: #F7F4EE; background: rgba(196,163,90,0.12); }
-  68%, 100% { color: #8A9BB0; background: transparent; }
+  0%, 44% { color: #B9C2CC; background: transparent; }
+  46%, 62% { color: #F4F5F7; background: rgba(228,161,51,0.12); }
+  68%, 100% { color: #B9C2CC; background: transparent; }
 }
 @keyframes hb-step-4 {
-  0%, 62% { color: #8A9BB0; background: transparent; }
-  64%, 84% { color: #F7F4EE; background: rgba(196,163,90,0.12); }
-  90%, 100% { color: #8A9BB0; background: transparent; }
+  0%, 62% { color: #B9C2CC; background: transparent; }
+  64%, 84% { color: #F4F5F7; background: rgba(228,161,51,0.12); }
+  90%, 100% { color: #B9C2CC; background: transparent; }
 }
 
 @media (max-width: 800px) {
@@ -2335,8 +2335,8 @@ footer .brand-logo {
   .hero-bridge__veto,
   .hero-bridge__packet { opacity: 0; }
   .hero-bridge__steps .is-4 {
-    color: #F7F4EE;
-    background: rgba(196,163,90,0.12);
+    color: #F4F5F7;
+    background: rgba(228,161,51,0.12);
   }
 }
 
@@ -2346,16 +2346,16 @@ footer .brand-logo {
   overflow: hidden;
   padding: 5.5rem 1.5rem 4.5rem;
   background:
-    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(196,163,90,0.14), transparent 55%),
-    radial-gradient(circle at 10% 90%, rgba(61,90,158,0.18), transparent 40%),
-    #081628;
-  color: #F7F4EE;
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(228,161,51,0.14), transparent 55%),
+    radial-gradient(circle at 10% 90%, rgba(85,137,202,0.18), transparent 40%),
+    #262626;
+  color: #F4F5F7;
 }
 .mw-band__gold {
   position: absolute;
   left: 0; right: 0; top: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #C4A35A, transparent);
+  background: linear-gradient(90deg, transparent, #E4A133, transparent);
 }
 .mw-band__inner {
   position: relative;
@@ -2369,7 +2369,7 @@ footer .brand-logo {
   font-size: 0.75rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 1.25rem;
 }
 .mw-band__title {
@@ -2384,7 +2384,7 @@ footer .brand-logo {
   margin: 0 auto 2.75rem;
   font-size: 1.125rem;
   line-height: 1.65;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .mw-pillars {
   display: grid;
@@ -2395,23 +2395,23 @@ footer .brand-logo {
 }
 .mw-pillars article {
   padding: 1.5rem 1.35rem;
-  border: 1px solid rgba(196,163,90,0.18);
-  background: rgba(8,22,40,0.65);
+  border: 1px solid rgba(228,161,51,0.18);
+  background: rgba(38,38,38,0.65);
   min-height: 100%;
 }
 .mw-pillars article.is-us {
-  border-color: rgba(196,163,90,0.55);
+  border-color: rgba(228,161,51,0.55);
   background:
-    linear-gradient(160deg, rgba(196,163,90,0.12), transparent 55%),
-    rgba(18,38,63,0.9);
-  box-shadow: 0 0 40px rgba(196,163,90,0.08);
+    linear-gradient(160deg, rgba(228,161,51,0.12), transparent 55%),
+    rgba(48,51,55,0.9);
+  box-shadow: 0 0 40px rgba(228,161,51,0.08);
 }
 .mw-pillars span {
   display: block;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.85rem;
 }
 .mw-pillars h3 {
@@ -2428,13 +2428,13 @@ footer .brand-logo {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.85rem;
 }
 .mw-pillars p {
   font-size: 0.9rem;
   line-height: 1.55;
-  color: #8A9BB0;
+  color: #B9C2CC;
   margin: 0;
 }
 .mw-band__quote {
@@ -2446,21 +2446,21 @@ footer .brand-logo {
   font-size: 1.15rem;
   font-weight: 600;
   line-height: 1.55;
-  color: #F7F4EE;
+  color: #F4F5F7;
   text-align: center;
   quotes: none;
 }
 .mw-band__more a {
   font-size: 0.875rem;
   font-weight: 700;
-  color: #C4A35A;
+  color: #E4A133;
   text-decoration: none;
 }
 .mw-band__more a:hover { text-decoration: underline; }
 
 .mw-strip {
-  background: #050d18;
-  border-top: 1px solid rgba(196,163,90,0.15);
+  background: #202225;
+  border-top: 1px solid rgba(228,161,51,0.15);
   border-bottom: 1px solid rgba(255,255,255,0.04);
   padding: 1rem 1.5rem;
 }
@@ -2472,9 +2472,9 @@ footer .brand-logo {
   color: #6b7c90;
   text-align: center;
 }
-.mw-strip strong { color: #C4A35A; font-weight: 700; }
+.mw-strip strong { color: #E4A133; font-weight: 700; }
 .mw-strip a {
-  color: #C4A35A;
+  color: #E4A133;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
@@ -2496,8 +2496,8 @@ footer .brand-logo {
 .skill-card,
 .uni-card {
   padding: 1.6rem 1.45rem;
-  border: 1px solid rgba(196,163,90,0.2);
-  background: rgba(8,22,40,0.55);
+  border: 1px solid rgba(228,161,51,0.2);
+  background: rgba(38,38,38,0.55);
   text-align: left;
 }
 .skill-card--wide,
@@ -2515,14 +2515,14 @@ footer .brand-logo {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.7rem;
   letter-spacing: 0.2em;
-  color: #C4A35A;
+  color: #E4A133;
 }
 .skill-card__meta em {
   font-style: normal;
   font-size: 0.65rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8A9BB0;
+  color: #B9C2CC;
 }
 .skill-card h3,
 .uni-card h3 {
@@ -2530,21 +2530,21 @@ footer .brand-logo {
   font-weight: 900;
   letter-spacing: -0.02em;
   margin-bottom: 0.35rem;
-  color: #F7F4EE;
+  color: #F4F5F7;
 }
 .skill-card__tag {
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.85rem;
 }
 .skill-card > p:not(.skill-card__tag),
 .uni-card > p:not(.uni-card__count):not(.uni-tickers) {
   font-size: 0.95rem;
   line-height: 1.6;
-  color: #8A9BB0;
+  color: #B9C2CC;
   margin-bottom: 1rem;
 }
 .skill-card ul {
@@ -2559,22 +2559,22 @@ footer .brand-logo {
   line-height: 1.45;
   color: #9ca3af;
   padding-left: 0.85rem;
-  border-left: 2px solid rgba(196,163,90,0.35);
+  border-left: 2px solid rgba(228,161,51,0.35);
 }
-.skill-card li strong { color: #F7F4EE; font-weight: 700; }
+.skill-card li strong { color: #F4F5F7; font-weight: 700; }
 .uni-card__count {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.7rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #C4A35A;
+  color: #E4A133;
   margin-bottom: 0.75rem;
 }
 .uni-tickers {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.78rem;
   line-height: 1.55;
-  color: #D4B87A;
+  color: #F0BB5E;
   margin-bottom: 0.85rem !important;
   letter-spacing: 0.02em;
 }
@@ -2596,14 +2596,14 @@ footer .brand-logo {
   max-width: none;
   white-space: nowrap;
   padding: 0.18rem 0.45rem 0.18rem 0.2rem;
-  border: 1px solid rgba(196,163,90,0.22);
+  border: 1px solid rgba(228,161,51,0.22);
   background: rgba(255,255,255,0.04);
   border-radius: 999px;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.04em;
-  color: #E6D3A1;
+  color: #F0BB5E;
   line-height: 1;
 }
 .uni-chip img {
@@ -2618,266 +2618,11 @@ footer .brand-logo {
   background: #fff;
 }
 .uni-chip img[src$=".svg"] {
-  background: #0B1F3A;
+  background: #262626;
 }
 @media (max-width: 800px) {
   .skill-grid,
   .uni-grid { grid-template-columns: 1fr; }
   .skill-card--wide,
   .uni-card--wide { grid-column: auto; }
-}
-
-/* —— Light theme only. Dark (html.dark) is untouched. ——
-   White / gray paper: navy ink, never ochre.
-   Navy islands that stay dark in light: keep cream/gold, do not invert text. */
-html:not(.dark) {
-  --gold-ink: #0B1F3A;
-}
-
-html:not(.dark) .text-brand-gold,
-html:not(.dark) .text-brand-goldLight {
-  color: var(--gold-ink);
-}
-html:not(.dark) .hover\:text-brand-gold:hover {
-  color: var(--gold-ink);
-}
-html:not(.dark) .border-brand-gold {
-  border-color: #0B1F3A;
-}
-html:not(.dark) .bg-brand-gold\/10 {
-  background-color: rgba(11, 31, 58, 0.08);
-}
-html:not(.dark) .bg-brand-gold\/5 {
-  background-color: rgba(11, 31, 58, 0.05);
-}
-
-html:not(.dark) .page-hero .text-brand-gold,
-html:not(.dark) .page-hero .text-brand-goldLight,
-html:not(.dark) .broker-rail .text-brand-gold,
-html:not(.dark) [class*="bg-[#081628]"] .text-brand-goldLight,
-html:not(.dark) [class*="bg-[#050d18]"] .text-brand-goldLight,
-html:not(.dark) .mw-band .text-brand-gold,
-html:not(.dark) .mw-strip .text-brand-gold,
-html:not(.dark) .bg-brand-navy .text-brand-gold,
-html:not(.dark) .bg-brand-dark .text-brand-gold,
-html:not(.dark) footer .text-brand-gold,
-html:not(.dark) [class*="bg-[#081628]"] .text-brand-gold,
-html:not(.dark) [class*="bg-[#050d18]"] .text-brand-gold,
-html:not(.dark) .hero-bridge .text-brand-gold,
-html:not(.dark) .cc-win .text-brand-gold,
-html:not(.dark) .proposal-card .text-brand-gold {
-  color: #C4A35A;
-}
-html:not(.dark) .page-hero .hover\:text-brand-gold:hover,
-html:not(.dark) .broker-rail .hover\:text-brand-gold:hover,
-html:not(.dark) .mw-band .hover\:text-brand-gold:hover,
-html:not(.dark) .mw-strip .hover\:text-brand-gold:hover,
-html:not(.dark) .bg-brand-navy .hover\:text-brand-gold:hover,
-html:not(.dark) .bg-brand-dark .hover\:text-brand-gold:hover,
-html:not(.dark) footer .hover\:text-brand-gold:hover,
-html:not(.dark) [class*="bg-[#081628]"] .hover\:text-brand-gold:hover,
-html:not(.dark) [class*="bg-[#050d18]"] .hover\:text-brand-gold:hover {
-  color: #C4A35A;
-}
-html:not(.dark) .page-hero .border-brand-gold,
-html:not(.dark) .broker-rail .border-brand-gold,
-html:not(.dark) .bg-brand-navy .border-brand-gold,
-html:not(.dark) [class*="bg-[#081628]"] .border-brand-gold,
-html:not(.dark) [class*="bg-[#050d18]"] .border-brand-gold,
-html:not(.dark) .hero-bridge .border-brand-gold {
-  border-color: #C4A35A;
-}
-html:not(.dark) [class*="bg-[#081628]"] .bg-brand-gold\/10,
-html:not(.dark) [class*="bg-[#050d18]"] .bg-brand-gold\/10,
-html:not(.dark) .bg-brand-navy .bg-brand-gold\/10 {
-  background-color: rgba(196, 163, 90, 0.1);
-}
-
-/* White card sitting on a navy band */
-html:not(.dark) [class*="bg-[#081628]"] .bg-white .text-brand-gold,
-html:not(.dark) form.bg-white .text-brand-gold {
-  color: var(--gold-ink);
-}
-html:not(.dark) [class*="bg-[#081628]"] .bg-white .hover\:text-brand-gold:hover,
-html:not(.dark) form.bg-white .hover\:text-brand-gold:hover {
-  color: var(--gold-ink);
-}
-
-html:not(.dark) .mega__btn.is-active {
-  color: var(--gold-ink);
-}
-html:not(.dark) .mega__link:hover,
-html:not(.dark) .mega__link.is-active {
-  background: rgba(11, 31, 58, 0.06);
-}
-html:not(.dark) .mobile-nav__acc summary,
-html:not(.dark) .mobile-nav__top {
-  color: #0B1F3A;
-}
-html:not(.dark) .mobile-nav__acc summary::after {
-  border-right-color: #0B1F3A;
-  border-bottom-color: #0B1F3A;
-}
-
-html:not(.dark) .broker-tile__status.is-live,
-html:not(.dark) .broker-tile__status.is-next {
-  color: var(--gold-ink);
-}
-html:not(.dark) .broker-rail .broker-tile__status.is-live,
-html:not(.dark) .broker-rail .broker-tile__status.is-next {
-  color: #C4A35A;
-}
-
-html:not(.dark) .gold-rule {
-  background: linear-gradient(90deg, transparent, #0B1F3A, transparent);
-}
-
-html:not(.dark) .pull-quote {
-  border-block: 2px solid rgba(11, 31, 58, 0.18);
-}
-html:not(.dark) .pull-quote blockquote {
-  color: #0B1F3A;
-}
-html:not(.dark) .pull-quote figcaption {
-  color: #4b5563;
-}
-
-/* Radar on paper sections only — not via body.bg-white, which would restyle navy pages */
-html:not(.dark) section.bg-white .radar,
-html:not(.dark) section.bg-gray-50 .radar {
-  background:
-    repeating-radial-gradient(circle, rgba(11, 31, 58, 0.2) 0 1px, transparent 1px 18%),
-    #f3f4f6;
-  border-color: rgba(11, 31, 58, 0.35);
-  box-shadow: 0 22px 48px rgba(11, 31, 58, 0.1);
-}
-html:not(.dark) section.bg-white .radar__sweep,
-html:not(.dark) section.bg-gray-50 .radar__sweep {
-  background: conic-gradient(from 0deg, transparent 0 70%, rgba(11, 31, 58, 0.4) 85%, transparent 100%);
-}
-html:not(.dark) section.bg-white .radar__blip,
-html:not(.dark) section.bg-gray-50 .radar__blip {
-  background: #0B1F3A;
-  box-shadow: 0 0 12px rgba(11, 31, 58, 0.45);
-}
-
-html:not(.dark) .hero-bridge__glow {
-  background: radial-gradient(ellipse at 50% 40%, rgba(11, 31, 58, 0.2), transparent 62%);
-}
-
-/* Veto cards keep a navy island: cream text, never black-on-navy */
-html:not(.dark) .veto-card {
-  background: #081628;
-  border-color: rgba(196, 163, 90, 0.22);
-  color: #F7F4EE;
-  box-shadow: 0 14px 32px rgba(11, 31, 58, 0.16);
-}
-html:not(.dark) .veto-card strong {
-  color: #F7F4EE;
-}
-html:not(.dark) .veto-card p {
-  color: #9ca3af;
-}
-html:not(.dark) .veto-card__no {
-  color: #fca5a5;
-  border-color: rgba(239, 68, 68, 0.4);
-}
-
-html:not(.dark) section.bg-white .compare-row,
-html:not(.dark) section.bg-gray-50 .compare-row {
-  border-color: rgba(11, 31, 58, 0.32);
-}
-html:not(.dark) section.bg-white .compare-row div:last-child,
-html:not(.dark) section.bg-gray-50 .compare-row div:last-child {
-  background: rgba(11, 31, 58, 0.04);
-}
-html:not(.dark) section.bg-white .compare-row .text-brand-gold,
-html:not(.dark) section.bg-gray-50 .compare-row .text-brand-gold {
-  color: var(--gold-ink);
-}
-
-html:not(.dark) .broker-card {
-  border-color: rgba(11, 31, 58, 0.32);
-  background: linear-gradient(180deg, rgba(11, 31, 58, 0.04), transparent 40%);
-}
-html:not(.dark) [class*="bg-[#081628]"] .broker-card,
-html:not(.dark) [class*="bg-[#050d18]"] .broker-card {
-  border-color: rgba(196, 163, 90, 0.18);
-  background: linear-gradient(180deg, rgba(196, 163, 90, 0.06), transparent 40%);
-}
-
-/* Paper titles: only sections that are actually white/gray — never via body.bg-white */
-html:not(.dark) section.bg-white .text-gray-900,
-html:not(.dark) section.bg-gray-50 .text-gray-900,
-html:not(.dark) .hero-index__title,
-html:not(.dark) section.bg-white h1,
-html:not(.dark) section.bg-white h2,
-html:not(.dark) section.bg-white h3,
-html:not(.dark) section.bg-white h4,
-html:not(.dark) section.bg-gray-50 h1,
-html:not(.dark) section.bg-gray-50 h2,
-html:not(.dark) section.bg-gray-50 h3,
-html:not(.dark) section.bg-gray-50 h4,
-html:not(.dark) section.bg-white summary,
-html:not(.dark) details.bg-white > summary {
-  color: #0B1F3A;
-}
-
-/* Navy islands keep white titles in light */
-html:not(.dark) .page-hero,
-html:not(.dark) .page-hero h1,
-html:not(.dark) .page-hero h2,
-html:not(.dark) [class*="bg-[#081628]"] h1,
-html:not(.dark) [class*="bg-[#081628]"] h2,
-html:not(.dark) [class*="bg-[#081628]"] h3,
-html:not(.dark) [class*="bg-[#081628]"] h4,
-html:not(.dark) [class*="bg-[#050d18]"] h1,
-html:not(.dark) [class*="bg-[#050d18]"] h2,
-html:not(.dark) [class*="bg-[#050d18]"] h3,
-html:not(.dark) [class*="bg-[#050d18]"] h4,
-html:not(.dark) .bg-brand-navy h2,
-html:not(.dark) .bg-brand-navy h3,
-html:not(.dark) .mw-band__title,
-html:not(.dark) .mw-pillars h3,
-html:not(.dark) footer h4,
-html:not(.dark) .skill-card h3,
-html:not(.dark) .uni-card h3,
-html:not(.dark) .flow-step h3,
-html:not(.dark) .venue-duel h3,
-html:not(.dark) .day-strip__tick strong {
-  color: #fff;
-}
-
-html:not(.dark) .page-hero .text-gray-300 {
-  color: #d1d5db;
-}
-
-html:not(.dark) .border-gray-100,
-html:not(.dark) .border-gray-200,
-html:not(.dark) .border-gray-300 {
-  border-color: rgba(11, 31, 58, 0.32);
-}
-
-html:not(.dark) #navbar {
-  border-bottom-color: rgba(11, 31, 58, 0.32);
-}
-
-html:not(.dark) form.bg-white,
-html:not(.dark) form.bg-white input,
-html:not(.dark) form.bg-white textarea,
-html:not(.dark) form.bg-white select {
-  border-color: rgba(11, 31, 58, 0.32);
-}
-
-html:not(.dark) .mega__panel {
-  border-color: rgba(11, 31, 58, 0.32);
-}
-
-html:not(.dark) .mobile-nav__acc,
-html:not(.dark) .mobile-nav__top {
-  border-bottom-color: rgba(11, 31, 58, 0.22);
-}
-
-html:not(.dark) .pull-quote {
-  border-block-color: #0B1F3A;
 }

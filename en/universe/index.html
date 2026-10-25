@@ -16,21 +16,21 @@ description: "Nesso works on the sheets Espo already has, and creates one if it 
 {% include pull-quote.html text="The price list looks at Product. If the sheet is missing, the fields stay empty." cite="The sheets" %}
 
 
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The ones Espo already has</h2>
+<section class="py-20 px-6 bg-surface">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-muted leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The ones Espo already has</h2>
     <p>The engine does not invent entity names. It reads the sheets this installation exposes. On a standard sheet the external key is the custom field cExternalKey.</p>
     <p>Two integrations on the same sheet do not step on each other: the key contains the integration id. An accounts file and a sites file can both land on Account, with different keys.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The ones created here</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The ones created here</h2>
     <p>If the sheet does not exist, Nesso creates it through the API. Singular and plural are given. Espo adds the prefix C. Fields on the new sheet do not receive a second prefix. The key is called externalKey.</p>
     <p>A sheet created here is not a second CRM. It is an Espo sheet, visible to whoever has the team. The team and the assigned person come from a column or from a fixed team.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">The ones that are not touched</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">The ones that are not touched</h2>
     <p>Espo users are not created from a master. A column of people does not become a list of logins.</p>
     <p>The recipe price list points at Product. If this installation does not have the sheet, the price-list fields stay empty and the recipe does not invent the catalog.</p>
   </div>
 </section>
 
-<section class="py-16 px-6 bg-gray-50 dark:bg-brand-surface">
+<section class="py-16 px-6 bg-canvas">
   <div class="max-w-5xl mx-auto">
     {% include universe-book.html %}
   </div>

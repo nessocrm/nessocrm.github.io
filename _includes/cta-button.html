@@ -6,6 +6,6 @@
   {% assign cta_label = site.cta.label_en %}
 {% endif %}
 <a href="{{ cta_href | relative_url }}"
-  class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-gold text-brand-dark font-bold text-sm hover:bg-brand-goldLight transition-colors shimmer-btn">
+  class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent-fill text-on-accent font-bold text-sm hover:bg-accent-hover transition-colors shimmer-btn">
   {{ include.label | default: cta_label }}
 </a>

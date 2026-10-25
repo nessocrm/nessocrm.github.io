@@ -3,7 +3,7 @@
   name: Webhook
   letter: W
   accent: "#5589CA"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: live
   status_it: "In ingresso"
   status_en: Inbound
@@ -13,7 +13,7 @@
 - id: database
   name: Database
   letter: DB
-  accent: "#243040"
+  accent: "#262626"
   ink: "#F4F5F7"
   status: live
   status_it: "Lettura database"
@@ -25,7 +25,7 @@
   name: CSV
   letter: C
   accent: "#E4A133"
-  ink: "#1B2430"
+  ink: "#262626"
   status: live
   status_it: "Importazione file"
   status_en: File
@@ -36,7 +36,7 @@
   name: HTTP
   letter: H
   accent: "#58C97A"
-  ink: "#1B2430"
+  ink: "#262626"
   status: live
   status_it: "In uscita"
   status_en: Outbound
@@ -47,7 +47,7 @@
   name: Excel
   letter: X
   accent: "#8B939C"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: live
   status_it: "Importazione Excel"
   status_en: Same as CSV
@@ -58,7 +58,7 @@
   name: SFTP
   letter: S
   accent: "#8B939C"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: live
   status_it: "Trasferimento remoto"
   status_en: Remote file
@@ -69,7 +69,7 @@
   name: PDF
   letter: P
   accent: "#E4A133"
-  ink: "#1B2430"
+  ink: "#262626"
   status: live
   status_it: "Documenti sul cliente"
   status_en: On the customer
@@ -80,7 +80,7 @@
   name: Documento
   letter: D
   accent: "#5589CA"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: live
   status_it: "Importazione documenti"
   status_en: Folder
@@ -90,7 +90,7 @@
 - id: writeback
   name: Ritorno
   letter: R
-  accent: "#243040"
+  accent: "#262626"
   ink: "#E4A133"
   status: queued
   status_it: "Da abilitare"
@@ -102,7 +102,7 @@
 - id: retry
   name: Ritento
   letter: Q
-  accent: "#243040"
+  accent: "#262626"
   ink: "#E4A133"
   status: queued
   status_it: "Da abilitare"
@@ -114,7 +114,7 @@
 - id: portal
   name: Portale
   letter: Po
-  accent: "#243040"
+  accent: "#262626"
   ink: "#E4A133"
   status: queued
   status_it: "Filtro opzionale"
@@ -126,7 +126,7 @@
 - id: secrets
   name: Segreti
   letter: K
-  accent: "#243040"
+  accent: "#262626"
   ink: "#E4A133"
   status: queued
   status_it: "Richiede configurazione"
@@ -139,7 +139,7 @@
   name: Posta
   letter: M
   accent: "#8B939C"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: blocked
   status_it: "Gestita in EspoCRM"
   status_en: Stays in Espo
@@ -151,7 +151,7 @@
   name: Advanced Pack
   letter: A
   accent: "#8B939C"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: blocked
   status_it: "Estensione separata"
   status_en: Not published
@@ -163,7 +163,7 @@
   name: Utenti Espo
   letter: U
   accent: "#8B939C"
-  ink: "#FFFFFF"
+  ink: "#141D28"
   status: blocked
   status_it: "Assegnazione record"
   status_en: Not born from a file
@@ -174,7 +174,7 @@
 - id: sql
   name: SQL su Espo
   letter: "No"
-  accent: "#1B2430"
+  accent: "#262626"
   ink: "#FFFFFF"
   status: blocked
   status_it: "Accesso tramite API"
@@ -186,7 +186,7 @@
 - id: anybridge
   name: Due sistemi qualunque
   letter: "No"
-  accent: "#1B2430"
+  accent: "#262626"
   ink: "#FFFFFF"
   status: blocked
   status_it: "Dedicato a EspoCRM"
@@ -198,7 +198,7 @@
 - id: dump
   name: Dump di produzione
   letter: "No"
-  accent: "#1B2430"
+  accent: "#262626"
   ink: "#FFFFFF"
   status: blocked
   status_it: "Dati dimostrativi"

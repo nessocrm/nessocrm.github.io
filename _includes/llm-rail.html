@@ -1,7 +1,7 @@
 {% comment %}Sliding LLM deck. {% include llm-rail.html %}{% endcomment %}
 <section class="broker-rail {% if include.pad != 'none' %}py-12{% endif %}" aria-label="{% if page.lang == 'it' %}Proposta di abbinamento{% else %}Mapping proposal{% endif %}">
   {% unless include.kicker == 'off' %}
-  <p class="text-center text-[10px] font-mono uppercase tracking-[0.35em] text-brand-gold mb-7">
+  <p class="text-center text-[10px] font-mono uppercase tracking-[0.35em] text-accent mb-7">
     {% if page.lang == 'it' %}Abbinamento · i sinonimi non chiamano nessuno{% else %}Mapping · synonyms call nobody{% endif %}
   </p>
   {% endunless %}
@@ -20,7 +20,7 @@
     </div>
   </div>
   {% unless include.caption == 'off' %}
-  <p class="text-center text-xs text-gray-500 mt-7 max-w-3xl mx-auto px-6">
+  <p class="text-center text-xs text-muted mt-7 max-w-3xl mx-auto px-6">
     {% if page.lang == 'it' %}
     La proposta per sinonimi è nel motore e non esce in rete. Il modello, se c'è un indirizzo, riempie solo le colonne ancora vuote e non salva. Non è l'elenco dei modelli di un fornitore.
     {% else %}

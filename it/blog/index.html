@@ -13,19 +13,19 @@ description: "Guide alle integrazioni con EspoCRM: identificativi, regole sui ca
   lead="Quattro articoli per comprendere il funzionamento di Nesso e le scelte da fare prima di automatizzare i trasferimenti tra EspoCRM e i sistemi aziendali."
 %}
 
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
+<section class="py-20 px-6 bg-surface">
   <div class="max-w-5xl mx-auto space-y-10">
     {% assign chapters = site.posts | where: "series", "giro" | where: "lang", "it" | sort: "series_order" %}
     {% for chapter in chapters %}
     <a href="{{ chapter.url | relative_url }}" class="card-glow grid md:grid-cols-5 gap-6 p-6 md:p-8 items-center">
       <img class="md:col-span-2 w-full h-auto rounded-2xl" src="{{ chapter.image_sm | relative_url }}" alt="{{ chapter.image_alt }}" width="640" height="360" loading="lazy" decoding="async">
       <div class="md:col-span-3">
-        <p class="text-brand-gold font-mono text-xs mb-3">Capitolo {{ chapter.series_order }}</p>
-        <h2 class="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-3">{{ chapter.title }}</h2>
-        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">{{ chapter.description }}</p>
+        <p class="text-accent font-mono text-xs mb-3">Capitolo {{ chapter.series_order }}</p>
+        <h2 class="text-2xl md:text-3xl font-black text-ink mb-3">{{ chapter.title }}</h2>
+        <p class="text-muted leading-relaxed">{{ chapter.description }}</p>
       </div>
     </a>
     {% endfor %}
-    <p class="text-sm text-gray-500">Per la configurazione operativa consulta il manuale nella cartella docs del <a class="text-brand-gold hover:underline" href="https://github.com/nessocrm/nessocrm">repository Nesso</a>.</p>
+    <p class="text-sm text-muted">Per la configurazione operativa consulta il manuale nella cartella docs del <a class="text-accent hover:underline" href="https://github.com/nessocrm/nessocrm">repository Nesso</a>.</p>
   </div>
 </section>

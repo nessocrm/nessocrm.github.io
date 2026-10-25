@@ -13,16 +13,16 @@ description: "Nesso gestisce collegamenti, regole e monitoraggio dei trasferimen
   lead="Nesso gestisce collegamenti, regole e monitoraggio dei trasferimenti. EspoCRM continua a gestire le informazioni e i processi del CRM."
 %}
 
-<section class="py-20 px-6 bg-white dark:bg-brand-dark">
-  <div class="max-w-5xl mx-auto sales-prose text-lg text-gray-600 dark:text-gray-400 leading-relaxed space-y-5">
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Accesso a EspoCRM tramite API</h2>
+<section class="py-20 px-6 bg-surface">
+  <div class="max-w-5xl mx-auto sales-prose text-lg text-muted leading-relaxed space-y-5">
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Accesso a EspoCRM tramite API</h2>
     <p>Le letture e le scritture su EspoCRM utilizzano le sue API HTTP. Anche la creazione di schede e campi passa dalle API: Nesso non esegue query SQL sul database del CRM.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Collegamenti e integrazioni separati</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Collegamenti e integrazioni separati</h2>
     <p>Il collegamento definisce come comunicare con il sistema esterno. L’integrazione definisce quali dati trasferire, dove scriverli e con quale frequenza.</p>
     <p>Uno stesso collegamento può essere utilizzato da più integrazioni. Puoi quindi gestire flussi diversi senza duplicare ogni volta la configurazione del canale.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Una memoria operativa del trasferimento</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Una memoria operativa del trasferimento</h2>
     <p>Nesso conserva in SQLite configurazioni, identificativi, impronte dei dati, avanzamento degli invii e registro delle attività. Queste informazioni permettono di riconoscere i record già elaborati e consultare gli esiti.</p>
-    <h2 class="text-3xl md:text-5xl font-black text-gray-900 dark:text-white">Permessi e configurazione dell’ambiente</h2>
+    <h2 class="text-3xl md:text-5xl font-black text-ink">Permessi e configurazione dell’ambiente</h2>
     <p>Le elaborazioni usano un utente EspoCRM dedicato, con un ruolo legato alle integrazioni attive. La creazione di schede e campi utilizza invece le credenziali amministrative di configurazione.</p>
     <p>Il repository include un ambiente Docker Compose per la valutazione locale. Requisiti, protezione delle credenziali e impostazioni operative sono descritti nel manuale.</p>
   </div>

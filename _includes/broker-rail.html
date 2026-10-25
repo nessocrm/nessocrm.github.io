@@ -1,7 +1,7 @@
 {% comment %}Sliding logo deck. Drop anywhere: {% include broker-rail.html %}{% endcomment %}
 <section class="broker-rail {% if include.pad != 'none' %}py-12{% endif %}" aria-label="{% if page.lang == 'it' %}Canali{% else %}Channels{% endif %}">
   {% unless include.kicker == 'off' %}
-  <p class="text-center text-[10px] font-mono uppercase tracking-[0.35em] text-brand-gold mb-7">
+  <p class="text-center text-[10px] font-mono uppercase tracking-[0.35em] text-accent mb-7">
     {% if page.lang == 'it' %}Canali disponibili per collegare i tuoi sistemi{% else %}Channels · an ERP's name is not in the code{% endif %}
   </p>
   {% endunless %}
@@ -20,7 +20,7 @@
     </div>
   </div>
   {% unless include.caption == 'off' %}
-  <p class="text-center text-xs text-gray-500 mt-7 max-w-3xl mx-auto px-6">
+  <p class="text-center text-xs text-muted mt-7 max-w-3xl mx-auto px-6">
     {% if page.lang == 'it' %}
     Importa dati e documenti, leggi i database aziendali e invia gli aggiornamenti ai sistemi esterni. Scegli il canale in base ai formati e alle interfacce disponibili.
     {% else %}
