@@ -23,6 +23,11 @@
                 Nesso moves records between an external system and EspoCRM. Channel, sheet, fields. Espo's API only.
                 {% endif %}
             </p>
+            <p class="text-muted text-sm mb-6 leading-relaxed">
+                {% if page.lang == 'it' %}Un progetto di{% else %}A project by{% endif %}
+                <a href="https://antoniotrento.net/" rel="author"
+                    class="text-link hover:underline transition-colors">Antonio Trento</a>.
+            </p>
             <div class="flex gap-2">
                 <a href="{{ site.social.github }}" target="_blank" rel="noopener"
                     class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold hover:text-brand-dark transition-all text-muted"
@@ -142,6 +147,10 @@
                     <li>
                         <a href="{{ site.social.github }}" target="_blank" rel="noopener"
                             class="hover:text-link transition-colors">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://antoniotrento.net/portfolio/nesso/"
+                            class="hover:text-link transition-colors">{% if page.lang == 'it' %}Il progetto nel portfolio di Antonio Trento{% else %}Nesso in Antonio Trento’s portfolio{% endif %}</a>
                     </li>
                 </ul>
             </div>
